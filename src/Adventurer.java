@@ -1,4 +1,6 @@
-abstract class Adventurer {
+import java.util.ArrayList;
+
+ class Adventurer {
 
     int damage;
     int treasureCount;
@@ -13,20 +15,24 @@ abstract class Adventurer {
         this.performAction = null;
     }
 
-    public Boolean isAlive(Adventurer adv){
-        if(adv.damage < 3)
+    public Boolean isAlive(){
+        if(this.damage < 3)
             return Boolean.TRUE;
         return Boolean.FALSE;
     }
 
-    public String move(){
-        return "";
+    public String move(Room currentLocation){
+        ArrayList<String> neighbouringRooms = currentLocation.connectedRooms;
+        int options = neighbouringRooms.size();
+        int index = (int)(Math.random()*options); //Gives random index in neighbouringRooms to go to
+        this.currentLocation = neighbouringRooms.get(index);
+        return this.currentLocation;
     }
 
-    public Boolean findTreasure(Adventurer adv){
-        int sum = adv.rollDice();
+    public Boolean findTreasure(){
+        int sum = this.rollDice();
         if(sum>= 10){
-            adv.treasureCount++;
+            this.treasureCount++;
             return Boolean.TRUE;
         }
         return Boolean.FALSE;
@@ -39,8 +45,8 @@ abstract class Adventurer {
         return die1+die2;
     }
 
-    public void updateFightOutcome(Adventurer adv){
-        adv.damage++;
+    public void updateFightOutcome(){
+        this.damage++;
     }
 
     public float fightChance(){

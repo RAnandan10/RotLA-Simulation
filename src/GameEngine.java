@@ -10,14 +10,23 @@ public class GameEngine {
         GameEngine g = new GameEngine();
         g.initializer();
     }
-    public void initializer(){
+    public void initializer() {
         facilityInitializer();
         adventurersInitializer();
         creaturesInitializer();
 
         BoardRenderer rend = new BoardRenderer();
         rend.render(facility);
-        rend.gameState(activeAdventurers,activeCreatures);
+        rend.gameState(activeAdventurers, activeCreatures);
+    }
+
+    private Room getRoomObjectFromRoomId(String id){
+        Room r = new Room(null);
+        for (Room room : facility) {
+            if (room.id.equals(id))
+                r = room;
+        }
+        return r;
     }
 
     private void adventurersInitializer(){

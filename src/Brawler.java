@@ -4,9 +4,9 @@ public class Brawler extends Adventurer{
         this.type = "B";
     }
 
-    public int rollDice(Brawler brw){
+    public int rollDice(){
         int sum = super.rollDice();
-        if(brw.performAction == "Fight")
+        if(this.performAction.equals("Fight"))
             return sum + 2;
         return sum;
     }
