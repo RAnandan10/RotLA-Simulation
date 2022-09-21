@@ -1,6 +1,9 @@
 public class Seeker extends Creature{
     Seeker(int number){
         super();
-        this.creatureId = "S" + number;
+    }
+
+    public void move(String room){
+        self.currentLocation = room;
     }
 }

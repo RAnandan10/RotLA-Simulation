@@ -97,4 +97,29 @@ public class GameEngine {
             }
         }
     }
+
+    private int check_treasure_count(){
+        return totalTreasureCount;
+    }
+
+    private int check_adventurer_count(){
+        int adventurerCount = 0;
+        for (int i = 0; i<n; i++){
+            if (activeAdventurers[i].isAlive){
+                adventurerCount ++;
+            }
+        }
+        return adventurerCount;
+    }
+
+    private int check_creature_count(){
+        int creatureCount = 0;
+        for (int i = 0; i<n; i++){
+            if (activeCreatures[i].isAlive){
+                adventurerCount ++;
+            }
+        }
+        return creatureCount;
+    }
+
 }

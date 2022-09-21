@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Creature {
     public Boolean isAlive;
     public String currentLocation;
@@ -11,11 +12,12 @@ public class Creature {
         return "";
     }
 
-    public void updateFightOutcome(Creature c){
-        c.isAlive = Boolean.FALSE;
+    public void updateFightOutcome(){
+        this.isAlive = Boolean.TRUE;
     }
 
     public int rollDice(){
-        return 0;
+        Random random = new Random();
+        return random.nextInt(7)+1;  
     }
 }
