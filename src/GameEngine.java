@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Random;
 
 public class GameEngine {
 
@@ -14,7 +13,8 @@ public class GameEngine {
         this.gameOver = Boolean.FALSE;
         this.totalTreasureCount =0;
         this.activeAdventurers = new ArrayList<Adventurer>();
-
+        this.activeCreatures = new ArrayList<Creature>();
+        this.facility = new ArrayList<Room>();
     }
     public static void main(String[] args) {
         GameEngine g = new GameEngine();
@@ -27,7 +27,7 @@ public class GameEngine {
 
         BoardRenderer rend = new BoardRenderer();
         rend.render(facility);
-        rend.gameState(activeAdventurers, activeCreatures);
+
     }
 
     private Room getRoomObjectFromRoomId(String id){
@@ -40,7 +40,6 @@ public class GameEngine {
     }
 
     private void adventurersInitializer(){
-        
         Brawler brawler = new Brawler();
         Sneaker sneaker = new Sneaker();
         Runner runner = new Runner();
@@ -55,7 +54,6 @@ public class GameEngine {
     }
 
     private void creaturesInitializer(){
-        activeCreatures = new ArrayList<>();
         for (int i = 1; i < 5; i++){
             Orbiter orbiter = new Orbiter(i);
             activeCreatures.add(orbiter);
@@ -64,10 +62,10 @@ public class GameEngine {
             Blinker blinker = new Blinker(i);
             activeCreatures.add(blinker);
         }
+        System.out.println(activeCreatures.size());
     }
 
     private void facilityInitializer(){
-        facility = new ArrayList<Room>();
         ArrayList<String> connectedRooms = new ArrayList<>();
         String connectedRoomId;
         String id;
@@ -123,8 +121,8 @@ public class GameEngine {
 
     private int check_adventurer_count(){
         int adventurerCount = 0;
-        for (int i = 0; i<n; i++){
-            if (activeAdventurers[i].isAlive){
+        for (int i = 0; i<activeAdventurers.size(); i++){
+            if (activeAdventurers.get(i).isAlive()){
                 adventurerCount ++;
             }
         }
@@ -133,9 +131,9 @@ public class GameEngine {
 
     private int check_creature_count(){
         int creatureCount = 0;
-        for (int i = 0; i<n; i++){
-            if (activeCreatures[i].isAlive){
-                adventurerCount ++;
+        for (int i = 0; i<activeCreatures.size(); i++){
+            if (activeCreatures.get(i).isAlive){
+                creatureCount++;
             }
         }
         return creatureCount;
@@ -143,7 +141,7 @@ public class GameEngine {
     private void turn(){
         //get adventure list
         //for all adventurer{
-            move(facility)
+            //move(facility)
             //if creature then fight
             //else find tressure
 
@@ -157,7 +155,7 @@ public class GameEngine {
 
         //getcreature list
         //for all creature{
-            move(facility)
+            //move(facility)
             //check for end game
         //}
 
@@ -167,14 +165,14 @@ public class GameEngine {
     private void fight(Creature c, Adventurer a){    
         //if adventurer is a sneeker then 50% of thime it escapes
         if (a.involveInFight() == Boolean.FALSE){
-            return 
+            return;
         }
         int c_sum = c.rollDice();
         int a_sum = a.rollDice();
 
         if (c_sum > a_sum){
             a.updateFightOutcome();
-            if ( ! a.isAlive(){
+            if (!a.isAlive()){
                 // update adventure list in room
                 //a.currentLocation()
 

@@ -50,6 +50,6 @@ import java.util.ArrayList;
     }
 
     public Boolean involveInFight(){
-        return TRUE
+        return Boolean.TRUE;
     }
 }

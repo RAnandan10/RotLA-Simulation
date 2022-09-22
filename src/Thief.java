@@ -1,7 +1,7 @@
 public class Thief extends Adventurer{
     Thief(){
         super();
-
+        this.type = "T";
     }
 
     public int rollDice(){
