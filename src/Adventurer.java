@@ -49,7 +49,7 @@ import java.util.ArrayList;
         this.damage++;
     }
 
-    public float fightChance(){
-        return 1;
+    public Boolean involveInFight(){
+        return TRUE
     }
 }

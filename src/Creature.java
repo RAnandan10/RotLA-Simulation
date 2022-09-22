@@ -3,6 +3,7 @@ public class Creature {
     public Boolean isAlive;
     public String currentLocation;
     public String creatureId;
+    public String type;
 
     Creature(){
         this.isAlive = Boolean.TRUE;
@@ -13,11 +14,13 @@ public class Creature {
     }
 
     public void updateFightOutcome(){
-        this.isAlive = Boolean.TRUE;
+        this.isAlive = Boolean.FALSE;
     }
 
     public int rollDice(){
         Random random = new Random();
-        return random.nextInt(7)+1;  
+        int dice1 = random.nextInt(6)+1;
+        int dice2 = random.nextInt(6)+1;
+        return dice1 + dice2;  
     }
 }

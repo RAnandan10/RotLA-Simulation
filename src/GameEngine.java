@@ -1,11 +1,21 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class GameEngine {
 
     public int totalTreasureCount;
+    public Boolean gameOver;
     public ArrayList<Adventurer> activeAdventurers;
     public ArrayList<Creature> activeCreatures;
     public ArrayList<Room> facility;
+
+    /*Game engin constructor */
+    GameEngine(){
+        this.gameOver = Boolean.FALSE;
+        this.totalTreasureCount =0;
+        this.activeAdventurers = new ArrayList<Adventurer>();
+
+    }
     public static void main(String[] args) {
         GameEngine g = new GameEngine();
         g.initializer();
@@ -30,7 +40,7 @@ public class GameEngine {
     }
 
     private void adventurersInitializer(){
-        activeAdventurers = new ArrayList<Adventurer>();
+        
         Brawler brawler = new Brawler();
         Sneaker sneaker = new Sneaker();
         Runner runner = new Runner();
@@ -130,5 +140,76 @@ public class GameEngine {
         }
         return creatureCount;
     }
+    private void turn(){
+        //get adventure list
+        //for all adventurer{
+            move(facility)
+            //if creature then fight
+            //else find tressure
+
+            //if sneeker fight twice
+            /*if (a.findTreasure){
+                //update total tressure count
+            }*/
+             //check for end game
+        //}
+       
+
+        //getcreature list
+        //for all creature{
+            move(facility)
+            //check for end game
+        //}
+
+
+    }
+    /* roll the dice and update the outcome */
+    private void fight(Creature c, Adventurer a){    
+        //if adventurer is a sneeker then 50% of thime it escapes
+        if (a.involveInFight() == Boolean.FALSE){
+            return 
+        }
+        int c_sum = c.rollDice();
+        int a_sum = a.rollDice();
+
+        if (c_sum > a_sum){
+            a.updateFightOutcome();
+            if ( ! a.isAlive(){
+                // update adventure list in room
+                //a.currentLocation()
+
+            }
+        }
+        else{
+            c.updateFightOutcome();
+            // update adventure list in room
+            //a.currentLocation() 
+        }
+        //if creature won the fight 
+    }
+
+    private Boolean shouldGameContinue(){
+        if (check_creature_count() == 0){
+            System.out.println("Game Over : All creatures are dead");
+            return Boolean.FALSE;
+        }
+
+        if (check_adventurer_count() == 0){
+            System.out.println("Game Over: All Adventurers are dead");
+            return Boolean.FALSE;
+        }
+
+        if (check_treasure_count() == 10){
+            System.out.println("Game Over: 10 tressure found");
+            return Boolean.FALSE;
+        }
+
+        return Boolean.TRUE;
+    }
+
+    private void playGame(){
+        
+    }
+
 
 }

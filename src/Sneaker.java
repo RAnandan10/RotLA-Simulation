@@ -3,7 +3,13 @@ public class Sneaker extends Adventurer{
         super();
     }
 
-    public float fightChance(){
-        return 0.5f;
+    public Boolean involveInFight(){
+        Random random = new Random();
+        int chance = random.nextInt(2);
+        if (chance){
+            return TRUE
+        }
+        return FALSE
+
     }
 }
