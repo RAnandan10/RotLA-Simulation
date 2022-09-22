@@ -30,18 +30,6 @@ public class Seeker extends Creature{
                 }
             }
         }
-
-
-
-
-  
-
-
-        // find adjacent adventurers in the same level
-        //move to that room 
-        
-
-        // update room status
         
     }
 }

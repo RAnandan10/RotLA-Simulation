@@ -16,10 +16,7 @@ public class GameEngine {
         this.activeCreatures = new ArrayList<Creature>();
         this.facility = new ArrayList<Room>();
     }
-    public static void main(String[] args) {
-        GameEngine g = new GameEngine();
-        g.initializer();
-    }
+
     public void initializer() {
         facilityInitializer();
         adventurersInitializer();
@@ -189,25 +186,32 @@ public class GameEngine {
     private Boolean shouldGameContinue(){
         if (check_creature_count() == 0){
             System.out.println("Game Over : All creatures are dead");
+            gameOver = Boolean.TRUE;
             return Boolean.FALSE;
+            
         }
 
         if (check_adventurer_count() == 0){
             System.out.println("Game Over: All Adventurers are dead");
+            gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
 
         if (check_treasure_count() == 10){
             System.out.println("Game Over: 10 tressure found");
+            gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
-
+        
         return Boolean.TRUE;
     }
 
     private void playGame(){
-        
+        int turnCount = 0;
+        while(!gameOver){
+            System.out.println("Turn Count",turnCount);
+            turnCount ++;
+            turn();
+        }   
     }
-
-
 }
