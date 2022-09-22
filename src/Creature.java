@@ -10,7 +10,7 @@ public class Creature {
         this.isAlive = Boolean.TRUE;
     }
 
-    private Room getRoomObjectFromRoomId(String id, ArrayList<Room> facility){
+    public Room getRoomObjectFromRoomId(String id, ArrayList<Room> facility){
         Room r = new Room(null);
         for (Room room : facility) {
             if (room.id.equals(id))

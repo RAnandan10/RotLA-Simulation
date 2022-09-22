@@ -1,5 +1,7 @@
-public class Blinker extends Creature{
+import java.util.ArrayList;
 import java.util.Random;
+
+public class Blinker extends Creature{
     Blinker(int number){
         super();
         this.creatureId="B"+number;
@@ -8,7 +10,7 @@ import java.util.Random;
 
     // Generate a random room number 
     private String randomRoom(){
-        Random random = new Random(); 
+        Random random = new Random();
         return (random.nextInt(4)+1) +"-"+ random.nextInt(3) +"-"+ random.nextInt(3);
     }
 
@@ -28,6 +30,5 @@ import java.util.Random;
             this.currentLocation = room.id; // updating the current location in the creature object.
             currentRoom.removeCreatureFromList(this.type);  // removing the creture from the current room
             room.addCreatureToList(this.type); // adding the creture to next room
-        } 
     }
 }
