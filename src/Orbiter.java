@@ -7,9 +7,9 @@ public class Orbiter extends Creature{
     String direction;
     Boolean clockWise;
 
-    Orbiter(int number){
+    Orbiter(){
         super();
-        this.creatureId = "O" + number;
+        this.creatureId = "O" ;
         
         Random random = new Random(); 
         if (random.nextInt(2) == 1){

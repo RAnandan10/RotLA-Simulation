@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Seeker extends Creature{
-    Seeker(int number){
+    Seeker(){
         super();
-        this.creatureId = "S" + number;
+        this.creatureId = "S";
         this.currentLocation = "1-2-2";
     }
 

@@ -1,10 +1,12 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+
 public class Blinker extends Creature{
-    Blinker(int number){
+    Blinker(){
+
         super();
-        this.creatureId="B"+number;
+        this.creatureId="B";
         //this.currentLocation = 
     }
 
