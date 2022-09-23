@@ -136,27 +136,36 @@ public class GameEngine {
         return creatureCount;
     }
     private void turn(){
-        //get adventure list
-        //for all adventurer{
-            //move(facility)
-            //if creature then fight
-            //else find tressure
+        Room r;
+        String nextLocation;
+        for (Adventurer a: activeAdventurers){
+            nextLocation = a.move(a.currentLocation);
+            //remove from the adventurer from current location
+            r = getRoomObjectFromRoomId(nextLocation)
 
-            //if sneeker fight twice
-            /*if (a.findTreasure){
+            if (r.isCreaturePresent()){
+                //fight the creature 
+            }
+            else{
+                //find tressure
                 //update total tressure count
-            }*/
-             //check for end game
-        //}
-       
-
-        //getcreature list
-        //for all creature{
-            //move(facility)
+            }
             //check for end game
-        //}
+        }
 
 
+        for (Creature c: activeCreatures){
+            nextLocation = c.move(c.currentLocation);
+            //remove from the adventurer from current location
+            r = getRoomObjectFromRoomId(nextLocation)
+
+            if (r.isAdventurerPresent){
+                //fight the Adventurer
+            }
+
+            //check for end game
+        }
+       
     }
     /* roll the dice and update the outcome */
     private void fight(Creature c, Adventurer a){    
