@@ -3,11 +3,18 @@ import java.util.Random;
 
 
 public class Blinker extends Creature{
-    Blinker(){
+    Blinker(ArrayList<Room> facility){
 
         super();
+        Room r;
         this.creatureId="B";
-        //this.currentLocation = 
+        List<String> dir = Arrays.asList("4-0-0", "4-0-1", "4-0-2","4-1-2", "4-2-2", "4-2-1", "4-2-0", "4-1-0");
+        Random random = new Random();
+        this.currentLocation = dir[random.nextInt(8)];
+
+        //set the blinker in the room
+        r = getRoomObjectFromRoomId(this.currentLocation,facility);
+        r.addCreatureToList(this.creatureId); // check systax 
     }
 
     // Generate a random room number 

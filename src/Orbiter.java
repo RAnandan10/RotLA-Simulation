@@ -7,16 +7,23 @@ public class Orbiter extends Creature{
     String direction;
     Boolean clockWise;
 
-    Orbiter(){
+    Orbiter(ArrayList<Room> facility){
         super();
         this.creatureId = "O" ;
-        
+        List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");
         Random random = new Random(); 
+        int floor = random.nextInt(5)+1;
+        this.currentLocation = floor + dir[random.nextInt(8)]// check syntax
+        //this.currentLocation = "1-2-2" // any outer location
         if (random.nextInt(2) == 1){
             this.clockWise = Boolean.TRUE;
         }
         
         this.clockWise = Boolean.FALSE;
+
+        //set the Orbitor in the room
+        r = getRoomObjectFromRoomId(this.currentLocation,facility);
+        r.addCreatureToList(this.creatureId); // check systax 
     }
 
     // Generate a  room number on the same floor

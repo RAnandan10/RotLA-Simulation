@@ -37,9 +37,9 @@ public class GameEngine {
     }
 
     private void adventurersInitializer(){
-        Brawler brawler = new Brawler();
-        Sneaker sneaker = new Sneaker();
-        Runner runner = new Runner();
+        Brawler brawler = new Brawler(facility);
+        Sneaker sneaker = new Sneaker(facility);
+        Runner runner = new Runner(facility);
         Thief thief = new Thief();
         activeAdventurers.add(brawler);
         activeAdventurers.add(sneaker);
