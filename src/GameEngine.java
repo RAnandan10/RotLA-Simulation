@@ -144,6 +144,8 @@ public class GameEngine {
             r = getRoomObjectFromRoomId(nextLocation)
 
             if (r.isCreaturePresent()){
+                // get creature object
+                fight(Creature c, a)
                 //fight the creature 
             }
             else{
