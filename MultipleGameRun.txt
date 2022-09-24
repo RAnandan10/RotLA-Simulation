@@ -1,4 +1,4 @@
-Out of 30 simulations, 29 time the game ended because the adventurers fould all the 10 tressures.
+Out of 30 simulations, 29 time the game ended because the adventurers found all the 10 treasures.
 
 Game simulation 0
     Game Over: 10 tressure found

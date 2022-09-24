@@ -1,47 +1,46 @@
 import java.util.ArrayList;
-
-
 import static java.lang.System.out;
 
-//PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
-//System.setOut(out);
-
+// This class defines methods to display the board and game status
 public class BoardRenderer {
+
+    // This method displays the current board status
     public void render(ArrayList<Room> facility){
-        String roomid;
-        Room r = facility.get(0);
+        String roomId;
+        Room room = facility.get(0);
         //r.adventurers.toString().replaceAll(",","").replace("[","").replace("]","")
-        out.println("\n" + r.id + ":" + r.adventurers + ":" + r.creatures);
+        out.println("\n" + room.id + ":" + room.adventurers + ":" + room.creatures);
         int i =1;
         while(i<facility.size()){
-            r = facility.get(i);
-            roomid = r.id;
-            while (roomid.contains("-0-")){
-                out.print(r.id + ":" + r.adventurers + ":" + r.creatures + "        ");
-                r=facility.get(++i);
-                roomid=r.id;
+            room = facility.get(i);
+            roomId = room.id;
+            while (roomId.contains("-0-")){
+                out.print(room.id + ":" + room.adventurers + ":" + room.creatures + "        ");
+                room=facility.get(++i);
+                roomId=room.id;
             }
             out.println();
 
-            while (roomid.contains("-1-")){
-                System.out.print(r.id + ":" + r.adventurers + ":" + r.creatures + "        ");
-                r=facility.get(++i);
-                roomid=r.id;
+            while (roomId.contains("-1-")){
+                System.out.print(room.id + ":" + room.adventurers + ":" + room.creatures + "        ");
+                room=facility.get(++i);
+                roomId=room.id;
             }
             out.println();
 
-            while (roomid.contains("-2-")){
-                out.print(r.id + ":" + r.adventurers + ":" + r.creatures + "        ");
+            while (roomId.contains("-2-")){
+                out.print(room.id + ":" + room.adventurers + ":" + room.creatures + "        ");
                 i++;
                 if(i == facility.size())
                     break;
-                r=facility.get(i);
-                roomid=r.id;
+                room=facility.get(i);
+                roomId=room.id;
             }
             out.println();
         }
     }
 
+    // This method displays the current game status
     public void gameState(ArrayList<Adventurer> activeAdventurers, ArrayList<Creature> activeCreatures){
         int orbiterCount=0,seekerCount=0,blinkerCount=0;
         for (Adventurer adv :activeAdventurers){

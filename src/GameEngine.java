@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+// This class drives the game. This class has public and private methods which are highly cohesive. This class is an example of Encapsulation and cohesion
 public class GameEngine {
 
     public int totalTreasureCount;
@@ -18,40 +19,16 @@ public class GameEngine {
         this.facility = new ArrayList<Room>();
     }
 
+    // This method initializes the game
     public void initializer(BoardRenderer board) {
         facilityInitializer();
         adventurersInitializer();
         creaturesInitializer();
-        //board.render(facility);
-        //board.gameState(activeAdventurers,activeCreatures);
+        board.render(facility);
+        board.gameState(activeAdventurers,activeCreatures);
     }
 
-    private Room getRoomObjectFromRoomId(String id){
-        Room r = new Room(null);
-        for (Room room : facility) {
-            if (room.id.equals(id))
-                r = room;
-        }
-        return r;
-    }
-
-    private Creature getCreatureObjectFromRoomId(String id){
-        Creature cre = new Creature();
-        for (Creature creature : activeCreatures) {
-            if (creature.type.equals(id))
-                cre = creature;
-        }
-        return cre;
-    }
-    private Adventurer getAdventurerObjectFromRoomId(String id){
-        Adventurer adv = new Adventurer();
-        for (Adventurer adventurer : activeAdventurers) {
-            if (adventurer.type.equals(id))
-                adv = adventurer;
-        }
-        return adv;
-    }
-
+    // This method initializes the adventurers
     private void adventurersInitializer(){
         Brawler brawler = new Brawler();
         Sneaker sneaker = new Sneaker();
@@ -66,22 +43,41 @@ public class GameEngine {
             startingPoint.addAdventurerToList(adv.type);
     }
 
+    // This method initializes the Creatures
     private void creaturesInitializer(){
-        for (int i = 1; i < 5; i++){
-            Orbiter orbiter = new Orbiter(facility);
-            activeCreatures.add(orbiter);
-            Seeker seeker = new Seeker(facility);
-            activeCreatures.add(seeker);
-            Blinker blinker = new Blinker(facility);
-            activeCreatures.add(blinker);
-        }
-       // System.out.println(activeCreatures.size());
+        Orbiter orbiter1 = new Orbiter(facility);
+        Orbiter orbiter2 = new Orbiter(facility);
+        Orbiter orbiter3 = new Orbiter(facility);
+        Orbiter orbiter4 = new Orbiter(facility);
+        activeCreatures.add(orbiter1);
+        activeCreatures.add(orbiter2);
+        activeCreatures.add(orbiter3);
+        activeCreatures.add(orbiter4);
+        Seeker seeker1 = new Seeker(facility);
+        Seeker seeker2 = new Seeker(facility);
+        Seeker seeker3 = new Seeker(facility);
+        Seeker seeker4 = new Seeker(facility);
+        activeCreatures.add(seeker1);
+        activeCreatures.add(seeker2);
+        activeCreatures.add(seeker3);
+        activeCreatures.add(seeker4);
+        Blinker blinker1 = new Blinker(facility);
+        Blinker blinker2 = new Blinker(facility);
+        Blinker blinker3 = new Blinker(facility);
+        Blinker blinker4 = new Blinker(facility);
+        activeCreatures.add(blinker1);
+        activeCreatures.add(blinker2);
+        activeCreatures.add(blinker3);
+        activeCreatures.add(blinker4);
+        System.out.println(activeCreatures.size());
     }
 
+    // This method initializes the facility
     private void facilityInitializer(){
         ArrayList<String> connectedRooms = new ArrayList<>();
         String connectedRoomId;
         String id;
+
         //For room at ground level
         Room groundLevelRoom = new Room("0-1-1");
         connectedRooms.add("1-1-1");
@@ -128,24 +124,27 @@ public class GameEngine {
         }
     }
 
+    // Returns total treasure count
     private int check_treasure_count(){
         return totalTreasureCount;
     }
 
+    // Method checks how many adventurers are alive
     private int check_adventurer_count(){
         int adventurerCount = 0;
-        for (int i = 0; i<activeAdventurers.size(); i++){
-            if (activeAdventurers.get(i).isAlive()){
-                adventurerCount ++;
+        for (Adventurer activeAdventurer : activeAdventurers) {
+            if (activeAdventurer.isAlive()) {
+                adventurerCount++;
             }
         }
         return adventurerCount;
     }
 
+    // Method checks how many creatures are alive
     private int check_creature_count(){
         int creatureCount = 0;
-        for (int i = 0; i<activeCreatures.size(); i++){
-            if (activeCreatures.get(i).isAlive){
+        for (Creature activeCreature : activeCreatures) {
+            if (activeCreature.isAlive) {
                 creatureCount++;
             }
         }
@@ -153,24 +152,30 @@ public class GameEngine {
     }
     private void turn(BoardRenderer board){
 
+        // Gets all adventurers that are alive
         ArrayList<Adventurer> playingAdventures = new ArrayList<>();
         for (Adventurer adv : activeAdventurers){
             if(adv.isAlive())
                 playingAdventures.add(adv);
         }
 
+        // Gets all creatures that are alive
         ArrayList<Creature> playingCreatures = new ArrayList<>();
         for (Creature cre : activeCreatures){
             if(cre.isAlive)
                 playingCreatures.add(cre);
         }
 
+        // Each alive adventurer gets to play
         for (Adventurer playingAdv : playingAdventures){
+            // Adventurer moves to next location
             Room currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
             playingAdv.move(facility);
             currentRoom.removeAdventurerFromList(playingAdv.type);
             Room newRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
             newRoom.addAdventurerToList(playingAdv.type);
+
+            // Check if Creature present in room. If so fight
             if(newRoom.isCreaturePresent()){
                 int index =0;
                 ArrayList<String> creaturesInRoom = newRoom.getCreaturesInRoom();
@@ -182,8 +187,9 @@ public class GameEngine {
                 }
                 creatureToFight = creaturesInRoom.get(index);
                 playingAdv.performAction="Fight";
-                fight(getCreatureObjectFromRoomId(creatureToFight), playingAdv);
+                fight(getCreatureObjectFromCreatureType(creatureToFight), playingAdv);
             }
+            // If Creature is not present in room then search treasure
             else {
                 playingAdv.performAction="Treasure";
                 Boolean foundTreasure = playingAdv.findTreasure();
@@ -191,14 +197,17 @@ public class GameEngine {
                     this.totalTreasureCount++;
                 }
             }
+            // Check if any end game condition is met after a adventurers turn
             if(!shouldGameContinue())
                 return;
         }
 
 
-        //Creature turn
+        // Each alive creature gets to play
         for (Creature playingCre : playingCreatures){
             Room currentRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
+
+            // Don't move if adventurer is in room
             if(currentRoom.isAdventurerPresent()){
                 continue;
             }
@@ -209,6 +218,7 @@ public class GameEngine {
                 newRoom.addCreatureToList(playingCre.type);
             }
 
+            // After creature move, check if adventurer is present and fight
             if(currentRoom.isAdventurerPresent()){
                 int index =0;
                 ArrayList<String> adventuresInRoom = currentRoom.getAdventurersInRoom();
@@ -219,57 +229,64 @@ public class GameEngine {
                     index = random.nextInt(size);
                 }
                 adventurerToFight = adventuresInRoom.get(index);
-                Adventurer fightingAdv = getAdventurerObjectFromRoomId(adventurerToFight);
+                Adventurer fightingAdv = getAdventurerObjectFromAdventurerType(adventurerToFight);
                 fightingAdv.performAction="Fight";
                 fight(playingCre, fightingAdv);
             }
-            
 
+            // Check if any end game condition is met after a creatures turn
             if(!shouldGameContinue())
                 return;
         }
-        //board.render(facility);
-        //board.gameState(activeAdventurers,activeCreatures);
+
+        // Prints current board and game status
+        board.render(facility);
+        board.gameState(activeAdventurers,activeCreatures);
     }
-    /* roll the dice and update the outcome */
+
+    //Method is used to simulate fight between adventurer and creature. This is a private method. Example of Abstraction
     private void fight(Creature c, Adventurer a){
         Room fightRoom;
-        //if adventurer is a sneeker then 50% of thime it escapes
+
+        //If adventurer is a sneaker then 50% of the time it escapes
         if (a.involveInFight() == Boolean.FALSE){
             return;
         }
-        int c_sum = c.rollDice();
-        int a_sum = a.rollDice();
+        int c_sum = c.rollDice();               // Creature rolls dice
+        int a_sum = a.rollDice();               // Adventurer rolls dice
 
-        if (c_sum > a_sum){
-            a.updateFightOutcome();
-            if (!a.isAlive()){
+        if (c_sum > a_sum){                                             // If creature wins fight
+            a.updateFightOutcome();                                     // Update adventurer health
+            if (!a.isAlive()){                                          // Remove adventurer from room if dead
                 fightRoom = getRoomObjectFromRoomId(a.currentLocation);
                 fightRoom.removeAdventurerFromList(a.type);
             }
         }
-        else{
-            c.updateFightOutcome();
+        else if (c_sum < a_sum){                                           // If adventurer wins fight
+            c.updateFightOutcome();                                         // Update creature to dead
             fightRoom = getRoomObjectFromRoomId(c.currentLocation);
-            fightRoom.removeAdventurerFromList(c.type);
+            fightRoom.removeCreatureFromList(c.type);                     // Remove creature from room
         }
-        //if creature won the fight 
     }
 
+    // This method checks if any termination condition is met and updates attribute gameOver. This is a private method. Example of Abstraction
     private Boolean shouldGameContinue(){
+
+        // Game ends if all creatures are dead
         if (check_creature_count() == 0){
             System.out.println("    Game Over : All creatures are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
-            
         }
 
+        // Game ends if all adventurers are dead
         if (check_adventurer_count() == 0){
             System.out.println("    Game Over: All Adventurers are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
 
+        // Game ends if 10 treasures are found
         if (check_treasure_count() == 10){
             System.out.println("    Game Over: 10 tressure found\n");
             gameOver = Boolean.TRUE;
@@ -279,12 +296,43 @@ public class GameEngine {
         return Boolean.TRUE;
     }
 
+    // This method is used to initialize the game and play the game until a termination condition is met
     public void playGame(BoardRenderer board){
         int turn = 1;
         while(!gameOver){
-            //System.out.println("Turn" + turn);
-            turn ++;
+            System.out.println("Turn" + turn);
             turn(board);
+            turn ++;
         }   
+    }
+
+    //Method to get a Room object using room id
+    private Room getRoomObjectFromRoomId(String id){
+        Room r = new Room(null);
+        for (Room room : facility) {
+            if (room.id.equals(id))
+                r = room;
+        }
+        return r;
+    }
+
+    //Method to get a Creature object using Creature type
+    private Creature getCreatureObjectFromCreatureType(String id){
+        Creature cre = new Creature();
+        for (Creature creature : activeCreatures) {
+            if (creature.type.equals(id))
+                cre = creature;
+        }
+        return cre;
+    }
+
+    //Method to get Adventurer object using Adventurer type
+    private Adventurer getAdventurerObjectFromAdventurerType(String id){
+        Adventurer adv = new Adventurer();
+        for (Adventurer adventurer : activeAdventurers) {
+            if (adventurer.type.equals(id))
+                adv = adventurer;
+        }
+        return adv;
     }
 }
