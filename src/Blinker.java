@@ -29,7 +29,7 @@ public class Blinker extends Creature{
         Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
         Room room;
         String nextLocation = null;
-        ArrayList<Room> adjacentRooms;
+        //ArrayList<Room> adjacentRooms;
 
 
         if (currentRoom.isAdventurerPresent()){
