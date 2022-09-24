@@ -1,14 +1,14 @@
 # RotLA
 
 ### Authors
-/*
+
 1. #### Rajagopal Anandan
     rajagopal.anandan@colorado.edu
 
 1. #### Suresh Nayak 
      suresh.nayak@colorado.edu
 
-*/
+
 
 Java version: openjdk 17.0.4.1 2022-08-12
 
