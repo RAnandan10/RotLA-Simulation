@@ -46,13 +46,15 @@ public class BoardRenderer {
         }
         out.println();
         for (Creature cre :activeCreatures){
-            String str = cre.creatureId;
-            if(str.contains("O"))
-                orbiterCount++;
-            else if (str.contains("S"))
-                seekerCount++;
-            else
-                blinkerCount++;
+            if (cre.isAlive){
+                String str = cre.type;
+                if(str.contains("O"))
+                    orbiterCount++;
+                else if (str.contains("S"))
+                    seekerCount++;
+                else
+                    blinkerCount++;
+                }
             }
         out.println("Orbiters - "+ orbiterCount + " Remaining");
         out.println("Seekers - "+ seekerCount + " Remaining");

@@ -3,7 +3,6 @@ import java.util.Random;
 public class Creature {
     public Boolean isAlive;
     public String currentLocation;
-    public String creatureId;
     public String type;
 
     Creature(){

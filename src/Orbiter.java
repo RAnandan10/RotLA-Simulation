@@ -9,21 +9,22 @@ public class Orbiter extends Creature{
 
     Orbiter(ArrayList<Room> facility){
         super();
-        this.creatureId = "O" ;
+        this.type = "O" ;
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");
         Random random = new Random(); 
         int floor = random.nextInt(5)+1;
-        this.currentLocation = floor + dir[random.nextInt(8)]// check syntax
+        this.currentLocation = floor + dir.get(random.nextInt(8));// check syntax
         //this.currentLocation = "1-2-2" // any outer location
         if (random.nextInt(2) == 1){
             this.clockWise = Boolean.TRUE;
         }
-        
-        this.clockWise = Boolean.FALSE;
+        else {
+            this.clockWise = Boolean.FALSE;
+        }
 
         //set the Orbitor in the room
-        r = getRoomObjectFromRoomId(this.currentLocation,facility);
-        r.addCreatureToList(this.creatureId); // check systax 
+        Room newRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
+        newRoom.addCreatureToList(this.type); // check systax
     }
 
     // Generate a  room number on the same floor
@@ -46,12 +47,13 @@ public class Orbiter extends Creature{
 
         /**if conterclockwise then get the prev entry from dir */
         else{
+            if (index == 0)
+                return this.currentLocation.substring(0,2) + dir.get(7);
             return this.currentLocation.substring(0,2) + dir.get((index-1)%8);
         }
     }
 
     public void move(ArrayList<Room> facility){
-        System.out.println("child");
         Room currentRoom = new Room(null);
         String nextLocation = null;
         ArrayList<Room> adjacentRooms;

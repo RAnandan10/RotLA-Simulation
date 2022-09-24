@@ -21,8 +21,9 @@ import java.util.ArrayList;
         return Boolean.FALSE;
     }
 
-    public String move(Room currentLocation){
-        ArrayList<String> neighbouringRooms = currentLocation.connectedRooms;
+    public String move(ArrayList<Room> facility){
+        Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
+        ArrayList<String> neighbouringRooms = currentRoom.connectedRooms;
         int options = neighbouringRooms.size();
         int index = (int)(Math.random()*options); //Gives random index in neighbouringRooms to go to
         this.currentLocation = neighbouringRooms.get(index);
@@ -52,4 +53,13 @@ import java.util.ArrayList;
     public Boolean involveInFight(){
         return Boolean.TRUE;
     }
+
+     public Room getRoomObjectFromRoomId(String id, ArrayList<Room> facility){
+         Room r = new Room(null);
+         for (Room room : facility) {
+             if (room.id.equals(id))
+                 r = room;
+         }
+         return r;
+     }
 }

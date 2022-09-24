@@ -1,4 +1,7 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
 
 public class Seeker extends Creature{
     /*Seeker(){
@@ -7,17 +10,17 @@ public class Seeker extends Creature{
         this.currentLocation = "1-2-2";
     }*/
     Seeker(ArrayList<Room> facility){
-        this.creatureId = "S";
+        this.type = "S";
 
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0", "-1-1");
-        Random random = new Random(); 
+        Random random = new Random();
         int floor = random.nextInt(5)+1;
-        this.currentLocation = floor + dir[random.nextInt(8)]// check syntax
+        this.currentLocation = floor + dir.get(random.nextInt(8));// check syntax
         //this.currentLocation = "1-2-2"; // make it dynamic
 
         //set the seeker in the room
-        r = getRoomObjectFromRoomId(this.currentLocation,facility);
-        r.addCreatureToList(this.creatureId); // check systax 
+        Room newRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
+        newRoom.addCreatureToList(this.type); // check systax
 
     }
 

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Room {
     public String id;
@@ -21,16 +22,16 @@ public class Room {
         this.adventurers.add(adventurerType);
     }
 
-    public void addCreatureToList(String creatureId){
-        this.creatures.add(creatureId);
+    public void addCreatureToList(String type){
+        this.creatures.add(type);
     }
 
     public void removeAdventurerFromList(String adventurerType){
         this.adventurers.remove(adventurerType);
     }
 
-    public void removeCreatureFromList(String creatureId){
-        this.creatures.remove(creatureId);
+    public void removeCreatureFromList(String type){
+        this.creatures.remove(type);
     }
 
     public ArrayList<String> getAdventurersInRoom(){

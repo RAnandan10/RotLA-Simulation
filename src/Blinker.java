@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
 
 
@@ -7,14 +9,14 @@ public class Blinker extends Creature{
 
         super();
         Room r;
-        this.creatureId="B";
+        this.type="B";
         List<String> dir = Arrays.asList("4-0-0", "4-0-1", "4-0-2","4-1-2", "4-2-2", "4-2-1", "4-2-0", "4-1-0");
         Random random = new Random();
-        this.currentLocation = dir[random.nextInt(8)];
+        this.currentLocation = dir.get(random.nextInt(8));
 
         //set the blinker in the room
         r = getRoomObjectFromRoomId(this.currentLocation,facility);
-        r.addCreatureToList(this.creatureId); // check systax 
+        r.addCreatureToList(this.type); // check systax
     }
 
     // Generate a random room number 
