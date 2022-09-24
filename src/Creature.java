@@ -5,6 +5,7 @@ public class Creature {
     public String currentLocation;
     public String type;
 
+    //Base class for creature.
     Creature(){
         this.isAlive = Boolean.TRUE;
     }

@@ -4,11 +4,7 @@ import java.util.List;
 import java.util.Random;
 
 public class Seeker extends Creature{
-    /*Seeker(){
-        super();
-        this.creatureId = "S";
-        this.currentLocation = "1-2-2";
-    }*/
+
     Seeker(ArrayList<Room> facility){
         this.type = "S";
 

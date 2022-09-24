@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 
 public class Orbiter extends Creature{
-    String direction;
     Boolean clockWise;
 
     Orbiter(ArrayList<Room> facility){
@@ -12,11 +11,8 @@ public class Orbiter extends Creature{
         this.type = "O" ;
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");
         Random random = new Random(); 
-<<<<<<< Updated upstream
         int floor = random.nextInt(3)+1;
-=======
-        int floor = random.nextInt(4)+1;
->>>>>>> Stashed changes
+
         this.currentLocation = floor + dir.get(random.nextInt(8));// check syntax
         //this.currentLocation = "1-2-2" // any outer location
         if (random.nextInt(2) == 1){
@@ -60,7 +56,6 @@ public class Orbiter extends Creature{
     public void move(ArrayList<Room> facility){
         Room currentRoom = new Room(null);
         String nextLocation = null;
-        ArrayList<Room> adjacentRooms;
         for (Room room : facility) {
             if (room.id.equals(this.currentLocation)){
                 currentRoom = room;
