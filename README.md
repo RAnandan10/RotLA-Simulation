@@ -2,7 +2,8 @@
 
 ### Authors
 #### Rajagopal Anandan
-#### Suresh Nayak
+#### Suresh Nayak 
+suresh.nayak@colorado.edu
 
 Java version: openjdk 17.0.4.1 2022-08-12
 
