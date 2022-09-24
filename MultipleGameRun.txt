@@ -1,0 +1,91 @@
+Out of 30 simulations, 29 time the game ended because the adventurers fould all the 10 tressures.
+
+Game simulation 0
+    Game Over: 10 tressure found
+
+Game simulation 1
+    Game Over: 10 tressure found
+
+Game simulation 2
+    Game Over: 10 tressure found
+
+Game simulation 3
+    Game Over: 10 tressure found
+
+Game simulation 4
+    Game Over: 10 tressure found
+
+Game simulation 5
+    Game Over: 10 tressure found
+
+Game simulation 6
+    Game Over: 10 tressure found
+
+Game simulation 7
+    Game Over: 10 tressure found
+
+Game simulation 8
+    Game Over: 10 tressure found
+
+Game simulation 9
+    Game Over: 10 tressure found
+
+Game simulation 10
+    Game Over: 10 tressure found
+
+Game simulation 11
+    Game Over: 10 tressure found
+
+Game simulation 12
+    Game Over: 10 tressure found
+
+Game simulation 13
+    Game Over: 10 tressure found
+
+Game simulation 14
+    Game Over: 10 tressure found
+
+Game simulation 15
+    Game Over: 10 tressure found
+
+Game simulation 16
+    Game Over: 10 tressure found
+
+Game simulation 17
+    Game Over: 10 tressure found
+
+Game simulation 18
+    Game Over: 10 tressure found
+
+Game simulation 19
+    Game Over: 10 tressure found
+
+Game simulation 20
+    Game Over: 10 tressure found
+
+Game simulation 21
+    Game Over: All Adventurers are dead
+
+Game simulation 22
+    Game Over: 10 tressure found
+
+Game simulation 23
+    Game Over: 10 tressure found
+
+Game simulation 24
+    Game Over: 10 tressure found
+
+Game simulation 25
+    Game Over: 10 tressure found
+
+Game simulation 26
+    Game Over: 10 tressure found
+
+Game simulation 27
+    Game Over: 10 tressure found
+
+Game simulation 28
+    Game Over: 10 tressure found
+
+Game simulation 29
+    Game Over: 10 tressure found

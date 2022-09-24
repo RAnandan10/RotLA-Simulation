@@ -22,8 +22,8 @@ public class GameEngine {
         facilityInitializer();
         adventurersInitializer();
         creaturesInitializer();
-        board.render(facility);
-        board.gameState(activeAdventurers,activeCreatures);
+        //board.render(facility);
+        //board.gameState(activeAdventurers,activeCreatures);
     }
 
     private Room getRoomObjectFromRoomId(String id){
@@ -75,7 +75,7 @@ public class GameEngine {
             Blinker blinker = new Blinker(facility);
             activeCreatures.add(blinker);
         }
-        System.out.println(activeCreatures.size());
+       // System.out.println(activeCreatures.size());
     }
 
     private void facilityInitializer(){
@@ -223,12 +223,13 @@ public class GameEngine {
                 fightingAdv.performAction="Fight";
                 fight(playingCre, fightingAdv);
             }
-            board.render(facility);
-            board.gameState(activeAdventurers,activeCreatures);
+            
 
             if(!shouldGameContinue())
                 return;
         }
+        //board.render(facility);
+        //board.gameState(activeAdventurers,activeCreatures);
     }
     /* roll the dice and update the outcome */
     private void fight(Creature c, Adventurer a){
@@ -257,20 +258,20 @@ public class GameEngine {
 
     private Boolean shouldGameContinue(){
         if (check_creature_count() == 0){
-            System.out.println("Game Over : All creatures are dead");
+            System.out.println("    Game Over : All creatures are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
             
         }
 
         if (check_adventurer_count() == 0){
-            System.out.println("Game Over: All Adventurers are dead");
+            System.out.println("    Game Over: All Adventurers are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
 
-        if (check_treasure_count() == 100){
-            System.out.println("Game Over: 10 tressure found");
+        if (check_treasure_count() == 10){
+            System.out.println("    Game Over: 10 tressure found\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
@@ -281,7 +282,7 @@ public class GameEngine {
     public void playGame(BoardRenderer board){
         int turn = 1;
         while(!gameOver){
-            System.out.println("Turn" + turn);
+            //System.out.println("Turn" + turn);
             turn ++;
             turn(board);
         }   
