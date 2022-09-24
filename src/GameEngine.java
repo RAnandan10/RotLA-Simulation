@@ -273,21 +273,21 @@ public class GameEngine {
 
         // Game ends if all creatures are dead
         if (check_creature_count() == 0){
-            System.out.println("Game Over : All creatures are dead");
+            System.out.println("    Game Over : All creatures are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
 
         // Game ends if all adventurers are dead
         if (check_adventurer_count() == 0){
-            System.out.println("Game Over: All Adventurers are dead");
+            System.out.println("    Game Over: All Adventurers are dead\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
 
         // Game ends if 10 treasures are found
         if (check_treasure_count() == 10){
-            System.out.println("Game Over: 10 treasures found");
+            System.out.println("    Game Over: 10 tressure found\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
