@@ -7,7 +7,11 @@ public class Sneaker extends Adventurer{
         this.type = "S";            // Sneakers are Adventurers who are identified through type 'S'. This is an example of Identity OO concept
     }
 
-    //This method overrides the Adventurer involveInFight() method. This is an example for Polymorphism
+    
+    /* (non-Javadoc)
+     * This method overrides the Adventurer involveInFight() method. This is an example for Polymorphism
+     * @see Adventurer#involveInFight()
+     */
     public Boolean involveInFight(){
         Random random = new Random();
         int chance = random.nextInt(2);
