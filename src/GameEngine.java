@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.Random;
 
+// This class drives the game. This class has public and private methods which are highly cohesive. This class is an example of Encapsulation and cohesion
 public class GameEngine {
 
     public int totalTreasureCount;
