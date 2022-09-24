@@ -269,7 +269,7 @@ public class GameEngine {
             return Boolean.FALSE;
         }
 
-        if (check_treasure_count() == 100){
+        if (check_treasure_count() == 10){
             System.out.println("Game Over: 10 tressure found");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
