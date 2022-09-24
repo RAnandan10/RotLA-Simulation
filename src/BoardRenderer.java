@@ -3,6 +3,9 @@ import java.util.ArrayList;
 
 import static java.lang.System.out;
 
+//PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+//System.setOut(out);
+
 public class BoardRenderer {
     public void render(ArrayList<Room> facility){
         String roomid;
