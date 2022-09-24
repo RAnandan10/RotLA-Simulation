@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 public class GameEngine {
 
@@ -17,14 +18,12 @@ public class GameEngine {
         this.facility = new ArrayList<Room>();
     }
 
-    public void initializer() {
+    public void initializer(BoardRenderer board) {
         facilityInitializer();
         adventurersInitializer();
         creaturesInitializer();
-
-        BoardRenderer rend = new BoardRenderer();
-        rend.render(facility);
-
+        board.render(facility);
+        board.gameState(activeAdventurers,activeCreatures);
     }
 
     private Room getRoomObjectFromRoomId(String id){
@@ -34,6 +33,23 @@ public class GameEngine {
                 r = room;
         }
         return r;
+    }
+
+    private Creature getCreatureObjectFromRoomId(String id){
+        Creature cre = new Creature();
+        for (Creature creature : activeCreatures) {
+            if (creature.type.equals(id))
+                cre = creature;
+        }
+        return cre;
+    }
+    private Adventurer getAdventurerObjectFromRoomId(String id){
+        Adventurer adv = new Adventurer();
+        for (Adventurer adventurer : activeAdventurers) {
+            if (adventurer.type.equals(id))
+                adv = adventurer;
+        }
+        return adv;
     }
 
     private void adventurersInitializer(){
@@ -52,11 +68,11 @@ public class GameEngine {
 
     private void creaturesInitializer(){
         for (int i = 1; i < 5; i++){
-            Orbiter orbiter = new Orbiter(i);
+            Orbiter orbiter = new Orbiter(facility);
             activeCreatures.add(orbiter);
-            Seeker seeker = new Seeker(i);
+            Seeker seeker = new Seeker(facility);
             activeCreatures.add(seeker);
-            Blinker blinker = new Blinker(i);
+            Blinker blinker = new Blinker(facility);
             activeCreatures.add(blinker);
         }
         System.out.println(activeCreatures.size());
@@ -135,31 +151,88 @@ public class GameEngine {
         }
         return creatureCount;
     }
-    private void turn(){
-        //get adventure list
-        //for all adventurer{
-            //move(facility)
-            //if creature then fight
-            //else find tressure
+    private void turn(BoardRenderer board){
 
-            //if sneeker fight twice
-            /*if (a.findTreasure){
-                //update total tressure count
-            }*/
-             //check for end game
-        //}
-       
+        ArrayList<Adventurer> playingAdventures = new ArrayList<>();
+        for (Adventurer adv : activeAdventurers){
+            if(adv.isAlive())
+                playingAdventures.add(adv);
+        }
 
-        //getcreature list
-        //for all creature{
-            //move(facility)
-            //check for end game
-        //}
+        ArrayList<Creature> playingCreatures = new ArrayList<>();
+        for (Creature cre : activeCreatures){
+            if(cre.isAlive)
+                playingCreatures.add(cre);
+        }
+
+        for (Adventurer playingAdv : playingAdventures){
+            Room currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
+            playingAdv.move(facility);
+            currentRoom.removeAdventurerFromList(playingAdv.type);
+            Room newRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
+            newRoom.addAdventurerToList(playingAdv.type);
+            if(newRoom.isCreaturePresent()){
+                int index =0;
+                ArrayList<String> creaturesInRoom = newRoom.getCreaturesInRoom();
+                String creatureToFight;
+                if (creaturesInRoom.size() > 1){
+                    int size =  creaturesInRoom.size();
+                    Random random = new Random();
+                    index = random.nextInt(size);
+                }
+                creatureToFight = creaturesInRoom.get(index);
+                playingAdv.performAction="Fight";
+                fight(getCreatureObjectFromRoomId(creatureToFight), playingAdv);
+            }
+            else {
+                playingAdv.performAction="Treasure";
+                Boolean foundTreasure = playingAdv.findTreasure();
+                if(foundTreasure){
+                    this.totalTreasureCount++;
+                }
+            }
+            if(!shouldGameContinue())
+                return;
+        }
 
 
+        //Creature turn
+        for (Creature playingCre : playingCreatures){
+            Room currentRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
+            if(currentRoom.isAdventurerPresent()){
+                continue;
+            }
+            else {
+                playingCre.move(facility);
+                currentRoom.removeCreatureFromList(playingCre.type);
+                Room newRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
+                newRoom.addCreatureToList(playingCre.type);
+            }
+
+            if(currentRoom.isAdventurerPresent()){
+                int index =0;
+                ArrayList<String> adventuresInRoom = currentRoom.getAdventurersInRoom();
+                String adventurerToFight;
+                if (adventuresInRoom.size() > 1){
+                    int size =  adventuresInRoom.size();
+                    Random random = new Random();
+                    index = random.nextInt(size);
+                }
+                adventurerToFight = adventuresInRoom.get(index);
+                Adventurer fightingAdv = getAdventurerObjectFromRoomId(adventurerToFight);
+                fightingAdv.performAction="Fight";
+                fight(playingCre, fightingAdv);
+            }
+            board.render(facility);
+            board.gameState(activeAdventurers,activeCreatures);
+
+            if(!shouldGameContinue())
+                return;
+        }
     }
     /* roll the dice and update the outcome */
-    private void fight(Creature c, Adventurer a){    
+    private void fight(Creature c, Adventurer a){
+        Room fightRoom;
         //if adventurer is a sneeker then 50% of thime it escapes
         if (a.involveInFight() == Boolean.FALSE){
             return;
@@ -170,15 +243,14 @@ public class GameEngine {
         if (c_sum > a_sum){
             a.updateFightOutcome();
             if (!a.isAlive()){
-                // update adventure list in room
-                //a.currentLocation()
-
+                fightRoom = getRoomObjectFromRoomId(a.currentLocation);
+                fightRoom.removeAdventurerFromList(a.type);
             }
         }
         else{
             c.updateFightOutcome();
-            // update adventure list in room
-            //a.currentLocation() 
+            fightRoom = getRoomObjectFromRoomId(c.currentLocation);
+            fightRoom.removeAdventurerFromList(c.type);
         }
         //if creature won the fight 
     }
@@ -197,7 +269,7 @@ public class GameEngine {
             return Boolean.FALSE;
         }
 
-        if (check_treasure_count() == 10){
+        if (check_treasure_count() == 100){
             System.out.println("Game Over: 10 tressure found");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
@@ -206,12 +278,12 @@ public class GameEngine {
         return Boolean.TRUE;
     }
 
-    private void playGame(){
-        int turnCount = 0;
+    public void playGame(BoardRenderer board){
+        int turn = 1;
         while(!gameOver){
-            System.out.println("Turn Count"+turnCount);
-            turnCount ++;
-            turn();
+            System.out.println("Turn" + turn);
+            turn ++;
+            turn(board);
         }   
     }
 }
