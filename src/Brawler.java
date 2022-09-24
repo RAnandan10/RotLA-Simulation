@@ -2,7 +2,7 @@
 public class Brawler extends Adventurer{
     Brawler(){
         super();
-        this.type = "B";
+        this.type = "B";            // Brawlers are Adventurers who are identified through type 'S'. This is an example of Identity OO concept
     }
 
     //This method overrides the Adventurer rollDice() method. This is an example for Polymorphism

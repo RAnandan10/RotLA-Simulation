@@ -2,7 +2,7 @@
 public class Thief extends Adventurer{
     Thief(){
         super();
-        this.type = "T";
+        this.type = "T";        // Thief(s) are Adventurers who are identified through type 'T'. This is an example of Identity OO concept
     }
 
     // This method overrides the Adventurer rollDice() method. This is an example for Polymorphism

@@ -3,31 +3,32 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
+// Orbiter class extends Creature class. This is an example of Inheritance
 public class Orbiter extends Creature{
-    Boolean clockWise;
+    private Boolean clockWise;                  // Tells us if Orbiter moves in clockwise direction or not. Also a private attribute. Example of abstraction
 
     Orbiter(ArrayList<Room> facility){
         super();
-        this.type = "O" ;
-        List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");
+        this.type = "O";
+        List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");    //Room list in a level while moving clockwise direction
         Random random = new Random(); 
-        int floor = random.nextInt(3)+1;
+        int floor = random.nextInt(3)+1;        // Select random level to initialize the Orbiter
 
-        this.currentLocation = floor + dir.get(random.nextInt(8));// check syntax
-        //this.currentLocation = "1-2-2" // any outer location
-        if (random.nextInt(2) == 1){
+        this.currentLocation = floor + dir.get(random.nextInt(8));      // Gives the random room in the level 'floor'
+        if (random.nextInt(2) == 1){                 // Sets direction randomly
             this.clockWise = Boolean.TRUE;
         }
         else {
             this.clockWise = Boolean.FALSE;
         }
 
-        //set the Orbitor in the room
+        //Room is updated with orbiters presence
         Room newRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
-        newRoom.addCreatureToList(this.type); // check systax
+        newRoom.addCreatureToList(this.type);
     }
 
-    // Generate a  room number on the same floor
+    // Generate a  room number on the same floor based on direction
+    // Method type is private. This is an example for Abstraction
     private String adjacentRoom(){
         List<String> dir = Arrays.asList("0-0", "0-1", "0-2","1-2", "2-2", "2-1", "2-0", "1-0");
         int index = 0;
@@ -45,7 +46,7 @@ public class Orbiter extends Creature{
             return this.currentLocation.substring(0,2) + dir.get((index+1)%8);
         }
 
-        /**if conterclockwise then get the prev entry from dir */
+        /**if counterclockwise then get the prev entry from dir */
         else{
             if (index == 0)
                 return this.currentLocation.substring(0,2) + dir.get(7);
@@ -53,6 +54,7 @@ public class Orbiter extends Creature{
         }
     }
 
+    // This method overrides the Creature move() method. This is an example for Polymorphism
     public void move(ArrayList<Room> facility){
         Room currentRoom = new Room(null);
         String nextLocation = null;
@@ -62,17 +64,16 @@ public class Orbiter extends Creature{
                 break;
             }    
         }
-        /* check if adventurer is present in current room --> return  */
 
         if (currentRoom.isAdventurerPresent()){
-            return;
+            return;                                         // Don't move if adventurer is in current room
         }
 
-       /* jump to a random room */
+       //Move to adjacent room based on direction of orbiters movement
         nextLocation = adjacentRoom();
         Room room = getRoomObjectFromRoomId(nextLocation,facility);
-        this.currentLocation = room.id; // updating the current location in the creature object.
-        currentRoom.removeCreatureFromList(this.type);  // removing the creture from the current room
-        room.addCreatureToList(this.type); // adding the creture to next room
+        this.currentLocation = room.id;                         // updating the current location in the creature object.
+        currentRoom.removeCreatureFromList(this.type);          // removing the creature from the current room
+        room.addCreatureToList(this.type);                      // adding the creature to new room
     }
 }

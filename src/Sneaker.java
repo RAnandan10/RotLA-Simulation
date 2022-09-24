@@ -4,7 +4,7 @@ import java.util.Random;
 public class Sneaker extends Adventurer{
     Sneaker(){
         super();
-        this.type = "S";
+        this.type = "S";            // Sneakers are Adventurers who are identified through type 'S'. This is an example of Identity OO concept
     }
 
     //This method overrides the Adventurer involveInFight() method. This is an example for Polymorphism
