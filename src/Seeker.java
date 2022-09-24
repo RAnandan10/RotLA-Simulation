@@ -5,12 +5,15 @@ import java.util.Random;
 
 public class Seeker extends Creature{
 
+    /**
+     * @param facility
+     */
     Seeker(ArrayList<Room> facility){
         this.type = "S";
 
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0", "-1-1");
         Random random = new Random();
-        int floor = random.nextInt(5)+1;
+        final int floor = random.nextInt(5)+1;
         this.currentLocation = floor + dir.get(random.nextInt(8));// check syntax
         //this.currentLocation = "1-2-2"; // make it dynamic
 
@@ -20,11 +23,12 @@ public class Seeker extends Creature{
 
     }
 
+    /* (non-Javadoc)
+     * @see Creature#move(java.util.ArrayList)
+     */
     public void move(ArrayList<Room> facility){
         System.out.println("child");
         Room currentRoom = new Room(null);
-        String nextLocation = null;
-        ArrayList<Room> adjacentRooms;
         for (Room room : facility) {
             if (room.id.equals(this.currentLocation)){
                 currentRoom = room;

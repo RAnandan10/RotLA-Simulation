@@ -8,6 +8,9 @@ class Adventurer {
     String currentLocation;         // Gives us the current room location of adventurer
     String performAction;           // What action is to be performed by adventurer based on room status
 
+    /**
+     * 
+     */
     Adventurer(){
         this.damage = 0;                        //Initial damage is 0
         this.treasureCount = 0;                 //Initial treasure found is 0
@@ -15,12 +18,18 @@ class Adventurer {
         this.performAction = null;
     }
 
+    /**
+     * @return
+     */
     public Boolean isAlive(){
         if(this.damage < 3)             //If damage is 3 then Adventurer is dead
             return Boolean.TRUE;
         return Boolean.FALSE;
     }
 
+    /**
+     * @param facility: array containing all room objects
+     */
     public void move(ArrayList<Room> facility){
         Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
         ArrayList<String> neighbouringRooms = currentRoom.connectedRooms;
@@ -29,6 +38,9 @@ class Adventurer {
         this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
     }
 
+    /**
+     * @return
+     */
     public Boolean findTreasure(){
         int sum = this.rollDice();
         if(sum>= 10){
@@ -39,6 +51,9 @@ class Adventurer {
     }
 
 
+    /**
+     * @return
+     */
     public int rollDice(){
         Random random = new Random();
         int dice1 = random.nextInt(6)+1;            // Dice1 is rolled
@@ -50,11 +65,20 @@ class Adventurer {
         this.damage++;                      // If adventurer losses the fight then damage is increased by 1
     }
 
+    /**
+     * @return: a boolean value indicating if the adventurer is involved in fight or not
+     */
     public Boolean involveInFight(){
         return Boolean.TRUE;                // Tell us the chance of an adventurer to involve in a fight. It is 100% by default
     }
 
-    // method to retrieve room object for a given room id
+    
+    /**
+     *  method to retrieve room object for a given room id
+     * @param id
+     * @param facility : array containing all room objects
+     * @return roob oject
+     */
     public Room getRoomObjectFromRoomId(String id, ArrayList<Room> facility){
          Room r = new Room(null);
          for (Room room : facility) {

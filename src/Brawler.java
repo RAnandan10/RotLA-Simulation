@@ -5,10 +5,14 @@ public class Brawler extends Adventurer{
         this.type = "B";
     }
 
-    //This method overrides the Adventurer rollDice() method. This is an example for Polymorphism
+    
+    /* (non-Javadoc)
+     *This method overrides the Adventurer rollDice() method. This is an example for Polymorphism
+     * @see Adventurer#rollDice()
+     */
     public int rollDice(){
         int sum = super.rollDice();
-        if(this.performAction.equals("Fight"))              // If action for brawler is fight then dice sum is increased by 2
+        if(this.performAction.equals("Fight"))      // If action for brawler is fight then dice sum is increased by 2
             return sum + 2;
         return sum;
     }
