@@ -231,7 +231,8 @@ public class GameEngine {
         }
     }
     /* roll the dice and update the outcome */
-    private void fight(Creature c, Adventurer a){    
+    private void fight(Creature c, Adventurer a){
+        Room fightRoom;
         //if adventurer is a sneeker then 50% of thime it escapes
         if (a.involveInFight() == Boolean.FALSE){
             return;
@@ -242,15 +243,14 @@ public class GameEngine {
         if (c_sum > a_sum){
             a.updateFightOutcome();
             if (!a.isAlive()){
-                // update adventure list in room
-                //a.currentLocation()
-
+                fightRoom = getRoomObjectFromRoomId(a.currentLocation);
+                fightRoom.removeAdventurerFromList(a.type);
             }
         }
         else{
             c.updateFightOutcome();
-            // update adventure list in room
-            //a.currentLocation() 
+            fightRoom = getRoomObjectFromRoomId(c.currentLocation);
+            fightRoom.removeAdventurerFromList(c.type);
         }
         //if creature won the fight 
     }

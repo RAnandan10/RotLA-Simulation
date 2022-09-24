@@ -1,6 +1,7 @@
 import java.util.ArrayList;
+import java.util.Random;
 
- class Adventurer {
+class Adventurer {
 
     int damage;
     int treasureCount;
@@ -41,9 +42,10 @@ import java.util.ArrayList;
 
     //https://math.hws.edu/eck/cs124/javanotes4/c5/ex-5-1-answer.html
     public int rollDice(){
-        int die1 = (int)(Math.random()*6) + 1;
-        int die2 = (int)(Math.random()*6) + 1;
-        return die1+die2;
+        Random random = new Random();
+        int dice1 = random.nextInt(6)+1;
+        int dice2 = random.nextInt(6)+1;
+        return dice1+dice2;
     }
 
     public void updateFightOutcome(){
