@@ -22,6 +22,7 @@ public class GameEngine {
     // This method initializes the game
     public void initializer(BoardRenderer board) {
         facilityInitializer();
+        treasureInitializer();
         adventurersInitializer();
         creaturesInitializer();
         board.render(facility);
@@ -45,30 +46,14 @@ public class GameEngine {
 
     // This method initializes the Creatures
     private void creaturesInitializer(){
-        Orbiter orbiter1 = new Orbiter(facility);
-        Orbiter orbiter2 = new Orbiter(facility);
-        Orbiter orbiter3 = new Orbiter(facility);
-        Orbiter orbiter4 = new Orbiter(facility);
-        activeCreatures.add(orbiter1);
-        activeCreatures.add(orbiter2);
-        activeCreatures.add(orbiter3);
-        activeCreatures.add(orbiter4);
-        Seeker seeker1 = new Seeker(facility);
-        Seeker seeker2 = new Seeker(facility);
-        Seeker seeker3 = new Seeker(facility);
-        Seeker seeker4 = new Seeker(facility);
-        activeCreatures.add(seeker1);
-        activeCreatures.add(seeker2);
-        activeCreatures.add(seeker3);
-        activeCreatures.add(seeker4);
-        Blinker blinker1 = new Blinker(facility);
-        Blinker blinker2 = new Blinker(facility);
-        Blinker blinker3 = new Blinker(facility);
-        Blinker blinker4 = new Blinker(facility);
-        activeCreatures.add(blinker1);
-        activeCreatures.add(blinker2);
-        activeCreatures.add(blinker3);
-        activeCreatures.add(blinker4);
+        for (int i = 1; i < 5; i++){
+            Orbiter orbiter = new Orbiter(facility,i);
+            Seeker seeker = new Seeker(facility,i);
+            Blinker blinker = new Blinker(facility,i);
+            activeCreatures.add(orbiter);
+            activeCreatures.add(seeker);
+            activeCreatures.add(blinker);
+        }
         System.out.println(activeCreatures.size());
     }
 
@@ -121,6 +106,38 @@ public class GameEngine {
                     facility.add(r);
                 }
             }
+        }
+    }
+
+    // This method initialises the treasures in random rooms
+    private void treasureInitializer(){
+        Room room;
+        Random rand = new Random();
+        for (int i =0; i<4 ; i++){
+            Sword sword = new Sword();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(sword);
+
+            Armor armor = new Armor();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(armor);
+
+            Gem gem = new Gem();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(gem);
+
+            Portal portal = new Portal();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(portal);
+
+            Potion potion = new Potion();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(potion);
+
+            Trap trap = new Trap();
+            room = facility.get(rand.nextInt(facility.size()));
+            room.setTreasureToRoom(trap);
+
         }
     }
 

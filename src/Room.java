@@ -6,12 +6,16 @@ public class Room {
     public ArrayList<String> connectedRooms;
     public ArrayList<String> adventurers;
     public ArrayList<String> creatures;
+    public Boolean isTreasurePresent;
+    public ArrayList<Treasure> availableTreasures;
 
     Room(String roomId){
         this.id = roomId;
         connectedRooms = new ArrayList<>();
         adventurers = new ArrayList<>();
         creatures = new ArrayList<>();
+        availableTreasures = new ArrayList<>();
+        isTreasurePresent = Boolean.FALSE;          // Initially no treasure in room
     }
 
     public void setRoomConnections(ArrayList<String> arr){
@@ -54,5 +58,22 @@ public class Room {
         if (occupants.isEmpty())
             return Boolean.FALSE;
         return Boolean.TRUE;
+    }
+
+    public void setTreasureToRoom(Treasure treasure){
+        this.availableTreasures.add(treasure);
+        updateTreasureStatus();
+    }
+
+    public void updateTreasureListInRoom(Treasure treasure){
+        this.availableTreasures.remove(treasure);
+        updateTreasureStatus();
+    }
+
+    private void updateTreasureStatus(){
+        if(availableTreasures.size() > 0)
+            this.isTreasurePresent = Boolean.TRUE;
+        else
+            this.isTreasurePresent = Boolean.FALSE;
     }
 }

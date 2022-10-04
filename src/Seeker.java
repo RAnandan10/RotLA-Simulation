@@ -6,8 +6,8 @@ import java.util.Random;
 // Seeker class extends Creature class. This is an example of Inheritance
 public class Seeker extends Creature{
 
-    Seeker(ArrayList<Room> facility){
-        this.type = "S";                            // Seekers are identified through type 'S'. This is an example of Identity OO concept
+    Seeker(ArrayList<Room> facility, int i){
+        this.type = "S" + i;                            // Seekers are identified through type 'S'. This is an example of Identity OO concept
 
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0", "-1-1");  //Seekers can move only in their level. These are the possible 9 rooms in a level
         Random random = new Random();

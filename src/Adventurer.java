@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Random;
 
 class Adventurer {
-    int damage;                     // Gives us damage status to adventurer
+    int damage;                     // Gives us current damage status of adventurer
+    int maxDamage;                  // Gives us maximum damage an adventurer can take
     int treasureCount;              // Tells us number of treasures found by adventurer
     String type;                    // Tells us type of adventurer
     String currentLocation;         // Gives us the current room location of adventurer
@@ -12,7 +13,8 @@ class Adventurer {
      * 
      */
     Adventurer(){
-        this.damage = 0;                        //Initial damage is 0
+        this.damage = 0;                      //Initial damage is 0
+        this.maxDamage = 3;
         this.treasureCount = 0;                 //Initial treasure found is 0
         this.currentLocation = "0-1-1";         //Starting location for adventures is always 0-1-1
         this.performAction = null;
@@ -22,7 +24,7 @@ class Adventurer {
      * @return
      */
     public Boolean isAlive(){
-        if(this.damage < 3)             //If damage is 3 then Adventurer is dead
+        if(this.damage < this.maxDamage)             //If damage is equal to maximum damage Adventurer can take then Adventurer is dead
             return Boolean.TRUE;
         return Boolean.FALSE;
     }
