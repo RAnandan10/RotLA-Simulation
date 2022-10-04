@@ -34,3 +34,4 @@ public class Creature {
         return dice1 + dice2;                         // Sum of the 2 dice rolls is passed
     }
 }
+

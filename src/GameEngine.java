@@ -305,6 +305,7 @@ public class GameEngine {
             turn ++;
         }   
     }
+<<<<<<< HEAD
 
     //Method to get a Room object using room id
     private Room getRoomObjectFromRoomId(String id){
@@ -336,3 +337,6 @@ public class GameEngine {
         return adv;
     }
 }
+=======
+}
+>>>>>>> 25d2162 (files for combat)
