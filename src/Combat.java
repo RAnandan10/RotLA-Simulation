@@ -1,4 +1,4 @@
 interface Combat{
-    public void fight();
+    public int fight();
     //public int rollDice();
 }
