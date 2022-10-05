@@ -1,7 +1,18 @@
 package RotLA;
-import java.util.Random;
-interface Search {
-    public void search();
+import RotLA.Random;
+import RotLA.adventurers.Adventurer;
+import RotLA.treasures.Treasure;
+import java.util.ArrayList;
+
+
+public interface Search {
+    public void search(Adventurer a, Room r);
+    public default Treasure pickTreasure(ArrayList<Treasure> treasuresAvailable, ArrayList<Treasure> treasuresOwned){
+
+        for() {
+            
+        }
+    }
     
 }
 
@@ -11,10 +22,11 @@ interface Search {
  */
 
 class Careful implements Search{
-    public void search(){
-        Random random = new Random();
-        int probability = random.nextInt(2); 
+    public void search(Adventurer a, Room r){
+       
+        int probability = Random.nextInt(2); 
         int advRoll = Random.RollTwoDice();
+        ArrayList<Treasure>  treausre = r.getTreasureFromRoom();
         if(advRoll >= 6){
             //tressure found
             if (probability == 0){
@@ -30,9 +42,9 @@ class Careful implements Search{
 }
 
 class Quick implements Search{
-    public void search(){
-        Random random = new Random();
-        int probability = random.nextInt(3); 
+    public void search(Adventurer a, Room r){
+        
+        int probability = Random.nextInt(3); 
         int advRoll = Random.RollTwoDice();
         if (probability == 2){
             //skip the search
@@ -44,8 +56,8 @@ class Quick implements Search{
 }
 
 class Careless implements Search{
-    public void search(){
-        Random random = new Random();
+    public void search(Adventurer a, Room r){
+      
         int advRoll = Random.RollTwoDice();
 
         if(advRoll > 10){

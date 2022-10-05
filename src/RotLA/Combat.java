@@ -1,6 +1,6 @@
 package RotLA;
 
-interface Combat{
+public interface Combat{
     public int fight();
 }
 

@@ -1,27 +1,36 @@
 package RotLA.adventurers;
 
 import RotLA.Room;
+import RotLA.Combat;
+import RotLA.Celebrate;
+import RotLA.Search;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class Adventurer {
+    private Combat combat;
+    private Search search;
+    
     public int damage;                     // Gives us current damage status of adventurer
     public int maxDamage;                  // Gives us maximum damage an adventurer can take
     public int treasureCount;              // Tells us number of treasures found by adventurer
     public String type;                    // Tells us type of adventurer
     public String currentLocation;         // Gives us the current room location of adventurer
     public String performAction;           // What action is to be performed by adventurer based on room status
+    //tresure list
 
     /**
      * 
      */
-    public Adventurer(){
+    public Adventurer(Combat combat, Search search){
         this.damage = 0;                      //Initial damage is 0
         this.maxDamage = 3;
         this.treasureCount = 0;                 //Initial treasure found is 0
         this.currentLocation = "0-1-1";         //Starting location for adventures is always 0-1-1
         this.performAction = null;
+        this.combat = combat;
+        this.search = search;
     }
 
     /**
@@ -37,15 +46,35 @@ public class Adventurer {
      * @param facility: array containing all room objects
      */
     public void move(ArrayList<Room> facility){
+        int fightOutcome ;
         Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
         ArrayList<String> neighbouringRooms = currentRoom.connectedRooms;
         int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to
         int index = (int)(Math.random()*options);                                   // Gives random index in neighbouringRooms to go to
         this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
-        /*
-         * If adventurer is in a room with a monster, then adventurer will fight the monster
-         * else call search method to search for treasure
-         */
+        
+        
+        currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
+        if (currentRoom.isCreaturePresent()){
+            fightOutcome = combat.fight();
+            if (fightOutcome == 1){
+                currentRoom.removeCreatureFromList(currentRoom.creatures.get(0));
+            }
+            else if (fightOutcome == -1){
+                this.damage++;
+                if (!this.isAlive()){
+                    currentRoom.removeAdventurerFromList(this.type);
+                    //System.out.println("Adventurer " + this.type + " is dead");
+                }
+            }
+        }
+        else{
+            if (currentRoom.isTreasurePresent){
+                this.search.search(this, currentRoom);
+            }
+            
+
+        }
     }
 
     /**

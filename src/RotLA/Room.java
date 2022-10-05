@@ -68,7 +68,7 @@ public class Room {
         updateTreasureStatus();
     }
 
-    public void updateTreasureListInRoom(Treasure treasure){
+    public void TreasureListInRoom(Treasure treasure){
         this.availableTreasures.remove(treasure);
         updateTreasureStatus();
     }
@@ -79,4 +79,9 @@ public class Room {
         else
             this.isTreasurePresent = Boolean.FALSE;
     }
+    public ArrayList<Treasure>  getTreasureFromRoom(){
+        return this.availableTreasures;
+        
+    }
+
 }
