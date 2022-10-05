@@ -1,3 +1,7 @@
+package RotLA.creatures;
+
+import RotLA.Room;
+
 import java.util.ArrayList;
 import java.util.Random;
 public class Creature {
@@ -6,7 +10,7 @@ public class Creature {
     public String type;                 // Tells us what type of creature
 
     //Constructor for creature class
-    Creature(){
+    public Creature(){
         this.isAlive = Boolean.TRUE;       // Creature is alive when we instantiate it
     }
 

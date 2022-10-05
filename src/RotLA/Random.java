@@ -1,5 +1,7 @@
+package RotLA;
+
 public interface Random {
-    // making this utility function that can be used by saying Random.rndFromRange(min,max)
+    // making this utility function that can be used by saying RotLA.Random.rndFromRange(min,max)
     // https://www.baeldung.com/java-generating-random-numbers-in-range
     static int rndFromRange(int min, int max) {
         //returns a uniform inclusive random number from a given min and max range

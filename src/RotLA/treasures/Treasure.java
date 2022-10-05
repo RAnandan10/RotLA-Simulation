@@ -1,3 +1,7 @@
+package RotLA.treasures;
+
+import RotLA.adventurers.Adventurer;
+
 public class Treasure {
     public String treasureType;
     public int[] treasureEffectOnCombatDiceRolls(int advRoll, int creRoll){
@@ -5,7 +9,7 @@ public class Treasure {
         diceRolls[0] = advRoll;
         diceRolls[1] = creRoll;
         return diceRolls;
-    };
+    }
 
     public void treasureEffect(Adventurer adv){
     }

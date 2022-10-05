@@ -1,6 +1,10 @@
+package RotLA.treasures;
+
+import RotLA.adventurers.Adventurer;
+
 public class Potion extends Treasure {
 
-    Potion() {
+    public Potion() {
         this.treasureType = this.getClass().getSimpleName();
     }
 

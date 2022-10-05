@@ -1,8 +1,8 @@
-import java.lang.reflect.Array;
+package RotLA.treasures;
 
-public class Gem extends Treasure {
+public class Armor extends Treasure {
 
-    Gem() {
+    public Armor() {
         this.treasureType = this.getClass().getSimpleName();
     }
 
@@ -10,7 +10,7 @@ public class Gem extends Treasure {
     public int[] treasureEffectOnCombatDiceRolls(int advRoll, int creRoll) {
         int[] diceRolls = new int[2];
         diceRolls[0] = advRoll;
-        diceRolls[1] = creRoll + 1;
+        diceRolls[1] = creRoll - 1;
         return diceRolls;
     }
 }

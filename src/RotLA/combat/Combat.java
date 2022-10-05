@@ -1,4 +1,6 @@
-import java.util.Random;
+package RotLA.combat;
+
+import RotLA.Random;
 interface Combat{
     public int fight();
     //public int rollDice();
@@ -18,8 +20,6 @@ class UnTrained implements Combat{
         else{
             return 0;
         }
-        return 1;
-                    
     }
 }
 
@@ -36,8 +36,6 @@ class Trained implements Combat{
         else{
             return 0;
         }
-        return 1;
-                    
     }
 }
 class Expert implements Combat{
@@ -54,20 +52,18 @@ class Expert implements Combat{
         else{
             return 0;
         }
-        return 1;
-                    
     }
 }
 
 class Stealth implements Combat {
     public int fight(){
         Random random = new Random();
-        int probability = random.nextInt(2); 
+        int probability = random.nextInt(2);
         if(probability == 0){
             return 0;
         }
         else{
             return 1;
-        }              
+        }
     }
 }

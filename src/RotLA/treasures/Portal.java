@@ -1,6 +1,10 @@
+package RotLA.treasures;
+
+import RotLA.adventurers.Adventurer;
+
 public class Portal extends Treasure {
 
-    Portal() {
+    public Portal() {
         this.treasureType = this.getClass().getSimpleName();
     }
 

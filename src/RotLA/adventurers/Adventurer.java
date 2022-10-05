@@ -1,18 +1,22 @@
+package RotLA.adventurers;
+
+import RotLA.Room;
+
 import java.util.ArrayList;
 import java.util.Random;
 
-class Adventurer {
-    int damage;                     // Gives us current damage status of adventurer
-    int maxDamage;                  // Gives us maximum damage an adventurer can take
-    int treasureCount;              // Tells us number of treasures found by adventurer
-    String type;                    // Tells us type of adventurer
-    String currentLocation;         // Gives us the current room location of adventurer
-    String performAction;           // What action is to be performed by adventurer based on room status
+public class Adventurer {
+    public int damage;                     // Gives us current damage status of adventurer
+    public int maxDamage;                  // Gives us maximum damage an adventurer can take
+    public int treasureCount;              // Tells us number of treasures found by adventurer
+    public String type;                    // Tells us type of adventurer
+    public String currentLocation;         // Gives us the current room location of adventurer
+    public String performAction;           // What action is to be performed by adventurer based on room status
 
     /**
      * 
      */
-    Adventurer(){
+    public Adventurer(){
         this.damage = 0;                      //Initial damage is 0
         this.maxDamage = 3;
         this.treasureCount = 0;                 //Initial treasure found is 0
@@ -68,7 +72,7 @@ class Adventurer {
     }
 
     /**
-     * @return: a boolean value indicating if the adventurer is involved in fight or not
+     * @return a boolean value indicating if the adventurer is involved in fight or not
      */
     public Boolean involveInFight(){
         return Boolean.TRUE;                // Tell us the chance of an adventurer to involve in a fight. It is 100% by default

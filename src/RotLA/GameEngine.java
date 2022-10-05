@@ -1,3 +1,9 @@
+package RotLA;
+
+import RotLA.adventurers.*;
+import RotLA.creatures.*;
+import RotLA.treasures.*;
+
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -14,9 +20,9 @@ public class GameEngine {
     GameEngine(){
         this.gameOver = Boolean.FALSE;
         this.totalTreasureCount =0;
-        this.activeAdventurers = new ArrayList<Adventurer>();
-        this.activeCreatures = new ArrayList<Creature>();
-        this.facility = new ArrayList<Room>();
+        this.activeAdventurers = new ArrayList<>();
+        this.activeCreatures = new ArrayList<>();
+        this.facility = new ArrayList<>();
     }
 
     // This method initializes the game
@@ -214,7 +220,7 @@ public class GameEngine {
                     this.totalTreasureCount++;
                 }
             }
-            // Check if any end game condition is met after a adventurers turn
+            // Check if any end game condition is met after an adventurers turn
             if(!shouldGameContinue())
                 return;
         }
@@ -305,7 +311,7 @@ public class GameEngine {
 
         // Game ends if 10 treasures are found
         if (check_treasure_count() == 10){
-            System.out.println("    Game Over: 10 tressure found\n");
+            System.out.println("    Game Over: 10 treasure found\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
@@ -322,7 +328,6 @@ public class GameEngine {
             turn ++;
         }   
     }
-<<<<<<< HEAD
 
     //Method to get a Room object using room id
     private Room getRoomObjectFromRoomId(String id){
@@ -354,6 +359,3 @@ public class GameEngine {
         return adv;
     }
 }
-=======
-}
->>>>>>> 25d2162 (files for combat)

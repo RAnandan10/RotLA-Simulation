@@ -1,6 +1,8 @@
+package RotLA.treasures;
+
 public class Sword extends Treasure {
 
-    Sword(){
+    public Sword(){
         this.treasureType = this.getClass().getSimpleName();
     }
 

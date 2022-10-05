@@ -1,6 +1,8 @@
+package RotLA.adventurers;
+
 // Thief class inherits Adventurer class. This is an example of Inheritance
-public class Thief extends Adventurer{
-    Thief(){
+public class Thief extends Adventurer {
+    public Thief(){
         super();
         this.type = "T";        // Thief(s) are Adventurers who are identified through type 'T'. This is an example of Identity OO concept
     }

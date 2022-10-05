@@ -1,8 +1,10 @@
+package RotLA.adventurers;
+
 import java.util.Random;
 
 // Sneaker class inherits Adventurer class. This is an example of Inheritance
-public class Sneaker extends Adventurer{
-    Sneaker(){
+public class Sneaker extends Adventurer {
+    public Sneaker(){
         super();
         this.type = "S";            // Sneakers are Adventurers who are identified through type 'S'. This is an example of Identity OO concept
     }

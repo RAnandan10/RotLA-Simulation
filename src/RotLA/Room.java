@@ -1,5 +1,8 @@
-import java.util.ArrayList;
+package RotLA;
 
+import RotLA.treasures.Treasure;
+
+import java.util.ArrayList;
 
 public class Room {
     public String id;
@@ -9,7 +12,7 @@ public class Room {
     public Boolean isTreasurePresent;
     public ArrayList<Treasure> availableTreasures;
 
-    Room(String roomId){
+    public Room(String roomId){
         this.id = roomId;
         connectedRooms = new ArrayList<>();
         adventurers = new ArrayList<>();

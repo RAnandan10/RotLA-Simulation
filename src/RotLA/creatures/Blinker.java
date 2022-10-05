@@ -1,13 +1,17 @@
+package RotLA.creatures;
+
+import RotLA.Room;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 // Blinker class inherits Creature class. This is an example of Inheritance
-public class Blinker extends Creature{
+public class Blinker extends Creature {
 
     //Constructor for Blinker class
-    Blinker(ArrayList<Room> facility, int i){
+    public Blinker(ArrayList<Room> facility, int i){
         super();
         Room r;
         this.type="B" + i;                      // Blinkers are identified through type 'B'. This is an example of Identity OO concept
