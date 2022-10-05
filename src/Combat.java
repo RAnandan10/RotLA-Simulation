@@ -1,5 +1,4 @@
-initerface Combat{
-    public void fight(){
-            
-    }
+interface Combat{
+    public void fight();
+    //public int rollDice();
 }
