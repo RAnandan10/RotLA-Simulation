@@ -1,4 +1,5 @@
-import java.util.Random;
+package RotLA;
+
 interface Search {
     public void search();
     

@@ -25,4 +25,8 @@ public interface Random {
         int x = new java.util.Random().nextInt(clazz.getEnumConstants().length);
         return clazz.getEnumConstants()[x];
     }
+
+    static int nextInt(int i){
+        return new java.util.Random().nextInt(i);
+    };
 }
