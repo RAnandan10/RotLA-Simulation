@@ -1,5 +1,5 @@
 package RotLA;
-
+import java.util.Random;
 interface Search {
     public void search();
     
@@ -14,13 +14,16 @@ class Careful implements Search{
     public void search(){
         Random random = new Random();
         int probability = random.nextInt(2); 
-        if(probability == 0){
-            // escape the fight
+        int advRoll = Random.RollTwoDice();
+        if(advRoll >= 6){
+            //tressure found
+            if (probability == 0){
+                //escape the trap
+            }
+            else{
+                //tressure not found
+            }
             System.out.println("You found nothing");
-        }
-        else{
-            // fight
-            System.out.println("You found something");
         }
         
     }
@@ -28,32 +31,27 @@ class Careful implements Search{
 
 class Quick implements Search{
     public void search(){
+        Random random = new Random();
+        int probability = random.nextInt(3); 
         int advRoll = Random.RollTwoDice();
-        int creRoll = Random.RollTwoDice();
-        if (advRoll > creRoll){
-            System.out.println("You found something!");
+        if (probability == 2){
+            //skip the search
         }
-        else if(advRoll < creRoll){
-            System.out.println("You found nothing.");
+        else if(advRoll > 9){
+            //tressure found
+            System.out.println("You found something");
         }
-        else{
-            System.out.println("You found something!");
-        }
-    }   
 }
 
 class Careless implements Search{
     public void search(){
+        Random random = new Random();
         int advRoll = Random.RollTwoDice();
-        int creRoll = Random.RollTwoDice();
-        if (advRoll > creRoll){
-            System.out.println("You found something!");
+
+        if(advRoll > 10){
+            //tressure found
+            System.out.println("You found something");
         }
-        else if(advRoll < creRoll){
-            System.out.println("You found nothing.");
-        }
-        else{
-            System.out.println("You found something!");
-        }
+        
     }
 }

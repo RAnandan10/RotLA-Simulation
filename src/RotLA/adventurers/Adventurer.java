@@ -42,10 +42,16 @@ public class Adventurer {
         int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to
         int index = (int)(Math.random()*options);                                   // Gives random index in neighbouringRooms to go to
         this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
+        /*
+         * If adventurer is in a room with a monster, then adventurer will fight the monster
+         * else call search method to search for treasure
+         */
     }
 
     /**
      * @return
+     * 
+     * TO BE ROMOVED
      */
     public Boolean findTreasure(){
         int sum = this.rollDice();
