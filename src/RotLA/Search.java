@@ -65,6 +65,8 @@ class Quick implements Search{
             r.removeTreasure(treasure);
             return 1;
         }
+        return 0;
+    }
 }
 
 class Careless implements Search{
