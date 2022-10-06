@@ -8,11 +8,21 @@ public interface Search {
     public int search(Adventurer a, Room r);
     public default Treasure pickTreasure(ArrayList<Treasure> treasuresAvailable, ArrayList<Treasure> treasuresOwned) {
         for (Treasure availTreasure : treasuresAvailable) {
+            if(treasuresOwned.size() == 0 || availTreasure.treasureType.equals("Trap")) {
+                return availTreasure;
+            }
+            boolean isOwned = false;
             for (Treasure ownedTreasure : treasuresOwned) {
-                if (!ownedTreasure.treasureType.equals(availTreasure.treasureType) || availTreasure.treasureType.equals("Trap")){
-                    return availTreasure;
+                if (ownedTreasure.treasureType.equals(availTreasure.treasureType)){
+                    isOwned = true;
+                    break;
+                    
                 }
             }
+            if (!isOwned) {
+                return availTreasure;
+            }
+
         }
         return null;
     }
