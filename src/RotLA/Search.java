@@ -14,7 +14,6 @@ public interface Search {
         }
         return null;
     }
-}
 
 class Careful implements Search{
     public int search(Adventurer a, Room r) {
@@ -37,6 +36,7 @@ class Careful implements Search{
             return 1;
         }
         return 0;
+        
     }
 }
 
