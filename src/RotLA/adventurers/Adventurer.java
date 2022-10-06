@@ -5,6 +5,8 @@ import RotLA.Room;
 import RotLA.Combat;
 import RotLA.Celebrate;
 import RotLA.Search;
+import RotLA.creatures.Creature;
+import RotLA.treasures.Treasure;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -19,12 +21,12 @@ public class Adventurer extends Publisher {
     public String type;                    // Tells us type of adventurer
     public String currentLocation;         // Gives us the current room location of adventurer
     public String performAction;           // What action is to be performed by adventurer based on room status
-    //tresure list
+    private ArrayList<Treasure> treasureRetrived;
 
     /**
      * 
      */
-    public Adventurer(Combat combat, Search search){
+    public Adventurer(Combat combat, Search search, String type){
         this.damage = 0;                      //Initial damage is 0
         this.maxDamage = 3;
         this.treasureCount = 0;                 //Initial treasure found is 0
@@ -32,6 +34,11 @@ public class Adventurer extends Publisher {
         this.performAction = null;
         this.combat = combat;
         this.search = search;
+        this.type = type;
+        this.treasureRetrived = new ArrayList<>();
+    }
+
+    public Adventurer(){
     }
 
     /**
@@ -53,29 +60,6 @@ public class Adventurer extends Publisher {
         int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to
         int index = (int)(Math.random()*options);                                   // Gives random index in neighbouringRooms to go to
         this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
-        
-        
-        currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
-        if (currentRoom.isCreaturePresent()){
-            fightOutcome = combat.fight();
-            if (fightOutcome == 1){
-                currentRoom.removeCreatureFromList(currentRoom.creatures.get(0));
-            }
-            else if (fightOutcome == -1){
-                this.damage++;
-                if (!this.isAlive()){
-                    currentRoom.removeAdventurerFromList(this.type);
-                    //System.out.println("Adventurer " + this.type + " is dead");
-                }
-            }
-        }
-        else{
-            if (currentRoom.isTreasurePresent){
-                this.search.search(this, currentRoom);
-            }
-            
-
-        }
     }
 
     /**
@@ -110,8 +94,25 @@ public class Adventurer extends Publisher {
     /**
      * @return a boolean value indicating if the adventurer is involved in fight or not
      */
-    public Boolean involveInFight(){
-        return Boolean.TRUE;                // Tell us the chance of an adventurer to involve in a fight. It is 100% by default
+    public void fight(Adventurer adv, Creature cre, Room currentRoom){
+        int diceRolls[] = new int[2];
+        diceRolls[0] = adv.rollDice();
+        diceRolls[1] = cre.rollDice();
+        for (Treasure t : adv.treasureRetrived){
+            diceRolls = t.treasureEffectOnCombatDiceRolls(diceRolls[0],diceRolls[1]);
+        }
+        int fightOutcome = combat.fight(diceRolls[0],diceRolls[1]);
+        if (fightOutcome == 1){
+            cre.updateFightOutcome();
+            currentRoom.removeCreatureFromList(cre.type);
+        }
+        else if (fightOutcome == -1){
+            adv.updateFightOutcome();
+            if (!this.isAlive()){
+                currentRoom.removeAdventurerFromList(adv.type);
+                //System.out.println("Adventurer " + this.type + " is dead");
+            }
+        }
     }
 
     
