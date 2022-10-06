@@ -3,7 +3,7 @@ package RotLA;
 import RotLA.adventurers.*;
 import RotLA.creatures.*;
 import RotLA.treasures.*;
-
+import RotLA.Search.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -184,7 +184,7 @@ public class GameEngine {
         }
         return creatureCount;
     }
-    private void turn(BoardRenderer board, Tracker track, int turn){
+    private void turn(BoardRenderer board, int turn){
 
         Logger log = new Logger(turn);
 
@@ -205,7 +205,6 @@ public class GameEngine {
         // Each alive adventurer gets to play
         for (Adventurer playingAdv : playingAdventures){
             playingAdv.registerSubscriber(log);
-            playingAdv.registerSubscriber(track);
             // Adventurer moves to next location
             Room currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
             playingAdv.move(facility);
@@ -227,18 +226,19 @@ public class GameEngine {
                 playingAdv.performAction="Fight";
                 //fight(getCreatureObjectFromCreatureType(creatureToFight), playingAdv);
                 playingAdv.fight(playingAdv,getCreatureObjectFromCreatureType(creatureToFight), newRoom);
+                if(!playingAdv.isAlive())
+                    playingAdv.removeSubscriber(track);
             }
             // If Creature is not present in room then search treasure
             else {
                 playingAdv.performAction="Treasure";
-                Boolean foundTreasure = playingAdv.findTreasure();
+                Boolean foundTreasure = playingAdv.findTreasure(newRoom);
                 if(foundTreasure){
                     this.totalTreasureCount++;
                 }
             }
 
             playingAdv.removeSubscriber(log);
-            playingAdv.removeSubscriber(track);
 
             // Check if any end game condition is met after an adventurers turn
             if(!shouldGameContinue())
@@ -250,7 +250,6 @@ public class GameEngine {
         for (Creature playingCre : playingCreatures){
 
             playingCre.registerSubscriber(log);
-            playingCre.registerSubscriber(track);
 
             Room currentRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
 
@@ -283,7 +282,6 @@ public class GameEngine {
             }
 
             playingCre.removeSubscriber(log);
-            playingCre.removeSubscriber(track);
 
             // Check if any end game condition is met after a creatures turn
             if(!shouldGameContinue())
@@ -313,7 +311,7 @@ public class GameEngine {
         }
 
         // Game ends if 10 treasures are found
-        if (check_treasure_count() == 25){
+        if (check_treasure_count() == 24){
             System.out.println("    Game Over: 10 treasure found\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
@@ -327,7 +325,7 @@ public class GameEngine {
         int turn = 1;
         while(!gameOver){
             System.out.println("Turn" + turn);
-            turn(board,track,turn);
+            turn(board,turn);
             turn ++;
             track.printTracker();
         }   
