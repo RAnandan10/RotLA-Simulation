@@ -14,7 +14,7 @@ public class Blinker extends Creature {
     public Blinker(ArrayList<Room> facility, int i){
         super();
         Room r;
-        this.type="B" + i;                      // Blinkers are identified through type 'B'. This is an example of Identity OO concept
+        this.type="Blinker" + i;                      // Blinkers are identified through type 'B'. This is an example of Identity OO concept
         List<String> dir = Arrays.asList("4-0-0", "4-0-1", "4-0-2","4-1-2", "4-2-2", "4-2-1", "4-2-0", "4-1-0", "4-1-1");    //Blinker's starting location is in level 4. These are possible location in level 4
         Random random = new Random();
         this.currentLocation = dir.get(random.nextInt(9));          //Starting location is any one of thr above room numbers

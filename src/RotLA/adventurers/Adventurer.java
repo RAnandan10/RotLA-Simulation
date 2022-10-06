@@ -1,5 +1,6 @@
 package RotLA.adventurers;
 
+import RotLA.Publisher;
 import RotLA.Room;
 import RotLA.Combat;
 import RotLA.Celebrate;
@@ -8,7 +9,7 @@ import RotLA.Search;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Adventurer {
+public class Adventurer extends Publisher {
     private Combat combat;
     private Search search;
     

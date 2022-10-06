@@ -1,10 +1,11 @@
 package RotLA.creatures;
 
+import RotLA.Publisher;
 import RotLA.Room;
 
 import java.util.ArrayList;
 import java.util.Random;
-public class Creature {
+public class Creature extends Publisher {
     public Boolean isAlive;             // Tells us if creature is alive or not
     public String currentLocation;      // Gives us the current location of the creature
     public String type;                 // Tells us what type of creature

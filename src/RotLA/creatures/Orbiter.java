@@ -13,7 +13,7 @@ public class Orbiter extends Creature {
 
     public Orbiter(ArrayList<Room> facility, int i){
         super();
-        this.type = "O" + i;
+        this.type = "Orbiter" + i;
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0");    //Room list in a level while moving clockwise direction
         Random random = new Random(); 
         int floor = random.nextInt(3)+1;        // Select random level to initialize the RotLA.creatures.Orbiter
