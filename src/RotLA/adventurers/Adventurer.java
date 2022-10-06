@@ -21,7 +21,7 @@ public class Adventurer extends Publisher {
     public String type;                    // Tells us type of adventurer
     public String currentLocation;         // Gives us the current room location of adventurer
     public String performAction;           // What action is to be performed by adventurer based on room status
-    private ArrayList<Treasure> treasureRetrived;
+    public ArrayList<Treasure> treasureRetrived;
 
     /**
      * 
@@ -65,9 +65,14 @@ public class Adventurer extends Publisher {
     /**
      * @return
      * 
-     * TO BE ROMOVED
+     * 
      */
-    public Boolean findTreasure(){
+    public Boolean findTreasure(Room room){
+        if( room.isTreasurePresent){
+            //c call search 
+
+            
+        }
         int sum = this.rollDice();
         if(sum>= 10){
             this.treasureCount++;               // Treasure is found if dice sum => 10

@@ -6,63 +6,81 @@ import java.util.ArrayList;
 
 
 public interface Search {
-    public void search(Adventurer a, Room r);
+    public int search(Adventurer a, Room r);
     public default Treasure pickTreasure(ArrayList<Treasure> treasuresAvailable, ArrayList<Treasure> treasuresOwned){
-
-        for() {
-            
+        for (Treasure treasure : treasuresAvailable) {
+            if (!treasuresOwned.contains(treasure) || treasure.treasureType.equals("Trap")) { 
+                return treasure;
+            }
+        }
+        return null;
         }
     }
     
-}
 
-/* Assumptin is the Game engin will call move which is implemented in adventure class
- * and move will call search which is implemented in search class.
- * 
- */
+
+
 
 class Careful implements Search{
-    public void search(Adventurer a, Room r){
+    public int search(Adventurer a, Room r){
        
         int probability = Random.nextInt(2); 
         int advRoll = Random.RollTwoDice();
         ArrayList<Treasure>  treausre = r.getTreasureFromRoom();
-        if(advRoll >= 6){
-            //tressure found
-            if (probability == 0){
-                //escape the trap
+        if(advRoll > 7){
+            Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrived);
+            if (treasure == null) {
+                return 0;
             }
-            else{
-                //tressure not found
+            if (treasure.treasureType == "Trap"){
+                if (probability == 0){
+                    return 0;
+                }
             }
-            System.out.println("You found nothing");
+            
+            a.treasureRetrived.add(treasure);
+            a.treasureCount++;
+            r.removeTreasure(treasure);
+            return 1;
         }
         
     }
 }
 
 class Quick implements Search{
-    public void search(Adventurer a, Room r){
+    public int search(Adventurer a, Room r){
         
         int probability = Random.nextInt(3); 
         int advRoll = Random.RollTwoDice();
         if (probability == 2){
-            //skip the search
+            return 0;
         }
-        else if(advRoll > 9){
-            //tressure found
-            System.out.println("You found something");
+        if(advRoll > 9){
+            Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrived);
+            if (treasure == null) {
+                return 0;
+            }
+            a.treasureRetrived.add(treasure);
+            a.treasureCount++;
+            r.removeTreasure(treasure);
+            return 1;
         }
 }
 
 class Careless implements Search{
-    public void search(Adventurer a, Room r){
+    public int search(Adventurer a, Room r){
       
         int advRoll = Random.RollTwoDice();
 
         if(advRoll > 10){
-            //tressure found
-            System.out.println("You found something");
+            Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrived);
+            if (treasure == null) {
+                return 0;
+            }
+            a.treasureRetrived.add(treasure);
+            a.treasureCount++;
+            r.removeTreasure(treasure);
+            return 1;
         }
         
     }
