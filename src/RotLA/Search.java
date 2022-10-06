@@ -7,14 +7,17 @@ import java.util.ArrayList;
 public interface Search {
     public int search(Adventurer a, Room r);
     public default Treasure pickTreasure(ArrayList<Treasure> treasuresAvailable, ArrayList<Treasure> treasuresOwned) {
-        for (Treasure treasure : treasuresAvailable) {
-            if (!treasuresOwned.contains(treasure) || treasure.treasureType.equals("Trap")) {
-                return treasure;
+        for (Treasure availTreasure : treasuresAvailable) {
+            for (Treasure ownedTreasure : treasuresOwned) {
+                if (!ownedTreasure.treasureType.equals(availTreasure.treasureType) || availTreasure.treasureType.equals("Trap")){
+                    return availTreasure;
+                }
             }
         }
         return null;
     }
 }
+
 class Careful implements Search{
     public int search(Adventurer a, Room r) {
         int probability = Random.nextInt(2);
