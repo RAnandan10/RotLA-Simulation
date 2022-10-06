@@ -3,7 +3,6 @@ package RotLA.adventurers;
 import RotLA.Publisher;
 import RotLA.Room;
 import RotLA.Combat;
-import RotLA.Celebrate;
 import RotLA.Search;
 import RotLA.creatures.Creature;
 import RotLA.treasures.Treasure;
@@ -21,7 +20,7 @@ public class Adventurer extends Publisher {
     public String type;                    // Tells us type of adventurer
     public String currentLocation;         // Gives us the current room location of adventurer
     public String performAction;           // What action is to be performed by adventurer based on room status
-    public ArrayList<Treasure> treasureRetrived;
+    public ArrayList<Treasure> treasureRetrieved;
 
     /**
      * 
@@ -35,7 +34,7 @@ public class Adventurer extends Publisher {
         this.combat = combat;
         this.search = search;
         this.type = type;
-        this.treasureRetrived = new ArrayList<>();
+        this.treasureRetrieved = new ArrayList<>();
     }
 
     public Adventurer(){
@@ -45,8 +44,11 @@ public class Adventurer extends Publisher {
      * @return
      */
     public Boolean isAlive(){
-        if(this.damage < this.maxDamage)             //If damage is equal to maximum damage Adventurer can take then Adventurer is dead
+        //If damage is equal to maximum damage Adventurer can take then Adventurer is dead
+        if(this.damage < this.maxDamage){
             return Boolean.TRUE;
+        }
+        this.notifySubscribers(this.type + " dead " + this.currentLocation);
         return Boolean.FALSE;
     }
 
@@ -59,6 +61,7 @@ public class Adventurer extends Publisher {
         int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to
         int index = (int)(Math.random()*options);                                   // Gives random index in neighbouringRooms to go to
         this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
+        this.notifySubscribers(this.type + " enters " + this.currentLocation);
     }
 
     /**
@@ -68,14 +71,10 @@ public class Adventurer extends Publisher {
      */
     public Boolean findTreasure(Room room){
         if( room.isTreasurePresent){
-            //c call search 
-
-            
-        }
-        int sum = this.rollDice();
-        if(sum>= 10){
-            this.treasureCount++;               // Treasure is found if dice sum => 10
-            return Boolean.TRUE;
+            int i = search.search(this,room);
+            if(i==1){
+                return Boolean.TRUE;
+            }
         }
         return Boolean.FALSE;
     }
@@ -93,6 +92,7 @@ public class Adventurer extends Publisher {
 
     public void updateFightOutcome(){
         this.damage++;                      // If adventurer losses the fight then damage is increased by 1
+        this.notifySubscribers(this.type + " damage " + this.damage);
     }
 
     /**
@@ -102,11 +102,12 @@ public class Adventurer extends Publisher {
         int diceRolls[] = new int[2];
         diceRolls[0] = adv.rollDice();
         diceRolls[1] = cre.rollDice();
-        for (Treasure t : adv.treasureRetrived){
+        for (Treasure t : adv.treasureRetrieved){
             diceRolls = t.treasureEffectOnCombatDiceRolls(diceRolls[0],diceRolls[1]);
         }
         int fightOutcome = combat.fight(diceRolls[0],diceRolls[1]);
         if (fightOutcome == 1){
+            //celebrate?
             cre.updateFightOutcome();
             currentRoom.removeCreatureFromList(cre.type);
         }
