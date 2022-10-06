@@ -54,7 +54,6 @@ public class Adventurer extends Publisher {
      * @param facility: array containing all room objects
      */
     public void move(ArrayList<Room> facility){
-        int fightOutcome ;
         Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
         ArrayList<String> neighbouringRooms = currentRoom.connectedRooms;
         int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to

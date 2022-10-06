@@ -1,13 +1,12 @@
 package RotLA;
 
 public interface Combat{
-    public int fight();
+    public int fight(int advDice, int creDice);
 }
 
 class Trained implements Combat{
-public int fight(){
-        int advRoll = Random.RollTwoDice();
-        int creRoll = Random.RollTwoDice();
+public int fight(int advRoll, int creRoll){
+        advRoll = advRoll + 1;
         if (advRoll > creRoll){
             return 1;
         }
@@ -21,9 +20,7 @@ public int fight(){
 }
 
 class Untrained implements Combat{
-    public int fight(){
-        int advRoll = Random.RollTwoDice();
-        int creRoll = Random.RollTwoDice();
+    public int fight(int advRoll, int creRoll){
         if (advRoll > creRoll){
             return 1;
         }
@@ -36,10 +33,8 @@ class Untrained implements Combat{
     }
 }
 class Expert implements Combat{
-    public int fight(){
-
-        int advRoll = Random.RollTwoDice() + 2;
-        int creRoll = Random.RollTwoDice();
+    public int fight(int advRoll, int creRoll){
+        advRoll = advRoll + 2;
         if (advRoll > creRoll){
             return 1;
         }
@@ -53,13 +48,20 @@ class Expert implements Combat{
 }
 
 class Stealth implements Combat {
-    public int fight(){
+    public int fight(int advRoll, int creRoll){
         int probability = Random.nextInt(2);
         if(probability == 0){
             return 0;
         }
-        else{
+
+        if (advRoll > creRoll){
             return 1;
         }
+        else if(advRoll < creRoll){
+            return -1;
+        }
+        else{
+            return 0;
+        }   
     }
 }
