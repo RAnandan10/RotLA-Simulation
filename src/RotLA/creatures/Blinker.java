@@ -1,16 +1,20 @@
+package RotLA.creatures;
+
+import RotLA.Room;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
 // Blinker class inherits Creature class. This is an example of Inheritance
-public class Blinker extends Creature{
+public class Blinker extends Creature {
 
     //Constructor for Blinker class
-    Blinker(ArrayList<Room> facility){
+    public Blinker(ArrayList<Room> facility, int i){
         super();
         Room r;
-        this.type="B";                      // Blinkers are identified through type 'B'. This is an example of Identity OO concept
+        this.type="Blinker" + i;                      // Blinkers are identified through type 'B'. This is an example of Identity OO concept
         List<String> dir = Arrays.asList("4-0-0", "4-0-1", "4-0-2","4-1-2", "4-2-2", "4-2-1", "4-2-0", "4-1-0", "4-1-1");    //Blinker's starting location is in level 4. These are possible location in level 4
         Random random = new Random();
         this.currentLocation = dir.get(random.nextInt(9));          //Starting location is any one of thr above room numbers

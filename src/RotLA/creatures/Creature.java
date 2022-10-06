@@ -1,12 +1,17 @@
+package RotLA.creatures;
+
+import RotLA.Publisher;
+import RotLA.Room;
+
 import java.util.ArrayList;
 import java.util.Random;
-public class Creature {
+public class Creature extends Publisher {
     public Boolean isAlive;             // Tells us if creature is alive or not
     public String currentLocation;      // Gives us the current location of the creature
     public String type;                 // Tells us what type of creature
 
     //Constructor for creature class
-    Creature(){
+    public Creature(){
         this.isAlive = Boolean.TRUE;       // Creature is alive when we instantiate it
     }
 
@@ -34,3 +39,4 @@ public class Creature {
         return dice1 + dice2;                         // Sum of the 2 dice rolls is passed
     }
 }
+
