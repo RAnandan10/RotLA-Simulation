@@ -48,7 +48,6 @@ public class Adventurer extends Publisher {
         if(this.damage < this.maxDamage){
             return Boolean.TRUE;
         }
-        this.notifySubscribers(this.type + " dead " + this.currentLocation);
         return Boolean.FALSE;
     }
 
@@ -93,13 +92,15 @@ public class Adventurer extends Publisher {
     public void updateFightOutcome(){
         this.damage++;                      // If adventurer losses the fight then damage is increased by 1
         this.notifySubscribers(this.type + " damage " + this.damage);
+        if (!this.isAlive())
+            this.notifySubscribers(this.type + " dead " + this.currentLocation);
     }
 
     /**
      * @return a boolean value indicating if the adventurer is involved in fight or not
      */
     public void fight(Adventurer adv, Creature cre, Room currentRoom){
-        int diceRolls[] = new int[2];
+        int[] diceRolls = new int[2];
         diceRolls[0] = adv.rollDice();
         diceRolls[1] = cre.rollDice();
         for (Treasure t : adv.treasureRetrieved){
@@ -108,14 +109,17 @@ public class Adventurer extends Publisher {
         int fightOutcome = combat.fight(diceRolls[0],diceRolls[1]);
         if (fightOutcome == 1){
             //celebrate?
+            this.notifySubscribers(this.type + " wins combat");
+            this.notifySubscribers(cre.type + " loses combat");
             cre.updateFightOutcome();
             currentRoom.removeCreatureFromList(cre.type);
         }
         else if (fightOutcome == -1){
+            this.notifySubscribers(this.type + " loses combat");
+            this.notifySubscribers(cre.type + " wins combat");
             adv.updateFightOutcome();
             if (!this.isAlive()){
                 currentRoom.removeAdventurerFromList(adv.type);
-                //System.out.println("Adventurer " + this.type + " is dead");
             }
         }
     }

@@ -3,7 +3,6 @@ package RotLA;
 import RotLA.adventurers.*;
 import RotLA.creatures.*;
 import RotLA.treasures.*;
-import RotLA.Search.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -202,9 +201,16 @@ public class GameEngine {
                 playingCreatures.add(cre);
         }
 
+        for (Adventurer adv : playingAdventures){
+            adv.registerSubscriber(log);
+        }
+
+        for (Creature cre : playingCreatures){
+            cre.registerSubscriber(log);
+        }
+
         // Each alive adventurer gets to play
         for (Adventurer playingAdv : playingAdventures){
-            playingAdv.registerSubscriber(log);
             // Adventurer moves to next location
             Room currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
             playingAdv.move(facility);
@@ -225,9 +231,16 @@ public class GameEngine {
                 creatureToFight = creaturesInRoom.get(index);
                 playingAdv.performAction="Fight";
                 //fight(getCreatureObjectFromCreatureType(creatureToFight), playingAdv);
-                playingAdv.fight(playingAdv,getCreatureObjectFromCreatureType(creatureToFight), newRoom);
-                if(!playingAdv.isAlive())
+                Creature fightingCre = getCreatureObjectFromCreatureType(creatureToFight);
+                playingAdv.fight(playingAdv,fightingCre, newRoom);
+                if(!playingAdv.isAlive()) {
                     playingAdv.removeSubscriber(track);
+                    //playingAdventures.remove(playingAdv);
+                }
+                if(!fightingCre.isAlive) {
+                    fightingCre.removeSubscriber(track);
+                    playingCreatures.remove(fightingCre);
+                }
             }
             // If Creature is not present in room then search treasure
             else {
@@ -238,8 +251,6 @@ public class GameEngine {
                 }
             }
 
-            playingAdv.removeSubscriber(log);
-
             // Check if any end game condition is met after an adventurers turn
             if(!shouldGameContinue())
                 return;
@@ -248,9 +259,6 @@ public class GameEngine {
 
         // Each alive creature gets to play
         for (Creature playingCre : playingCreatures){
-
-            playingCre.registerSubscriber(log);
-
             Room currentRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
 
             // Don't move if adventurer is in room
@@ -277,15 +285,27 @@ public class GameEngine {
                 adventurerToFight = adventuresInRoom.get(index);
                 Adventurer fightingAdv = getAdventurerObjectFromAdventurerType(adventurerToFight);
                 fightingAdv.performAction="Fight";
-                //fight(playingCre, fightingAdv);
                 fightingAdv.fight(fightingAdv,playingCre, currentRoom);
+                if (!playingCre.isAlive) {
+                    playingCre.removeSubscriber(track);
+                    //playingCreatures.remove(playingCre);
+                }
+                if (!fightingAdv.isAlive()) {
+                    fightingAdv.removeSubscriber(track);
+                    playingAdventures.remove(fightingAdv);
+                }
             }
-
-            playingCre.removeSubscriber(log);
-
             // Check if any end game condition is met after a creatures turn
             if(!shouldGameContinue())
                 return;
+        }
+
+        for (Adventurer adv : playingAdventures){
+            adv.removeSubscriber(log);
+        }
+
+        for (Creature cre : playingCreatures){
+            cre.removeSubscriber(log);
         }
 
         // Prints current board and game status

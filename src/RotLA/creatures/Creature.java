@@ -30,6 +30,7 @@ public class Creature extends Publisher {
 
     public void updateFightOutcome(){
         this.isAlive = Boolean.FALSE;           // Creature dies when fight with an adventurer is lost
+        this.notifySubscribers(this.type + " dead " + this.currentLocation);
     }
 
     public int rollDice(){

@@ -92,7 +92,7 @@ public class Tracker implements Observers {
         System.out.println("Total Active Adventurers:" + this.advCount);
         System.out.println("Adventurers\t Room\t Damage\t Treasure");
         for(adventurerTrackerObject adv : adventurers){
-            if(adv.isAlive)
+            //if(adv.isAlive)
                 System.out.println(adv.type+"\t"+adv.location+"\t"+adv.currentDamage+"\t"+adv.treasuresCollected);
         }
         System.out.println("\nTotal Active Creatures:" + this.creCount);

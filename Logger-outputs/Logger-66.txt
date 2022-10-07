@@ -1,0 +1,9 @@
+Brawler enters 2-1-1
+Sneaker enters 1-0-1
+Runner enters 2-1-1
+Thief enters 1-1-0
+Thief wins combat
+Blinker2 loses combat
+Blinker2 dead 1-1-0
+Orbiter2 enters 3-1-0
+Blinker4 enters 1-0-2

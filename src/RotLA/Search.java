@@ -7,14 +7,27 @@ import java.util.ArrayList;
 public interface Search {
     public int search(Adventurer a, Room r);
     public default Treasure pickTreasure(ArrayList<Treasure> treasuresAvailable, ArrayList<Treasure> treasuresOwned) {
-        for (Treasure treasure : treasuresAvailable) {
-            if (!treasuresOwned.contains(treasure) || treasure.treasureType.equals("Trap")) {
-                return treasure;
+        for (Treasure availTreasure : treasuresAvailable) {
+            if(treasuresOwned.size() == 0 || availTreasure.treasureType.equals("Trap")) {
+                return availTreasure;
             }
+            boolean isOwned = false;
+            for (Treasure ownedTreasure : treasuresOwned) {
+                if (ownedTreasure.treasureType.equals(availTreasure.treasureType)){
+                    isOwned = true;
+                    break;
+                    
+                }
+            }
+            if (!isOwned) {
+                return availTreasure;
+            }
+
         }
         return null;
     }
 }
+
 class Careful implements Search{
     public int search(Adventurer a, Room r) {
         int probability = Random.nextInt(2);
@@ -30,6 +43,7 @@ class Careful implements Search{
                 }
             }
             a.treasureRetrieved.add(treasure);
+            treasure.treasureEffect(a);
             a.treasureCount++;
             r.removeTreasure(treasure);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
@@ -55,6 +69,7 @@ class Quick implements Search{
             }
             a.treasureRetrieved.add(treasure);
             a.treasureCount++;
+            treasure.treasureEffect(a);
             r.removeTreasure(treasure);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
             return 1;
@@ -74,6 +89,7 @@ class Careless implements Search{
             a.treasureRetrieved.add(treasure);
             a.treasureCount++;
             r.removeTreasure(treasure);
+            treasure.treasureEffect(a);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
             return 1;
         }

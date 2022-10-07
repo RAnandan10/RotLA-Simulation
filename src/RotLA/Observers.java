@@ -30,7 +30,7 @@ class Logger implements Observers{
     public void update(String event){
         try {
             FileWriter myWriter = new FileWriter(this.fileName,true);
-            myWriter.write(event);
+            myWriter.write(event+"\n");
             myWriter.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");

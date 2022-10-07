@@ -10,6 +10,6 @@ public class Trap extends Treasure {
 
     @Override
     public void treasureEffect(Adventurer adv) {
-        adv.damage++;
+        adv.updateFightOutcome();
     }
 }
