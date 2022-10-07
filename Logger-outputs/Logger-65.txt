@@ -1,0 +1,7 @@
+Brawler enters 2-2-2
+Sneaker enters 1-1-1
+Runner enters 2-2-2
+Thief enters 1-1-1
+Orbiter2 enters 3-1-0
+Blinker2 enters 1-1-0
+Blinker4 enters 1-1-1

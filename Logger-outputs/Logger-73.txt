@@ -1,0 +1,8 @@
+Brawler enters 1-1-1
+Sneaker enters 1-1-1
+Runner enters 3-1-1
+Runner wins combat
+Seeker3 loses combat
+Seeker3 dead 3-1-1
+Thief enters 1-1-1
+Orbiter2 enters 3-1-0
