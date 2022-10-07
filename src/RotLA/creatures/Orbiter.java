@@ -79,5 +79,6 @@ public class Orbiter extends Creature {
         this.currentLocation = room.id;                         // updating the current location in the creature object.
         currentRoom.removeCreatureFromList(this.type);          // removing the creature from the current room
         room.addCreatureToList(this.type);                      // adding the creature to new room
+        this.notifySubscribers(this.type + " enters " + this.currentLocation);
     }
 }

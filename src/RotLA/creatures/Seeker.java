@@ -15,7 +15,7 @@ public class Seeker extends Creature {
 
         List<String> dir = Arrays.asList("-0-0", "-0-1", "-0-2","-1-2", "-2-2", "-2-1", "-2-0", "-1-0", "-1-1");  //Seekers can move only in their level. These are the possible 9 rooms in a level
         Random random = new Random();
-        int floor = random.nextInt(5)+1;                                    // Select a random level
+        int floor = random.nextInt(4)+1;                                    // Select a random level
         this.currentLocation = floor + dir.get(random.nextInt(9));          // Select any random room in level 'floor'
 
         //Room is updated with seekers presence
@@ -47,6 +47,7 @@ public class Seeker extends Creature {
                     this.currentLocation = room.id;                         // updating the current location in the creature object.
                     currentRoom.removeCreatureFromList(this.type);          // removing the creature from the current room
                     room.addCreatureToList(this.type);                      // adding the creature to next room
+                    this.notifySubscribers(this.type + " enters " + this.currentLocation);
                     break;
                 }
             }

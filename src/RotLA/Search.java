@@ -43,6 +43,7 @@ class Careful implements Search{
                 }
             }
             a.treasureRetrieved.add(treasure);
+            treasure.treasureEffect(a);
             a.treasureCount++;
             r.removeTreasure(treasure);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
@@ -68,6 +69,7 @@ class Quick implements Search{
             }
             a.treasureRetrieved.add(treasure);
             a.treasureCount++;
+            treasure.treasureEffect(a);
             r.removeTreasure(treasure);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
             return 1;
@@ -87,6 +89,7 @@ class Careless implements Search{
             a.treasureRetrieved.add(treasure);
             a.treasureCount++;
             r.removeTreasure(treasure);
+            treasure.treasureEffect(a);
             a.notifySubscribers(a.type + " treasure " + treasure.treasureType);
             return 1;
         }
