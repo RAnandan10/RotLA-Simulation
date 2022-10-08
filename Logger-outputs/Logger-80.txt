@@ -1,7 +1,0 @@
-Brawler enters 0-1-1
-Sneaker enters 1-0-0
-Sneaker treasure Sword
-Runner enters 3-2-1
-Thief enters 1-1-2
-Orbiter2 enters 3-1-0
-Seeker4 enters 3-2-1
