@@ -1,0 +1,120 @@
+Game simulation 0
+12
+    Game Over : All creatures are dead
+
+Game simulation 1
+12
+    Game Over : All creatures are dead
+
+Game simulation 2
+12
+    Game Over : All creatures are dead
+
+Game simulation 3
+12
+    Game Over : All creatures are dead
+
+Game simulation 4
+12
+    Game Over : All creatures are dead
+
+Game simulation 5
+12
+    Game Over : All creatures are dead
+
+Game simulation 6
+12
+    Game Over : All creatures are dead
+
+Game simulation 7
+12
+    Game Over : All creatures are dead
+
+Game simulation 8
+12
+    Game Over : All creatures are dead
+
+Game simulation 9
+12
+    Game Over : All creatures are dead
+
+Game simulation 10
+12
+    Game Over : All creatures are dead
+
+Game simulation 11
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 12
+12
+    Game Over : All creatures are dead
+
+Game simulation 13
+12
+    Game Over : All creatures are dead
+
+Game simulation 14
+12
+    Game Over : All creatures are dead
+
+Game simulation 15
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 16
+12
+    Game Over : All creatures are dead
+
+Game simulation 17
+12
+    Game Over : All creatures are dead
+
+Game simulation 18
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 19
+12
+    Game Over : All creatures are dead
+
+Game simulation 20
+12
+    Game Over : All creatures are dead
+
+Game simulation 21
+12
+    Game Over : All creatures are dead
+
+Game simulation 22
+12
+    Game Over : All creatures are dead
+
+Game simulation 23
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 24
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 25
+12
+    Game Over : All creatures are dead
+
+Game simulation 26
+12
+    Game Over : All creatures are dead
+
+Game simulation 27
+12
+    Game Over: All Adventurers are dead
+
+Game simulation 28
+12
+    Game Over : All creatures are dead
+
+Game simulation 29
+12
+    Game Over : All creatures are dead
+
