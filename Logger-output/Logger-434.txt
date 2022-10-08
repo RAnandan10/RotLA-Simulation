@@ -1,0 +1,6 @@
+Sneaker enters 1-1-0
+Sneaker wins combat
+Orbiter1 loses combat
+Orbiter1 dead 1-1-0
+Sneaker enters 4-1-1
+Seeker2 enters 4-1-1
