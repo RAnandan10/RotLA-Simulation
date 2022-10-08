@@ -16,24 +16,22 @@ class Shout extends Celebrate {
         System.out.println("Shout");
     }
     
-    public void shout(){
-        System.out.println("Yay! We found the treasure!");
-    }
+   
 }
 
 class  Dance extends Celebrate {
-    public void dance(){
-        System.out.println("Yay! We found the treasure!");
+    public void celebrate() {
+        System.out.println("Dance");
     }
 }
 class Jump extends Celebrate{
-    public void jump(){
-        System.out.println("Yay! We found the treasure!");
+    public void celebrate() {
+        System.out.println("Jump");
     }
 }
 class Spin extends Celebrate{
-    public void spin(){
-        System.out.println("Yay! We found the treasure!");
+    public void celebrate() {
+        System.out.println("Spin");
     }
 }
 
