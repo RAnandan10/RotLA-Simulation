@@ -1,39 +1,19 @@
 package RotLA;
 
-public abstract   class Celebrate implements Combat{
+public abstract class Celebrate implements Combat{
     public Combat combat;
+
+    Celebrate(Combat c){
+        this.combat = c;
+    }
     public void celebrate(){
-        System.out.println("Celebrate");
     }
     public int fight(int advRoll, int creRoll){
-        return combat.fight(advRoll, creRoll);
-    }
-}   
-
-
-class Shout extends Celebrate {        
-    public void celebrate() {
-        System.out.println("Shout");
-    }
-    
-    public void shout(){
-        System.out.println("Yay! We found the treasure!");
+        int outcome = combat.fight(advRoll, creRoll);
+        if(outcome==1)
+            this.celebrate();
+        return outcome;
     }
 }
 
-class  Dance extends Celebrate {
-    public void dance(){
-        System.out.println("Yay! We found the treasure!");
-    }
-}
-class Jump extends Celebrate{
-    public void jump(){
-        System.out.println("Yay! We found the treasure!");
-    }
-}
-class Spin extends Celebrate{
-    public void spin(){
-        System.out.println("Yay! We found the treasure!");
-    }
-}
 

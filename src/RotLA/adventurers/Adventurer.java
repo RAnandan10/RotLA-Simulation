@@ -1,9 +1,6 @@
 package RotLA.adventurers;
 
-import RotLA.Publisher;
-import RotLA.Room;
-import RotLA.Combat;
-import RotLA.Search;
+import RotLA.*;
 import RotLA.creatures.Creature;
 import RotLA.treasures.Treasure;
 
@@ -100,13 +97,33 @@ public class Adventurer extends Publisher {
      * @return a boolean value indicating if the adventurer is involved in fight or not
      */
     public void fight(Adventurer adv, Creature cre, Room currentRoom){
+        Random rand = new Random();
         int[] diceRolls = new int[2];
         diceRolls[0] = adv.rollDice();
         diceRolls[1] = cre.rollDice();
         for (Treasure t : adv.treasureRetrieved){
             diceRolls = t.treasureEffectOnCombatDiceRolls(diceRolls[0],diceRolls[1]);
         }
-        int fightOutcome = combat.fight(diceRolls[0],diceRolls[1]);
+
+        Combat myFight = this.combat;
+
+        int number = rand.nextInt(3);
+        for(int i = 0; i<number;i++){
+            int index = rand.nextInt(4);
+            switch (index) {
+                case 0: myFight = new Shout(myFight);
+                        break;
+                case 1: myFight = new Dance(myFight);
+                    break;
+                case 2: myFight = new Jump(myFight);
+                    break;
+                case 3: myFight = new Spin(myFight);
+                    break;
+
+            }
+        }
+
+        int fightOutcome = myFight.fight(diceRolls[0],diceRolls[1]);
         if (fightOutcome == 1){
             //celebrate?
             this.notifySubscribers(this.type + " wins combat");
