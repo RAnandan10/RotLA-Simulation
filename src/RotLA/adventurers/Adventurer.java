@@ -1,9 +1,6 @@
 package RotLA.adventurers;
 
-import RotLA.Publisher;
-import RotLA.Room;
-import RotLA.Combat;
-import RotLA.Search;
+import RotLA.*;
 import RotLA.creatures.Creature;
 import RotLA.treasures.Treasure;
 
@@ -106,15 +103,21 @@ public class Adventurer extends Publisher {
         for (Treasure t : adv.treasureRetrieved){
             diceRolls = t.treasureEffectOnCombatDiceRolls(diceRolls[0],diceRolls[1]);
         }
-        int fightOutcome = combat.fight(diceRolls[0],diceRolls[1]);
-        if (fightOutcome == 1){
-            //celebrate?
+
+        Combat myFight = this.combat;
+        myFight = setCelebrations(myFight);
+
+        String fightOutcome = myFight.fight(diceRolls[0],diceRolls[1]);
+        if (fightOutcome.contains("Adventurer wins")){
+            String[] celebration = fightOutcome.split("!");
             this.notifySubscribers(this.type + " wins combat");
             this.notifySubscribers(cre.type + " loses combat");
+            if(celebration.length>1)
+                this.notifySubscribers(this.type + " Celebrates: "+ celebration[1]);
             cre.updateFightOutcome();
             currentRoom.removeCreatureFromList(cre.type);
         }
-        else if (fightOutcome == -1){
+        else if (fightOutcome.contains("Creature wins!")){
             this.notifySubscribers(this.type + " loses combat");
             this.notifySubscribers(cre.type + " wins combat");
             adv.updateFightOutcome();
@@ -138,5 +141,26 @@ public class Adventurer extends Publisher {
                  r = room;
          }
          return r;
+     }
+
+     private Combat setCelebrations(Combat myFight){
+         Random rand = new Random();
+         int number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Shout(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Dance(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Jump(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Spin(myFight);
+         }
+        return myFight;
      }
 }

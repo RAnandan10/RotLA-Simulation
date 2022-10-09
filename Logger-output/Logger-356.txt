@@ -1,8 +1,0 @@
-Sneaker enters 2-1-1
-Orbiter1 enters 1-1-0
-Orbiter3 enters 1-1-0
-Orbiter4 enters 1-1-0
-Sneaker enters 3-0-2
-Brawler enters 1-0-1
-Sneaker enters 1-0-0
-Orbiter2 enters 2-1-0
