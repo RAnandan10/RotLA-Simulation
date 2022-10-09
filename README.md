@@ -13,12 +13,17 @@
 Java version: openjdk 17.0.4.1 2022-08-12
 
 ## Assumptions:
-1. we have assumed the numbering of 1st floor to be as follows:  
+1. We have assumed the numbering of 1st floor to be as follows:  
   <img width="244" alt="image" src="https://user-images.githubusercontent.com/42914453/192075159-9274e023-8b25-4a4c-8bc7-2ee4c3354768.png">
-2. In case of Browler, we have assumed theat the max dice output it can get is 12 even after adding +2 to the dice outcome
 
-3. In case of thiefs, we have added +1 to the health of the thief for finding a tressure and fighting a creature. 
+2. The bonus points awarded can take the dice output beyond 12.
 
-4. Project Structure:  
+3. In case of Portion, Trap and Portal treasures the treasure effect is immediate.
+4. Finding a Portal treasure allows the adventurer to move to a different room immediately.
+5. During a Careful search the adventurer has a 50% chance of avoiding Trap treasure. If avoided the trap is not removed from the room.
+6. Treasures can be placed in any room including starting room 0-1-1.
+7. Observer for tracking events is implemented using a push model.
+8. All events are notified to registered subscribers. Tracker ignores any events that are not useful to it. 
+9. Project Structure:  
   &nbsp; The main function is in RotLA.java.  
   &nbsp; All the files required to run the program are in src folder.  
