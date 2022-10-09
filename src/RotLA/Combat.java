@@ -1,67 +1,66 @@
 package RotLA;
 
 public interface Combat{
-    public int fight(int advDice, int creDice);
+    String fight(int advDice, int creDice);
 }
 
 class Trained implements Combat{
-public int fight(int advRoll, int creRoll){
+public String fight(int advRoll, int creRoll){
         advRoll = advRoll + 1;
         if (advRoll > creRoll){
-            return 1;
+            return "Adventurer wins!";
         }
         else if(advRoll < creRoll){
-            return -1;
+            return "Creature wins!";
         }
         else{
-            return 0;
+            return "Draw";
         }
     }
 }
 
 class Untrained implements Combat{
-    public int fight(int advRoll, int creRoll){
+    public String fight(int advRoll, int creRoll){
         if (advRoll > creRoll){
-            return 1;
+            return "Adventurer wins!";
         }
         else if(advRoll < creRoll){
-            return -1;
+            return "Creature wins!";
         }
         else{
-            return 0;
+            return "Draw";
         }
     }
 }
 class Expert implements Combat{
-    public int fight(int advRoll, int creRoll){
+    public String fight(int advRoll, int creRoll){
         advRoll = advRoll + 2;
         if (advRoll > creRoll){
-            return 1;
+            return "Adventurer wins!";
         }
         else if(advRoll < creRoll){
-            return -1;
+            return "Creature wins!";
         }
         else{
-            return 0;
+            return "Draw";
         }
     }
 }
 
 class Stealth implements Combat {
-    public int fight(int advRoll, int creRoll){
+    public String fight(int advRoll, int creRoll){
         int probability = Random.nextInt(2);
         if(probability == 0){
-            return 0;
+            return "No Fight";
         }
-
         if (advRoll > creRoll){
-            return 1;
+            return "Adventurer wins!";
         }
         else if(advRoll < creRoll){
-            return -1;
+            return "Creature wins!";
         }
         else{
-            return 0;
+            return "Draw";
         }   
     }
 }

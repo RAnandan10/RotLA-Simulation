@@ -11,8 +11,8 @@ public class GameEngine {
 
     public int totalTreasureCount;
     public Boolean gameOver;
-    public ArrayList<Adventurer> activeAdventurers;
-    public ArrayList<Creature> activeCreatures;
+    public ArrayList<Adventurer> adventurers;
+    public ArrayList<Creature> creatures;
     public ArrayList<Room> facility;
 
     public Tracker track = new Tracker();
@@ -21,8 +21,8 @@ public class GameEngine {
     GameEngine(){
         this.gameOver = Boolean.FALSE;
         this.totalTreasureCount =0;
-        this.activeAdventurers = new ArrayList<>();
-        this.activeCreatures = new ArrayList<>();
+        this.adventurers = new ArrayList<>();
+        this.creatures = new ArrayList<>();
         this.facility = new ArrayList<>();
     }
 
@@ -33,7 +33,7 @@ public class GameEngine {
         adventurersInitializer();
         creaturesInitializer();
         board.render(facility);
-        board.gameState(activeAdventurers,activeCreatures);
+        board.gameState(adventurers,creatures);
     }
 
     // This method initializes the adventurers
@@ -42,12 +42,12 @@ public class GameEngine {
         Adventurer sneaker = new Adventurer(new Stealth(), new Quick(), "Sneaker");
         Adventurer runner = new Adventurer(new Untrained(), new Quick(), "Runner");
         Adventurer thief = new Adventurer(new Trained(), new Careful(), "Thief");
-        activeAdventurers.add(brawler);
-        activeAdventurers.add(sneaker);
-        activeAdventurers.add(runner);
-        activeAdventurers.add(thief);
+        adventurers.add(brawler);
+        adventurers.add(sneaker);
+        adventurers.add(runner);
+        adventurers.add(thief);
         Room startingPoint = facility.get(0);
-        for(Adventurer adv: activeAdventurers){
+        for(Adventurer adv: adventurers){
             startingPoint.addAdventurerToList(adv.type);
             adv.registerSubscriber(track);
             adv.notifySubscribers(adv.type + " initialised " + adv.currentLocation);
@@ -66,11 +66,11 @@ public class GameEngine {
             Blinker blinker = new Blinker(facility,i);
             blinker.registerSubscriber(track);
             blinker.notifySubscribers(blinker.type + " initialised " + blinker.currentLocation);
-            activeCreatures.add(orbiter);
-            activeCreatures.add(seeker);
-            activeCreatures.add(blinker);
+            creatures.add(orbiter);
+            creatures.add(seeker);
+            creatures.add(blinker);
         }
-        System.out.println(activeCreatures.size());
+        System.out.println(creatures.size());
     }
 
     // This method initializes the facility
@@ -165,7 +165,7 @@ public class GameEngine {
     // Method checks how many adventurers are alive
     private int check_adventurer_count(){
         int adventurerCount = 0;
-        for (Adventurer activeAdventurer : activeAdventurers) {
+        for (Adventurer activeAdventurer : adventurers) {
             if (activeAdventurer.isAlive()) {
                 adventurerCount++;
             }
@@ -176,7 +176,7 @@ public class GameEngine {
     // Method checks how many creatures are alive
     private int check_creature_count(){
         int creatureCount = 0;
-        for (Creature activeCreature : activeCreatures) {
+        for (Creature activeCreature : creatures) {
             if (activeCreature.isAlive) {
                 creatureCount++;
             }
@@ -188,29 +188,29 @@ public class GameEngine {
         Logger log = new Logger(turn);
 
         // Gets all adventurers that are alive
-        ArrayList<Adventurer> playingAdventures = new ArrayList<>();
-        for (Adventurer adv : activeAdventurers){
+        ArrayList<Adventurer> activeAdventurers = new ArrayList<>();
+        for (Adventurer adv : adventurers){
             if(adv.isAlive())
-                playingAdventures.add(adv);
+                activeAdventurers.add(adv);
         }
 
         // Gets all creatures that are alive
-        ArrayList<Creature> playingCreatures = new ArrayList<>();
-        for (Creature cre : activeCreatures){
+        ArrayList<Creature> activeCreatures = new ArrayList<>();
+        for (Creature cre : creatures){
             if(cre.isAlive)
-                playingCreatures.add(cre);
+                activeCreatures.add(cre);
         }
 
-        for (Adventurer adv : playingAdventures){
+        for (Adventurer adv : activeAdventurers){
             adv.registerSubscriber(log);
         }
 
-        for (Creature cre : playingCreatures){
+        for (Creature cre : activeCreatures){
             cre.registerSubscriber(log);
         }
 
         // Each alive adventurer gets to play
-        for (Adventurer playingAdv : playingAdventures){
+        for (Adventurer playingAdv : activeAdventurers){
             // Adventurer moves to next location
             Room currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
             playingAdv.move(facility);
@@ -235,11 +235,11 @@ public class GameEngine {
                 playingAdv.fight(playingAdv,fightingCre, newRoom);
                 if(!playingAdv.isAlive()) {
                     playingAdv.removeSubscriber(track);
-                    //playingAdventures.remove(playingAdv);
+                    //activeAdventurers.remove(playingAdv);
                 }
                 if(!fightingCre.isAlive) {
                     fightingCre.removeSubscriber(track);
-                    playingCreatures.remove(fightingCre);
+                    activeCreatures.remove(fightingCre);
                 }
             }
             // If Creature is not present in room then search treasure
@@ -258,7 +258,7 @@ public class GameEngine {
 
 
         // Each alive creature gets to play
-        for (Creature playingCre : playingCreatures){
+        for (Creature playingCre : activeCreatures){
             Room currentRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
 
             // Don't move if adventurer is in room
@@ -267,9 +267,6 @@ public class GameEngine {
             }
             else {
                 playingCre.move(facility);
-                /*currentRoom.removeCreatureFromList(playingCre.type);
-                Room newRoom = getRoomObjectFromRoomId(playingCre.currentLocation);
-                newRoom.addCreatureToList(playingCre.type);*/
             }
 
             // After creature move, check if adventurer is present and fight
@@ -288,11 +285,11 @@ public class GameEngine {
                 fightingAdv.fight(fightingAdv,playingCre, currentRoom);
                 if (!playingCre.isAlive) {
                     playingCre.removeSubscriber(track);
-                    //playingCreatures.remove(playingCre);
+                    //activeCreatures.remove(playingCre);
                 }
                 if (!fightingAdv.isAlive()) {
                     fightingAdv.removeSubscriber(track);
-                    playingAdventures.remove(fightingAdv);
+                    activeAdventurers.remove(fightingAdv);
                 }
             }
             // Check if any end game condition is met after a creatures turn
@@ -300,17 +297,16 @@ public class GameEngine {
                 return;
         }
 
-        for (Adventurer adv : playingAdventures){
+        for (Adventurer adv : activeAdventurers){
             adv.removeSubscriber(log);
         }
-
-        for (Creature cre : playingCreatures){
+        for (Creature cre : activeCreatures){
             cre.removeSubscriber(log);
         }
 
         // Prints current board and game status
         board.render(facility);
-        board.gameState(activeAdventurers,activeCreatures);
+        board.gameState(adventurers,creatures);
     }
 
     // This method checks if any termination condition is met and updates attribute gameOver. This is a private method. Example of Abstraction
@@ -364,7 +360,7 @@ public class GameEngine {
     //Method to get a Creature object using Creature type
     private Creature getCreatureObjectFromCreatureType(String id){
         Creature cre = new Creature();
-        for (Creature creature : activeCreatures) {
+        for (Creature creature : creatures) {
             if (creature.type.equals(id))
                 cre = creature;
         }
@@ -374,7 +370,7 @@ public class GameEngine {
     //Method to get Adventurer object using Adventurer type
     private Adventurer getAdventurerObjectFromAdventurerType(String id){
         Adventurer adv = new Adventurer();
-        for (Adventurer adventurer : activeAdventurers) {
+        for (Adventurer adventurer : adventurers) {
             if (adventurer.type.equals(id))
                 adv = adventurer;
         }

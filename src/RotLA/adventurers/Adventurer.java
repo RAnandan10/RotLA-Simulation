@@ -97,7 +97,6 @@ public class Adventurer extends Publisher {
      * @return a boolean value indicating if the adventurer is involved in fight or not
      */
     public void fight(Adventurer adv, Creature cre, Room currentRoom){
-        Random rand = new Random();
         int[] diceRolls = new int[2];
         diceRolls[0] = adv.rollDice();
         diceRolls[1] = cre.rollDice();
@@ -106,32 +105,19 @@ public class Adventurer extends Publisher {
         }
 
         Combat myFight = this.combat;
+        myFight = setCelebrations(myFight);
 
-        int number = rand.nextInt(3);
-        for(int i = 0; i<number;i++){
-            int index = rand.nextInt(4);
-            switch (index) {
-                case 0: myFight = new Shout(myFight);
-                        break;
-                case 1: myFight = new Dance(myFight);
-                    break;
-                case 2: myFight = new Jump(myFight);
-                    break;
-                case 3: myFight = new Spin(myFight);
-                    break;
-
-            }
-        }
-
-        int fightOutcome = myFight.fight(diceRolls[0],diceRolls[1]);
-        if (fightOutcome == 1){
-            //celebrate?
+        String fightOutcome = myFight.fight(diceRolls[0],diceRolls[1]);
+        if (fightOutcome.contains("Adventurer wins")){
+            String[] celebration = fightOutcome.split("!");
             this.notifySubscribers(this.type + " wins combat");
             this.notifySubscribers(cre.type + " loses combat");
+            if(celebration.length>1)
+                this.notifySubscribers(this.type + " Celebrates: "+ celebration[1]);
             cre.updateFightOutcome();
             currentRoom.removeCreatureFromList(cre.type);
         }
-        else if (fightOutcome == -1){
+        else if (fightOutcome.contains("Creature wins!")){
             this.notifySubscribers(this.type + " loses combat");
             this.notifySubscribers(cre.type + " wins combat");
             adv.updateFightOutcome();
@@ -155,5 +141,26 @@ public class Adventurer extends Publisher {
                  r = room;
          }
          return r;
+     }
+
+     private Combat setCelebrations(Combat myFight){
+         Random rand = new Random();
+         int number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Shout(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Dance(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Jump(myFight);
+         }
+         number = rand.nextInt(3);
+         for(int i = 0; i<number;i++){
+             myFight = new Spin(myFight);
+         }
+        return myFight;
      }
 }

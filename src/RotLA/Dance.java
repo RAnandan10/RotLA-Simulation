@@ -5,7 +5,7 @@ public class Dance extends Celebrate {
         super(c);
     }
 
-    public void celebrate() {
-        System.out.println("Dance");
+    public String celebrate() {
+        return "Dance";
     }
 }

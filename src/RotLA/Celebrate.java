@@ -6,12 +6,11 @@ public abstract class Celebrate implements Combat{
     Celebrate(Combat c){
         this.combat = c;
     }
-    public void celebrate(){
-    }
-    public int fight(int advRoll, int creRoll){
-        int outcome = combat.fight(advRoll, creRoll);
-        if(outcome==1)
-            this.celebrate();
+    abstract public String celebrate();
+    public String fight(int advRoll, int creRoll){
+        String outcome = combat.fight(advRoll, creRoll);
+        if(outcome.contains("Adventurer wins"))
+            return outcome + this.celebrate() + " ";
         return outcome;
     }
 }

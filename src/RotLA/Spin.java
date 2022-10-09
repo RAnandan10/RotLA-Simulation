@@ -5,7 +5,7 @@ public class Spin extends Celebrate {
         super(c);
     }
 
-    public void celebrate() {
-        System.out.println("Spin");
+    public String celebrate() {
+        return "Spin";
     }
 }

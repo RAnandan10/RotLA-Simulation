@@ -5,7 +5,7 @@ public class Jump extends Celebrate {
         super(c);
     }
 
-    public void celebrate() {
-        System.out.println("Jump");
+    public String celebrate() {
+        return "Jump";
     }
 }
