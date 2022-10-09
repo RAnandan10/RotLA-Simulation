@@ -1,0 +1,12 @@
+Brawler enters 1-2-1
+Sneaker enters 4-1-1
+Runner enters 2-1-1
+Runner treasure Potion
+Thief enters 2-1-1
+Orbiter1 enters 2-0-1
+Seeker1 enters 4-1-1
+Blinker1 enters 3-2-1
+Seeker2 enters 1-2-1
+Orbiter3 enters 2-0-1
+Seeker3 enters 4-1-1
+Orbiter4 enters 3-0-1

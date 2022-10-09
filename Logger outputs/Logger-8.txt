@@ -1,0 +1,14 @@
+Brawler enters 1-2-1
+Sneaker enters 2-1-1
+Runner enters 1-0-1
+Runner loses combat
+Orbiter2 wins combat
+Runner damage 1
+Thief enters 1-1-2
+Orbiter1 enters 2-0-1
+Blinker1 enters 2-0-1
+Seeker2 enters 1-0-1
+Orbiter3 enters 2-0-1
+Blinker3 enters 1-0-1
+Orbiter4 enters 3-0-1
+Seeker4 enters 2-1-1

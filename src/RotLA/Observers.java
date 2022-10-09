@@ -17,7 +17,7 @@ class Logger implements Observers{
     }
 
     private String createNewLoggerFile(){
-        String filename = "./Logger-outputs/Logger-" + this.turn + ".txt";
+        String filename = "./Logger outputs/Logger-" + this.turn + ".txt";
         try {
             File myObj = new File(filename);
             myObj.createNewFile();
