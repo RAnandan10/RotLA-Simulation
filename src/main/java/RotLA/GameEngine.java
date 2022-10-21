@@ -40,10 +40,10 @@ public class GameEngine {
     // This method initializes the adventurers
     private void adventurersInitializer(){
         // Adventurers are initialized based on strategy pattern for combat and search algorithms
-        Adventurer brawler = new Adventurer(new Expert(), new Careless(), "Brawler");
-        Adventurer sneaker = new Adventurer(new Stealth(), new Quick(), "Sneaker");
-        Adventurer runner = new Adventurer(new Untrained(), new Quick(), "Runner");
-        Adventurer thief = new Adventurer(new Trained(), new Careful(), "Thief");
+        Adventurer brawler = new BrawlerCreator().createAdventurer();
+        Adventurer sneaker = new SneakerCreator().createAdventurer();
+        Adventurer runner = new RunnerCreator().createAdventurer();
+        Adventurer thief = new ThiefCreator().createAdventurer();
         adventurers.add(brawler);
         adventurers.add(sneaker);
         adventurers.add(runner);
@@ -60,13 +60,13 @@ public class GameEngine {
     // This method initializes the Creatures
     private void creaturesInitializer(){
         for (int i = 1; i < 5; i++){
-            Orbiter orbiter = new Orbiter(facility,i);
+            Creature orbiter = new OrbiterCreator().createCreature(facility,i);
             orbiter.registerSubscriber(track);
             orbiter.notifySubscribers(orbiter.type + " initialised " + orbiter.currentLocation);
-            Seeker seeker = new Seeker(facility,i);
+            Creature seeker = new SeekerCreator().createCreature(facility,i);
             seeker.registerSubscriber(track);
             seeker.notifySubscribers(seeker.type + " initialised " + seeker.currentLocation);
-            Blinker blinker = new Blinker(facility,i);
+            Creature blinker = new BlinkerCreator().createCreature(facility,i);
             blinker.registerSubscriber(track);
             blinker.notifySubscribers(blinker.type + " initialised " + blinker.currentLocation);
             creatures.add(orbiter);
