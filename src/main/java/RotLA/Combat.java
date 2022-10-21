@@ -49,14 +49,14 @@ class Expert implements Combat{
 
 class Stealth implements Combat {
     public String fight(int advRoll, int creRoll){
-        int probability = Random.nextInt(2);
-        if(probability == 0){
-            return "No Fight";
-        }
         if (advRoll > creRoll){
             return "Adventurer wins!";
         }
         else if(advRoll < creRoll){
+            int probability = Random.nextInt(2);
+            if(probability == 0){
+                return "Draw";
+            }
             return "Creature wins!";
         }
         else{

@@ -32,7 +32,7 @@ class Careful implements Search{
     public int search(Adventurer a, Room r) {
         int probability = Random.nextInt(2);
         int advRoll = Random.RollTwoDice();
-        if (advRoll > 7) {
+        if (advRoll > 4) {
             Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrieved);
             if (treasure == null) {
                 return 0;
@@ -56,13 +56,9 @@ class Careful implements Search{
 
 class Quick implements Search{
     public int search(Adventurer a, Room r){
-        
-        int probability = Random.nextInt(3); 
+
         int advRoll = Random.RollTwoDice();
-        if (probability == 2){
-            return 0;
-        }
-        if(advRoll > 9){
+        if(advRoll > 6){
             Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrieved);
             if (treasure == null) {
                 return 0;
@@ -81,7 +77,7 @@ class Quick implements Search{
 class Careless implements Search{
     public int search(Adventurer a, Room r){
         int advRoll = Random.RollTwoDice();
-        if(advRoll > 10){
+        if(advRoll > 7){
             Treasure treasure = pickTreasure(r.getTreasureFromRoom(), a.treasureRetrieved);
             if (treasure == null) {
                 return 0;

@@ -22,9 +22,9 @@ public class Adventurer extends Publisher {
     /**
      * 
      */
-    public Adventurer(Combat combat, Search search, String type){
+    public Adventurer(Combat combat, Search search, String type, int maxDamage){
         this.damage = 0;                      //Initial damage is 0
-        this.maxDamage = 3;
+        this.maxDamage = maxDamage;
         this.treasureCount = 0;                 //Initial treasure found is 0
         this.currentLocation = "0-1-1";         //Starting location for adventures is always 0-1-1
         this.performAction = null;
