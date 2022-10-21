@@ -4,17 +4,25 @@ import java.util.ArrayList;
 
 public class Tracker implements Observers {
 
-    private ArrayList<adventurerTrackerObject> adventurers;
-    private ArrayList<creatureTrackerObject> creatures;
+    private ArrayList<AdventurerTrackerObject> adventurers;
+    private ArrayList<CreatureTrackerObject> creatures;
     private int advCount;
     private int creCount;
 
-    Tracker(){
+    // Eager Instantiation of Singleton Tracker class
+    private static Tracker tracker = new Tracker();
+
+    private Tracker(){
         this.adventurers = new ArrayList<>();
         this.creatures = new ArrayList<>();
         this.advCount=0;
         this.creCount=0;
     }
+
+    public static Tracker getInstance(){
+        return tracker;
+    }
+
     public void update(String event) {
         String[] extracted = event.split(" ");
         String actor = extracted[0];
@@ -24,7 +32,7 @@ public class Tracker implements Observers {
         if(action.equals("initialised")){
             for(Adventurers a : Adventurers.values()){
                 if(actor.equals(a.toString())){
-                    adventurerTrackerObject adv = new adventurerTrackerObject(actor);
+                    AdventurerTrackerObject adv = new AdventurerTrackerObject(actor);
                     adv.location = result;
                     this.adventurers.add(adv);
                     this.advCount++;
@@ -32,14 +40,14 @@ public class Tracker implements Observers {
                 }
             }
 
-            creatureTrackerObject cre = new creatureTrackerObject(actor);
+            CreatureTrackerObject cre = new CreatureTrackerObject(actor);
             cre.location = result;
             this.creatures.add(cre);
             this.creCount++;
             return;
         }
 
-        for (adventurerTrackerObject adv: this.adventurers){
+        for (AdventurerTrackerObject adv: this.adventurers){
             if(actor.equals(adv.type)){
                 switch (action) {
                     case "enters":
@@ -62,7 +70,7 @@ public class Tracker implements Observers {
             }
         }
 
-        for (creatureTrackerObject cre: this.creatures){
+        for (CreatureTrackerObject cre: this.creatures){
             if(actor.equals(cre.type)){
                 if (action.equals("enters")){
                     cre.location = result;
@@ -77,41 +85,31 @@ public class Tracker implements Observers {
 
             }
         }
-
-        /*for(Adventurers a : Adventurers.values()){
-            if(actor.equals(a.toString())){
-                adventurerTrackerObject adv = new adventurerTrackerObject(actor);
-                this.adventurers.add(adv);
-            }
-
-        }*/
-
     }
 
     public void printTracker() {
         System.out.println("Total Active Adventurers:" + this.advCount);
         System.out.println("Adventurers\t Room\t Damage\t Treasure");
-        for(adventurerTrackerObject adv : adventurers){
-            //if(adv.isAlive)
-                System.out.println(adv.type+"\t"+adv.location+"\t"+adv.currentDamage+"\t"+adv.treasuresCollected);
+        for(AdventurerTrackerObject adv : adventurers){
+            System.out.println(adv.type+"\t"+adv.location+"\t"+adv.currentDamage+"\t"+adv.treasuresCollected);
         }
         System.out.println("\nTotal Active Creatures:" + this.creCount);
         System.out.println("Creatures\t Room");
-        for(creatureTrackerObject cre : creatures){
+        for(CreatureTrackerObject cre : creatures){
             if(cre.isAlive)
                 System.out.println(cre.type+"\t"+cre.location);
         }
     }
 }
 
-class adventurerTrackerObject{
+class AdventurerTrackerObject{
     String type;
     String location;
     int currentDamage;
     ArrayList<String> treasuresCollected;
     Boolean isAlive;
 
-    adventurerTrackerObject(String type){
+    AdventurerTrackerObject(String type){
         this.type = type;
         this.location = "0-1-1";
         this.currentDamage=0;
@@ -120,12 +118,12 @@ class adventurerTrackerObject{
     }
 }
 
-class creatureTrackerObject{
+class CreatureTrackerObject{
     String type;
     String location;
     Boolean isAlive;
 
-    creatureTrackerObject(String type){
+    CreatureTrackerObject(String type){
         this.type = type;
         this.location = "";
         this.isAlive = true;
@@ -134,8 +132,4 @@ class creatureTrackerObject{
 
 enum Adventurers{
     Brawler, Runner, Sneaker, Thief
-}
-
-enum Creatures{
-    Orbiter, Seeker, Blinker
 }
