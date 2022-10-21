@@ -117,7 +117,7 @@ public class Adventurer extends Publisher {
             cre.updateFightOutcome();
             currentRoom.removeCreatureFromList(cre.type);
         }
-        else if (fightOutcome.contains("Creature wins!")){
+        else if (fightOutcome.contains("Creature wins")){
             this.notifySubscribers(this.type + " loses combat");
             this.notifySubscribers(cre.type + " wins combat");
             adv.updateFightOutcome();

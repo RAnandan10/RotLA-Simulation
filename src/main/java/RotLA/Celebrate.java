@@ -1,7 +1,7 @@
 package RotLA;
 
 public abstract class Celebrate implements Combat{
-    public Combat combat;
+    private Combat combat;
 
     Celebrate(Combat c){
         this.combat = c;
