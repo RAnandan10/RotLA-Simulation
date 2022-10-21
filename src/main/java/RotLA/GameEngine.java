@@ -4,6 +4,7 @@ import RotLA.adventurers.*;
 import RotLA.creatures.*;
 import RotLA.treasures.*;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Random;
 
 // This class drives the game. This class has public and private methods which are highly cohesive. This class is an example of Encapsulation and cohesion
@@ -15,7 +16,7 @@ public class GameEngine {
     public ArrayList<Creature> creatures;
     public ArrayList<Room> facility;
 
-    public Tracker track = new Tracker();
+    public Tracker track = Tracker.getInstance();
 
     /*Game engin constructor */
     GameEngine(){
@@ -38,6 +39,7 @@ public class GameEngine {
 
     // This method initializes the adventurers
     private void adventurersInitializer(){
+        // Adventurers are initialized based on strategy pattern for combat and search algorithms
         Adventurer brawler = new Adventurer(new Expert(), new Careless(), "Brawler");
         Adventurer sneaker = new Adventurer(new Stealth(), new Quick(), "Sneaker");
         Adventurer runner = new Adventurer(new Untrained(), new Quick(), "Runner");
@@ -49,6 +51,7 @@ public class GameEngine {
         Room startingPoint = facility.get(0);
         for(Adventurer adv: adventurers){
             startingPoint.addAdventurerToList(adv.type);
+            // Tracker is registered when an adventurer is initialized
             adv.registerSubscriber(track);
             adv.notifySubscribers(adv.type + " initialised " + adv.currentLocation);
         }
@@ -70,7 +73,6 @@ public class GameEngine {
             creatures.add(seeker);
             creatures.add(blinker);
         }
-        System.out.println(creatures.size());
     }
 
     // This method initializes the facility
@@ -129,6 +131,7 @@ public class GameEngine {
     private void treasureInitializer(){
         Room room;
         Random rand = new Random();
+        // Pick a random room from the facility and add a treasure
         for (int i =0; i<4 ; i++){
             Sword sword = new Sword();
             room = facility.get(rand.nextInt(facility.size()));
@@ -185,7 +188,7 @@ public class GameEngine {
     }
     private void turn(BoardRenderer board, int turn){
 
-        Logger log = new Logger(turn);
+        Logger log = Logger.getInstance(turn);
 
         // Gets all adventurers that are alive
         ArrayList<Adventurer> activeAdventurers = new ArrayList<>();
@@ -201,10 +204,12 @@ public class GameEngine {
                 activeCreatures.add(cre);
         }
 
+        // Logger is subscribed for all events of playing Adventurers in a turn
         for (Adventurer adv : activeAdventurers){
             adv.registerSubscriber(log);
         }
 
+        // Logger is subscribed for all events of playing creatures in a turn
         for (Creature cre : activeCreatures){
             cre.registerSubscriber(log);
         }
@@ -230,13 +235,13 @@ public class GameEngine {
                 }
                 creatureToFight = creaturesInRoom.get(index);
                 playingAdv.performAction="Fight";
-                //fight(getCreatureObjectFromCreatureType(creatureToFight), playingAdv);
                 Creature fightingCre = getCreatureObjectFromCreatureType(creatureToFight);
                 playingAdv.fight(playingAdv,fightingCre, newRoom);
+                // If playing Adventurer is dead after fight
                 if(!playingAdv.isAlive()) {
                     playingAdv.removeSubscriber(track);
-                    //activeAdventurers.remove(playingAdv);
                 }
+                // If fighting Creature is dead after fight
                 if(!fightingCre.isAlive) {
                     fightingCre.removeSubscriber(track);
                     activeCreatures.remove(fightingCre);
@@ -247,7 +252,15 @@ public class GameEngine {
                 playingAdv.performAction="Treasure";
                 Boolean foundTreasure = playingAdv.findTreasure(newRoom);
                 if(foundTreasure){
-                    this.totalTreasureCount++;
+                    this.totalTreasureCount++;                  //Treasure count increased if treasure is found
+                    //Extra move for adventurer if treasure found was Portal
+                    if(Objects.equals(playingAdv.treasureRetrieved.get(playingAdv.treasureRetrieved.size() - 1).treasureType, "Portal")){
+                        currentRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
+                        playingAdv.move(facility);
+                        currentRoom.removeAdventurerFromList(playingAdv.type);
+                        newRoom = getRoomObjectFromRoomId(playingAdv.currentLocation);
+                        newRoom.addAdventurerToList(playingAdv.type);
+                    }
                 }
             }
 
@@ -283,10 +296,11 @@ public class GameEngine {
                 Adventurer fightingAdv = getAdventurerObjectFromAdventurerType(adventurerToFight);
                 fightingAdv.performAction="Fight";
                 fightingAdv.fight(fightingAdv,playingCre, currentRoom);
+                // If playing Creature is dead after fight
                 if (!playingCre.isAlive) {
                     playingCre.removeSubscriber(track);
-                    //activeCreatures.remove(playingCre);
                 }
+                // If fighting Adventurer is dead after fight
                 if (!fightingAdv.isAlive()) {
                     fightingAdv.removeSubscriber(track);
                     activeAdventurers.remove(fightingAdv);
@@ -297,9 +311,12 @@ public class GameEngine {
                 return;
         }
 
+        // Logger is unsubscribed from playing Adventurers after a turn is over
         for (Adventurer adv : activeAdventurers){
             adv.removeSubscriber(log);
         }
+
+        // Logger is unsubscribed from playing creatures after a turn is over
         for (Creature cre : activeCreatures){
             cre.removeSubscriber(log);
         }
@@ -326,9 +343,9 @@ public class GameEngine {
             return Boolean.FALSE;
         }
 
-        // Game ends if 10 treasures are found
+        // Game ends if all treasures are found
         if (check_treasure_count() == 24){
-            System.out.println("    Game Over: 10 treasure found\n");
+            System.out.println("    Game Over: All treasures found\n");
             gameOver = Boolean.TRUE;
             return Boolean.FALSE;
         }
