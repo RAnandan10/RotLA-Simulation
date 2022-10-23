@@ -10,6 +10,6 @@ public class Potion extends Treasure {
 
     @Override
     public void treasureEffect(Adventurer adv) {
-        adv.maxDamage = 4;
+        adv.maxDamage++;
     }
 }

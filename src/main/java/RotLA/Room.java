@@ -84,4 +84,8 @@ public class Room {
         
     }
 
+    public ArrayList<String>  getConnectedRooms(){
+        return this.connectedRooms;
+    }
+
 }

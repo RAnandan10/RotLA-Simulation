@@ -18,6 +18,7 @@ public class Adventurer extends Publisher {
     public String currentLocation;         // Gives us the current room location of adventurer
     public String performAction;           // What action is to be performed by adventurer based on room status
     public ArrayList<Treasure> treasureRetrieved;
+    public String name;
 
     /**
      * 
@@ -49,14 +50,13 @@ public class Adventurer extends Publisher {
     }
 
     /**
-     * @param facility: array containing all room objects
+     * @param currentRoom: Room object where adventurer is present
+     * @param newRoom: Room object where adventurer will move to
      */
-    public void move(ArrayList<Room> facility){
-        Room currentRoom = getRoomObjectFromRoomId(this.currentLocation,facility);
-        ArrayList<String> neighbouringRooms = currentRoom.connectedRooms;
-        int options = neighbouringRooms.size();                                     // Gives us the possible neighbouring rooms the adventurer can move to
-        int index = (int)(Math.random()*options);                                   // Gives random index in neighbouringRooms to go to
-        this.currentLocation = neighbouringRooms.get(index);                        // Current location of adventurer is updated
+    public void move(Room currentRoom, Room newRoom){
+        currentRoom.removeAdventurerFromList(this.type);
+        this.currentLocation = newRoom.id;
+        newRoom.addAdventurerToList(this.type);
         this.notifySubscribers(this.type + " enters " + this.currentLocation);
     }
 
@@ -65,14 +65,13 @@ public class Adventurer extends Publisher {
      * 
      * 
      */
-    public Boolean findTreasure(Room room){
+    public void findTreasure(Room room){
         if( room.isTreasurePresent){
             int i = search.search(this,room);
             if(i==1){
-                return Boolean.TRUE;
+                this.treasureCount++;
             }
         }
-        return Boolean.FALSE;
     }
 
 
@@ -104,8 +103,7 @@ public class Adventurer extends Publisher {
             diceRolls = t.treasureEffectOnCombatDiceRolls(diceRolls[0],diceRolls[1]);
         }
 
-        Combat myFight = this.combat;
-        myFight = setCelebrations(myFight);
+        Combat myFight = setCelebrations();
 
         String fightOutcome = myFight.fight(diceRolls[0],diceRolls[1]);
         if (fightOutcome.contains("Adventurer wins")){
@@ -143,7 +141,8 @@ public class Adventurer extends Publisher {
          return r;
      }
 
-     private Combat setCelebrations(Combat myFight){
+     public Combat setCelebrations(){
+         Combat myFight = this.combat;
          Random rand = new Random();
          int number = rand.nextInt(3);
          for(int i = 0; i<number;i++){
