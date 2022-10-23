@@ -1,12 +1,9 @@
-Brawler enters 1-1-0
-Sneaker enters 3-0-2
-Runner enters 1-2-1
-Thief enters 1-2-0
-Thief treasure Sword
+Brawler enters 1-2-0
 Orbiter1 enters 2-0-1
 Blinker1 enters 4-0-0
-Orbiter2 enters 1-0-1
-Seeker2 enters 1-1-0
-Orbiter3 enters 2-0-1
-Blinker3 enters 3-2-1
-Orbiter4 enters 3-0-1
+Orbiter2 enters 2-1-0
+Brawler wins combat
+Blinker2 loses combat
+Brawler Celebrates: Shout Shout Jump Jump Spin 
+Blinker2 dead 1-2-0
+Blinker4 enters 2-1-1

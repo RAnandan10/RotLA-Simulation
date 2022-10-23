@@ -1,0 +1,3311 @@
+/Users/raasa/Library/Java/JavaVirtualMachines/openjdk-18.0.2.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=62679:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/raasa/Desktop/CUB/fall 22 classes/OOAD-5448/RotLA/out/production/RotLA RotLA.RotLA
+
+0-1-1:[Brawler, Sneaker, Runner, Thief]:[]
+1-0-0:[]:[Orbiter2]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[Seeker2]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[Orbiter1]
+2-2-0:[]:[Orbiter3]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Orbiter4]
+4-0-0:[]:[]        4-0-1:[]:[Blinker1]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[Blinker2, Blinker4]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[Blinker3]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 0 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Turn1
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Sneaker, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[Blinker4]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker1, Blinker3]
+3-0-0:[]:[Blinker2]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 0 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	1-1-1	0	[]
+Runner	1-1-1	0	[]
+Thief	1-1-1	0	[]
+
+Total Active Creatures:12
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	2-2-2
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Blinker2	3-0-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	2-2-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Blinker4	2-1-2
+Turn2
+
+0-1-1:[Brawler]:[]
+1-0-0:[]:[Blinker3]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[Runner]:[Seeker2]        1-1-1:[]:[]        1-1-2:[Sneaker, Thief]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[Blinker2]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[Blinker4]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 0 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	0-1-1	0	[]
+Sneaker	1-1-2	0	[]
+Runner	1-1-0	0	[]
+Thief	1-1-2	0	[]
+
+Total Active Creatures:12
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-2-1
+Orbiter2	1-0-1
+Seeker2	1-1-0
+Blinker2	3-0-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	1-0-0
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Blinker4	3-1-1
+Turn3
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[Blinker1]
+1-1-0:[]:[]        1-1-1:[Brawler, Sneaker, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4, Blinker3]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Blinker2]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1, Blinker4]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	1-1-1	0	[]
+Runner	1-1-1	0	[]
+Thief	1-1-1	0	[Potion]
+
+Total Active Creatures:12
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-0-2
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Blinker2	4-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	2-1-1
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Blinker4	4-2-0
+Turn4
+
+0-1-1:[Brawler]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2, Blinker2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[Blinker4]        1-1-2:[]:[]
+1-2-0:[Thief]:[Blinker1, Seeker2]        1-2-1:[Runner]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker]:[Seeker4, Blinker3]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	0-1-1	0	[]
+Sneaker	2-1-1	0	[]
+Runner	1-2-1	0	[]
+Thief	1-2-0	0	[Potion]
+
+Total Active Creatures:12
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-2-0
+Orbiter2	1-0-1
+Seeker2	1-2-0
+Blinker2	1-0-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	2-1-1
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Blinker4	1-1-1
+Turn5
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[Blinker2]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Sneaker]:[Seeker4]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Blinker1, Blinker3]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 3 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	2-0-0	0	[]
+Runner	1-1-1	0	[]
+Thief	1-1-1	0	[Potion]
+
+Total Active Creatures:11
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-2-2
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Blinker2	1-2-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	3-2-2
+Orbiter4	3-0-1
+Seeker4	2-0-0
+Turn6
+
+0-1-1:[]:[]
+1-0-0:[Runner]:[Seeker2]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Thief]:[]        1-2-1:[Brawler]:[]        1-2-2:[]:[Blinker1]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[Blinker3]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-1	0	[]
+Sneaker	2-1-1	0	[]
+Runner	1-0-0	0	[]
+Thief	1-2-0	0	[Potion]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-2-2
+Orbiter2	1-0-1
+Seeker2	1-0-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	4-0-1
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn7
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Sneaker]:[Seeker4]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[Blinker1]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[Blinker3]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 0 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	2-0-0	0	[]
+Runner	1-1-1	0	[]
+Thief	1-1-1	0	[Potion]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-0-0
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	3-0-2
+Orbiter4	3-0-1
+Seeker4	2-0-0
+Turn8
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[Runner]:[Orbiter2, Seeker2, Blinker3]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[Thief]:[]
+1-2-0:[]:[]        1-2-1:[Brawler]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Blinker1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-1	0	[]
+Sneaker	2-1-1	0	[]
+Runner	1-0-1	1	[]
+Thief	1-1-2	0	[Potion]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	2-0-1
+Orbiter2	1-0-1
+Seeker2	1-0-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	1-0-1
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn9
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[Blinker3]
+2-2-0:[]:[]        2-2-1:[]:[Blinker1]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 1 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	1-1-1	0	[Potion]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	2-2-1
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	2-1-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn10
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[Brawler]:[Seeker2]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Thief]:[]        1-2-1:[Runner]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[Sneaker]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker3]        3-2-2:[]:[]
+4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-0	0	[]
+Sneaker	3-0-2	0	[]
+Runner	1-2-1	1	[]
+Thief	1-2-0	0	[Potion, Sword]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	4-0-0
+Orbiter2	1-0-1
+Seeker2	1-1-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	3-2-1
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn11
+
+0-1-1:[]:[]
+1-0-0:[]:[Blinker3]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[Blinker1]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 4 Remaining
+Seekers - 4 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	1-1-1	0	[Potion, Sword]
+
+Total Active Creatures:10
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-0-2
+Orbiter2	1-0-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Blinker3	1-0-0
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn12
+
+0-1-1:[]:[]
+1-0-0:[Thief]:[Seeker2]        1-0-1:[Brawler]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Runner]:[Blinker1]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[Sneaker]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 4 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-0-1	0	[]
+Sneaker	3-1-2	0	[]
+Runner	1-2-0	1	[]
+Thief	1-0-0	0	[Potion, Sword]
+
+Total Active Creatures:8
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-2-0
+Seeker2	1-0-0
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn13
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 4 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	1-1-1	0	[Potion, Sword]
+
+Total Active Creatures:8
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-2-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn14
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Brawler]:[Seeker2]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Thief]:[]        1-2-2:[Runner]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[Sneaker]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 4 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-0-2	0	[]
+Sneaker	3-2-1	0	[]
+Runner	1-2-2	1	[]
+Thief	1-2-1	0	[Potion, Sword]
+
+Total Active Creatures:8
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-2-1
+Seeker2	1-0-2
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn15
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Blinker1]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Seeker4]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 4 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	1-1-1	0	[Potion, Sword]
+
+Total Active Creatures:8
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-0-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Seeker4	2-1-1
+Turn16
+
+0-1-1:[Runner]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[Seeker2]
+1-1-0:[Brawler]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[Blinker1]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-0	0	[]
+Sneaker	2-1-1	0	[]
+Runner	0-1-1	1	[]
+Thief	1-0-2	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-1-1
+Seeker2	1-0-2
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn17
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[Blinker1]        1-1-1:[Brawler, Runner, Thief]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[Sneaker]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	2-0-2	0	[]
+Runner	1-1-1	1	[]
+Thief	1-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	1-1-0
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn18
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Brawler]:[Seeker2]        1-2-2:[Runner]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1, Blinker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-1	0	[]
+Sneaker	2-1-1	0	[]
+Runner	1-2-2	1	[]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	4-2-0
+Seeker2	1-2-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn19
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[Thief]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	2-2-2	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-2-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn20
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[Brawler, Runner]:[Seeker2]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker1]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[Sneaker]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-2	0	[]
+Sneaker	3-2-2	0	[]
+Runner	1-1-2	1	[]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	3-1-2
+Seeker2	1-1-2
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn21
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Runner]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[Thief]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker1]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Seeker1]        4-2-1:[]:[]        4-2-2:[]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	1	[]
+Thief	2-2-0	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-0
+Blinker1	2-2-2
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn22
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Brawler]:[Seeker2]        1-1-1:[]:[]        1-1-2:[Runner]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Blinker1]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-0	0	[]
+Sneaker	4-1-1	0	[]
+Runner	1-1-2	1	[]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	2-0-0
+Seeker2	1-1-0
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn23
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[Blinker1]        1-1-1:[Brawler, Runner]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[Thief]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[Sneaker]:[Seeker1, Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 0 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	4-2-2	0	[]
+Runner	1-1-1	1	[]
+Thief	2-0-2	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-2
+Blinker1	1-1-0
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn24
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Brawler]:[Seeker2]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner, Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-1	0	[]
+Sneaker	4-1-1	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	3-2-1
+Seeker2	1-2-1
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn25
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[Thief]:[]        2-2-2:[Runner]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[Blinker1]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[Sneaker]:[Seeker1, Seeker3]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	4-2-1	0	[]
+Runner	2-2-2	1	[Potion]
+Thief	2-2-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-2-1
+Blinker1	4-0-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-2-1
+Orbiter4	3-0-1
+Turn26
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Brawler]:[Seeker2]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner, Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker1, Blinker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-0	0	[]
+Sneaker	4-1-1	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	4-1-1
+Seeker2	1-1-0
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn27
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Runner]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[Thief]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker1]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[Sneaker]:[Seeker1, Seeker3]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	4-0-0	0	[]
+Runner	2-0-0	1	[Potion]
+Thief	2-2-2	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-0-0
+Blinker1	3-1-2
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-0-0
+Orbiter4	3-0-1
+Turn28
+
+0-1-1:[Brawler]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[Seeker2]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner, Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	0-1-1	0	[]
+Sneaker	4-1-1	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	2-1-1	0	[Potion, Sword]
+
+Total Active Creatures:7
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	3-2-1
+Seeker2	1-1-1
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn29
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[Blinker1]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[Runner]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 2 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	2-2-1	1	[Potion]
+Thief	1-1-1	0	[Potion, Sword]
+
+Total Active Creatures:6
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	2-0-2
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn30
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Brawler]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Thief]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[Sneaker]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[Blinker1]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-0	0	[]
+Sneaker	3-1-0	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	1-2-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:6
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	4-0-1
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn31
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[Runner]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[Blinker1]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	2-2-1	1	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:6
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	3-1-2
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn32
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Thief]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Brawler]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Blinker1, Orbiter4]        3-0-2:[]:[]
+3-1-0:[Sneaker]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 3 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-1	0	[]
+Sneaker	3-1-0	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	1-1-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:6
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	3-0-1
+Orbiter3	2-0-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn33
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Runner]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Blinker1]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	2-0-1	1	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:5
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	2-1-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn34
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Brawler, Runner]:[Blinker1]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[Sneaker]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	2-1-1	0	[]
+Sneaker	3-0-1	0	[]
+Runner	2-1-1	1	[Potion]
+Thief	1-0-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:5
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	2-1-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn35
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[Brawler]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker, Runner]:[]        3-1-2:[]:[]
+3-2-0:[]:[Blinker1]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker1, Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 1 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 2 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	2-1-0	0	[]
+Sneaker	3-1-1	0	[]
+Runner	3-1-1	1	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:5
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	4-1-1
+Blinker1	3-2-0
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn36
+
+0-1-1:[Thief]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[Blinker1]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[Runner]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	2-1-1	0	[]
+Sneaker	4-1-1	0	[]
+Runner	3-0-1	2	[Potion]
+Thief	0-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-2-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn37
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Runner]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[Sneaker]:[Seeker3]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	4-1-0	0	[]
+Runner	3-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-0-0
+Seeker3	4-1-0
+Orbiter4	3-0-1
+Turn38
+
+0-1-1:[Thief]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[Blinker1]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Brawler]:[]        3-2-1:[]:[]        3-2-2:[Runner]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-2-0	0	[]
+Sneaker	4-1-1	0	[]
+Runner	3-2-2	2	[Potion]
+Thief	0-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-0-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn39
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Runner]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[Blinker1]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[Sneaker]:[Seeker3]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	4-2-2	0	[]
+Runner	3-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-0-2
+Seeker3	4-2-2
+Orbiter4	3-0-1
+Turn40
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Thief]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[Blinker1]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[Brawler, Runner]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-2-1	0	[]
+Sneaker	4-1-1	0	[]
+Runner	3-2-1	2	[Potion]
+Thief	1-1-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-0-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn41
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[Blinker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Runner]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[Sneaker]:[Seeker3]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	4-2-1	0	[]
+Runner	3-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-2-0
+Seeker3	4-2-1
+Orbiter4	3-0-1
+Turn42
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[Blinker1]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[Brawler]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[Runner]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-0-2	0	[]
+Sneaker	4-1-1	0	[]
+Runner	3-2-2	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-1-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn43
+
+0-1-1:[]:[]
+1-0-0:[]:[Blinker1]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[Thief]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Runner]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[Sneaker]:[Seeker3]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	4-2-0	0	[]
+Runner	3-1-1	2	[Potion]
+Thief	2-1-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-0-0
+Seeker3	4-2-0
+Orbiter4	3-0-1
+Turn44
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner, Thief]:[Blinker1]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Brawler]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Sneaker]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-2-0	0	[]
+Sneaker	4-1-1	0	[]
+Runner	2-1-1	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-1-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn45
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[Blinker1]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-2-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn46
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Runner]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Blinker1]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[Brawler]:[]        3-0-1:[Sneaker]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-0-0	0	[]
+Sneaker	3-0-1	0	[]
+Runner	1-2-1	2	[Potion]
+Thief	1-0-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-1-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn47
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[Blinker1]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-1-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn48
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[Runner]:[]
+1-2-0:[Thief]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Blinker1]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[Brawler, Sneaker]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-0-0	0	[]
+Sneaker	3-0-0	0	[]
+Runner	1-1-2	2	[Potion]
+Thief	1-2-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-0-0
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn49
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[Blinker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-2-0
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn50
+
+0-1-1:[Runner]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[Blinker1]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[Brawler]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[Sneaker]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-0	0	[]
+Sneaker	3-2-2	0	[]
+Runner	0-1-1	2	[Potion]
+Thief	1-0-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-0-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn51
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[Blinker1]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-1-0
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn52
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Runner]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[Blinker1]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[Brawler]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Sneaker]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-0	0	[]
+Sneaker	3-2-0	0	[]
+Runner	1-0-2	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-1-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn53
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[Thief]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	2-1-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-2-1
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn54
+
+0-1-1:[]:[]
+1-0-0:[Runner]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[Sneaker]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[Blinker1]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Brawler]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-2-0	0	[]
+Sneaker	3-0-0	0	[]
+Runner	1-0-0	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-1-0
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn55
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[Thief]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler, Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Blinker1]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Seeker3]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 1 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	2-2-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:4
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-2-2
+Seeker3	4-1-1
+Orbiter4	3-0-1
+Turn56
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Runner]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Sneaker]:[]        3-2-1:[]:[]        3-2-2:[]:[Blinker1]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	3-2-0	0	[]
+Runner	1-0-2	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-2-2
+Orbiter4	3-0-1
+Turn57
+
+0-1-1:[]:[]
+1-0-0:[]:[Blinker1]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Thief]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[Brawler]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-2	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	2-0-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-0-0
+Orbiter4	3-0-1
+Turn58
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Runner]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[Blinker1]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[Sneaker]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	3-2-1	0	[]
+Runner	1-2-0	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-1-0
+Orbiter4	3-0-1
+Turn59
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Blinker1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[Thief]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[Brawler]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 0 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-0	0	[]
+Sneaker	3-1-1	0	[]
+Runner	1-1-1	2	[Potion]
+Thief	2-2-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-0-1
+Orbiter4	3-0-1
+Turn60
+
+0-1-1:[]:[]
+1-0-0:[Runner]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Thief]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[Blinker1]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[Sneaker]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	3-2-0	0	[Gem]
+Runner	1-0-0	2	[Potion]
+Thief	2-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-0-0
+Orbiter4	3-0-1
+Turn61
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Sneaker]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[Brawler]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[Blinker1]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-2	0	[]
+Sneaker	3-1-1	0	[Gem]
+Runner	1-1-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-2-1
+Orbiter4	3-0-1
+Turn62
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Thief]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[Blinker1]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	2	[Potion]
+Thief	1-2-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	3-2-0
+Orbiter4	3-0-1
+Turn63
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[Blinker1]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[Sneaker]:[]        2-2-1:[Runner]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[Brawler]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-0	0	[]
+Sneaker	2-2-0	0	[Gem]
+Runner	2-2-1	2	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-2-2
+Orbiter4	3-0-1
+Turn64
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Thief]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Blinker1]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 2 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	2	[Potion]
+Thief	1-1-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	2-0-0
+Orbiter4	3-0-1
+Turn65
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Runner]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[Sneaker]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[Brawler]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-2	0	[]
+Sneaker	2-2-1	0	[Gem]
+Runner	2-0-1	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-0-0
+Orbiter4	3-0-1
+Turn66
+
+0-1-1:[Thief]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[Blinker1]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	0-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	1-2-1
+Orbiter4	3-0-1
+Turn67
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Sneaker]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[Runner]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[Brawler]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Blinker1]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-1	0	[]
+Sneaker	2-0-0	0	[Gem]
+Runner	2-0-2	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:3
+Creatures	 Room
+Orbiter1	2-0-1
+Blinker1	4-1-1
+Orbiter4	3-0-1
+Turn68
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-0-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn69
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[Sneaker, Runner]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[Brawler]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-0	0	[]
+Sneaker	2-1-2	0	[Gem]
+Runner	2-1-2	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn70
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Thief]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-2-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn71
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[Sneaker]:[]
+2-2-0:[]:[]        2-2-1:[Runner]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[Brawler]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-0	0	[]
+Sneaker	2-1-2	0	[Gem]
+Runner	2-2-1	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn72
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Thief]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Sneaker, Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	2-1-1	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-2-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn73
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[Runner]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[Brawler]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-0	0	[]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-2	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn74
+
+0-1-1:[]:[]
+1-0-0:[Thief]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Sneaker]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	1-1-0	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-0-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:2
+Creatures	 Room
+Orbiter1	2-0-1
+Orbiter4	3-0-1
+Turn75
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Runner]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[Brawler]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-0	0	[]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-1	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn76
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[Thief]:[]
+1-2-0:[]:[]        1-2-1:[Sneaker]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	1-2-1	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-1-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn77
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Runner]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[Brawler]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-0-0	0	[]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-1	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn78
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Sneaker]:[]
+1-1-0:[Thief]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	1-0-2	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-1-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn79
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[Runner]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[Brawler]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-2	0	[]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-0	3	[Potion]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn80
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[Thief]:[]
+1-1-0:[Sneaker]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 1 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	1-1-0	0	[Gem]
+Runner	2-1-1	3	[Potion]
+Thief	1-0-2	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn81
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Runner]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	0	[]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-1	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn82
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Thief]:[]        1-2-1:[Sneaker]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[]
+Sneaker	1-2-1	0	[Gem]
+Runner	2-1-1	3	[Potion, Portal]
+Thief	1-2-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn83
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[Runner]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	0	[Sword]
+Sneaker	1-1-1	0	[Gem]
+Runner	2-0-2	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn84
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[Thief]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[Sneaker]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Runner]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[Sword]
+Sneaker	1-2-1	0	[Gem]
+Runner	2-1-1	3	[Potion, Portal]
+Thief	1-1-0	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn85
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	0	[Sword]
+Sneaker	1-1-1	0	[Gem]
+Runner	1-1-1	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn86
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[Sneaker]:[]
+1-2-0:[]:[]        1-2-1:[Thief]:[]        1-2-2:[Runner]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	0	[Sword]
+Sneaker	1-1-2	0	[Gem]
+Runner	1-2-2	3	[Potion, Portal]
+Thief	1-2-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn87
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[Sword]
+Sneaker	1-1-1	0	[Gem]
+Runner	1-1-1	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn88
+
+0-1-1:[Thief]:[]
+1-0-0:[]:[]        1-0-1:[Sneaker, Runner]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[Brawler]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-2-1	0	[Sword]
+Sneaker	1-0-1	0	[Gem]
+Runner	1-0-1	3	[Potion, Portal]
+Thief	0-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn89
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Sneaker, Runner, Thief]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Orbiter4]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 1 Treasure(s) 0 Damage
+Sneaker - 1 Treasure(s) 0 Damage
+Runner - 2 Treasure(s) 3 Damage
+Thief - 3 Treasure(s) 0 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	0	[Sword]
+Sneaker	1-1-1	0	[Gem]
+Runner	1-1-1	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:1
+Creatures	 Room
+Orbiter4	3-0-1
+Turn90
+    Game Over : All creatures are dead
+
+Total Active Adventurers:4
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-0-1	0	[Sword]
+Sneaker	1-1-1	0	[Gem]
+Runner	1-1-1	3	[Potion, Portal]
+Thief	1-1-1	0	[Potion, Sword, Armor]
+
+Total Active Creatures:0
+Creatures	 Room
+
+Process finished with exit code 0
