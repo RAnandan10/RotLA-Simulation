@@ -14,13 +14,13 @@ import org.jfree.data.category.DefaultCategoryDataset;
  This class is used to generate the line chart for RotLA game
 */
 public class LineChart {
-    private DefaultCategoryDataset line_chart_dataset = new DefaultCategoryDataset();
+    private DefaultCategoryDataset dataset = new DefaultCategoryDataset();
 
     // This method is used to add new data points after each turn
     public void AddData(ArrayList<Integer> turnStats, String turn) {
-        this.line_chart_dataset.addValue( turnStats.get(0) , "Treasure found" , turn );
-        this.line_chart_dataset.addValue( turnStats.get(1) , "Adventurer damage" , turn );
-        this.line_chart_dataset.addValue( turnStats.get(2) , "Creature active" , turn );
+        this.dataset.addValue( turnStats.get(0) , "Treasure found" , turn );
+        this.dataset.addValue( turnStats.get(1) , "Adventurer damage" , turn );
+        this.dataset.addValue( turnStats.get(2) , "Creature active" , turn );
     }
 
     // This method is used generate the Line chart and save it
@@ -28,7 +28,7 @@ public class LineChart {
         JFreeChart lineChartObject = ChartFactory.createLineChart(
                 "Game Statistics for each turn","Turn",
                 "Count",
-                line_chart_dataset,PlotOrientation.VERTICAL,
+                dataset,PlotOrientation.VERTICAL,
                 true,true,false);
 
         int width = 1080;    /* Width of the image */
