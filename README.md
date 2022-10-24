@@ -26,7 +26,7 @@ Java version: openjdk 17.0.4.1 2022-08-12
 8. All events are notified to registered subscribers. Tracker ignores any events that are not useful to it. 
 9. Project Structure:  
   &nbsp; The main function is in RotLA.java.  
-  &nbsp; All the files required to run the program are in src/main folder.
+  &nbsp; All the files required to run the program are in src/main folder.  
   &nbsp; All the test files are in src/test folder.
 10. JUnit test results are avibale in file - JUnitResults.png
 11. Line chart result is avibale in file - RotLASummary.jpeg
