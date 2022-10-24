@@ -28,8 +28,8 @@ Java version: openjdk 17.0.4.1 2022-08-12
   &nbsp; The main function is in RotLA.java.  
   &nbsp; All the files required to run the program are in src/main folder.  
   &nbsp; All the test files are in src/test folder.
-10. JUnit test results are avibale in file - JUnitResults.png
-11. Line chart result is avibale in file - RotLASummary.jpeg
+10. JUnit test results are avaibale in file - JUnitResults.png
+11. Line chart result is avaibale in file - RotLASummary.jpeg
 12. Maven tool is used to build the tests and dependencies are listed under pom.xml
 13. RotLA game is interactive and allows user to enter commands
 14. Incorrect commands including typos will result in game termination
