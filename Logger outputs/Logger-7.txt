@@ -1,12 +1,6 @@
-Brawler loses combat
-Orbiter3 wins combat
-Brawler damage 3
 Orbiter1 enters 2-0-1
-Blinker1 enters 2-1-1
-Orbiter2 enters 2-1-0
-Blinker2 enters 1-2-1
-Brawler wins combat
-Orbiter3 loses combat
-Brawler Celebrates: Shout Shout Dance Jump 
-Orbiter3 dead 1-1-0
-Blinker4 enters 4-1-2
+Blinker2 enters 2-1-0
+Orbiter3 enters 2-0-1
+Blinker3 enters 3-1-1
+Orbiter4 enters 3-1-0
+Blinker4 enters 3-1-0

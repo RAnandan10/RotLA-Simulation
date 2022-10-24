@@ -1,9 +1,3 @@
-Brawler loses combat
-Seeker4 wins combat
-Brawler damage 9
-Blinker1 enters 4-2-0
-Brawler wins combat
-Seeker4 loses combat
-Brawler Celebrates: Jump Spin 
-Seeker4 dead 3-1-1
-Blinker4 enters 3-0-2
+Brawler Celebrates: Shout Shout Jump Jump Spin Spin 
+Blinker3 enters 4-0-2
+Blinker4 enters 2-2-1

@@ -1,1 +1,5 @@
-Brawler enters 0-1-1
+Blinker4 enters 4-1-2
+Brawler wins combat
+Blinker4 loses combat
+Brawler Celebrates: Jump 
+Blinker4 dead 4-1-2

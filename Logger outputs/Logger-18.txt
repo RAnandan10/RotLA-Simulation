@@ -1,7 +1,6 @@
-Brawler enters 2-1-0
-Blinker1 enters 3-1-2
-Brawler wins combat
-Orbiter2 loses combat
-Brawler Celebrates: Shout Spin Spin 
-Orbiter2 dead 2-1-0
-Blinker4 enters 3-2-0
+Brawler enters 3-1-0
+Blinker3 enters 3-0-1
+Brawler loses combat
+Orbiter4 wins combat
+Brawler damage 3
+Blinker4 enters 1-2-0
