@@ -138,6 +138,3 @@ class CreatureTrackerObject{
     }
 }
 
-enum Adventurers{
-    Brawler, Runner, Sneaker, Thief
-}
