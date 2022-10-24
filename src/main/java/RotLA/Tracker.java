@@ -100,6 +100,14 @@ public class Tracker implements Observers {
                 System.out.println(cre.type+"\t"+cre.location);
         }
     }
+
+    public ArrayList<Integer> getTurnSummary(){
+        ArrayList<Integer> turnStatistics = new ArrayList<>();
+        turnStatistics.add(this.adventurers.get(0).treasuresCollected.size());
+        turnStatistics.add(this.adventurers.get(0).currentDamage);
+        turnStatistics.add(this.creCount);
+        return turnStatistics;
+    }
 }
 
 class AdventurerTrackerObject{
