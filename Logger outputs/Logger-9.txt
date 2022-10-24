@@ -1,7 +1,7 @@
-Brawler enters 1-1-1
-Brawler damage 5
+Brawler treasure Sword
 Orbiter1 enters 2-0-1
-Blinker1 enters 2-2-2
-Orbiter2 enters 2-1-0
-Blinker2 enters 1-2-0
-Blinker4 enters 4-2-2
+Blinker2 enters 4-0-2
+Orbiter3 enters 2-0-1
+Blinker3 enters 2-1-1
+Orbiter4 enters 3-1-0
+Blinker4 enters 2-1-2

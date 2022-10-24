@@ -19,6 +19,7 @@ public class GameEngine {
 
     public Tracker track = Tracker.getInstance();
     private Command command;
+    private LineChart chart;
 
     /*Game engin constructor */
     GameEngine(){
@@ -27,6 +28,7 @@ public class GameEngine {
         this.adventurers = new ArrayList<>();
         this.creatures = new ArrayList<>();
         this.facility = new ArrayList<>();
+        this.chart = new LineChart();
     }
 
     // This method initializes the game
@@ -431,9 +433,15 @@ public class GameEngine {
         while(!gameOver){
             System.out.println("Turn" + turn);
             turn(board,turn);
-            turn ++;
             track.printTracker();
-        }   
+            chart.AddData(track.getTurnSummary(),Integer.toString(turn));
+            turn ++;
+        }
+        try {
+                chart.plotGameChart();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
     }
 
     //Method to get a Room object using room id

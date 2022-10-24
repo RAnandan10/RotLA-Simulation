@@ -1,2 +1,3 @@
-Brawler enters 3-1-1
-Blinker1 enters 1-1-0
+Brawler enters 4-1-1
+Blinker3 enters 2-2-1
+Blinker4 enters 4-2-0

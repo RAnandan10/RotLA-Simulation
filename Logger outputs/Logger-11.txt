@@ -1,5 +1,25 @@
-Brawler enters 1-1-1
+Brawler enters 2-1-1
 Orbiter1 enters 2-0-1
-Blinker1 enters 2-0-0
-Orbiter2 enters 2-1-0
-Blinker4 enters 3-1-2
+Seeker1 enters 2-1-1
+Brawler wins combat
+Seeker1 loses combat
+Brawler Celebrates: Shout Dance Dance Jump Jump 
+Seeker1 dead 2-1-1
+Seeker2 enters 2-1-1
+Brawler wins combat
+Seeker2 loses combat
+Brawler Celebrates: Shout Dance Dance Spin Spin 
+Seeker2 dead 2-1-1
+Brawler wins combat
+Blinker2 loses combat
+Brawler Celebrates: Dance Spin Spin 
+Blinker2 dead 2-1-1
+Orbiter3 enters 2-0-1
+Blinker3 enters 4-0-1
+Orbiter4 enters 3-1-0
+Seeker4 enters 2-1-1
+Brawler wins combat
+Seeker4 loses combat
+Brawler Celebrates: Shout Shout Dance Jump Jump Spin Spin 
+Seeker4 dead 2-1-1
+Blinker4 enters 4-0-1

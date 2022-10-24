@@ -1,12 +1,7 @@
-Brawler enters 3-1-1
-Seeker1 enters 3-1-1
+Brawler enters 3-1-0
+Blinker3 enters 2-2-2
 Brawler wins combat
-Seeker1 loses combat
-Brawler Celebrates: Dance Jump Jump 
-Seeker1 dead 3-1-1
-Blinker1 enters 4-1-1
-Seeker4 enters 3-1-1
-Brawler loses combat
-Seeker4 wins combat
-Brawler damage 8
-Blinker4 enters 4-2-0
+Orbiter4 loses combat
+Brawler Celebrates: Shout 
+Orbiter4 dead 3-1-0
+Blinker4 enters 1-0-1

@@ -1,5 +1,4 @@
-/Users/raasa/Library/Java/JavaVirtualMachines/openjdk-18.0.2.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=57668:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/raasa/Desktop/CUB/fall 22 classes/OOAD-5448/RotLA/target/classes:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.0/junit-jupiter-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/raasa/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/raasa/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/raasa/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.0/junit-jupiter-params-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar RotLA.RotLA
-Game simulation 1
+/Users/raasa/Library/Java/JavaVirtualMachines/openjdk-18.0.2.1/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=50186:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath /Users/raasa/Desktop/CUB/fall 22 classes/OOAD-5448/RotLA/target/classes:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.0/junit-jupiter-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.0/junit-jupiter-api-5.9.0.jar:/Users/raasa/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/raasa/.m2/repository/org/junit/platform/junit-platform-commons/1.9.0/junit-platform-commons-1.9.0.jar:/Users/raasa/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.0/junit-jupiter-params-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.0/junit-jupiter-engine-5.9.0.jar:/Users/raasa/.m2/repository/org/junit/platform/junit-platform-engine/1.9.0/junit-platform-engine-1.9.0.jar:/Users/raasa/.m2/repository/org/jfree/jfreechart/1.0.18/jfreechart-1.0.18.jar:/Users/raasa/.m2/repository/org/jfree/jcommon/1.0.21/jcommon-1.0.21.jar:/Users/raasa/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar RotLA.RotLA
 Choose type of Adventurer from below options:
 1. Brawler
 2. Sneaker
@@ -12,18 +11,18 @@ Indiana Jones
 Custom adventurer Indiana Jones of type Brawler created!
 
 0-1-1:[Brawler]:[]
-1-0-0:[]:[Orbiter4]        1-0-1:[]:[]        1-0-2:[]:[Seeker2, Seeker3]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[Orbiter3]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[Orbiter2]        1-1-1:[]:[]        1-1-2:[]:[Seeker3]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[Orbiter1]
-2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[Orbiter2]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[]        2-0-2:[]:[Orbiter1]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[Orbiter3]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
 3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[Blinker4]
-4-1-0:[]:[Blinker2]        4-1-1:[]:[Blinker3]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[Blinker1]        4-2-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Orbiter4]
+4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[Blinker2]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[Blinker3, Blinker4]
 Brawler - 0 Treasure(s) 0 Damage
 
 Orbiters - 4 Remaining
@@ -37,137 +36,51 @@ Empty Room. You can perform one of the fo1lowing actions
 3. Celebrate
 Enter action :
 Move
-
 Select a room to move to
 1. 1-1-1
 1
 
 0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[Orbiter3, Orbiter4]        1-1-1:[Brawler]:[Seeker2]        1-1-2:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Orbiter2]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler]:[Seeker3]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Blinker4]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker1]
-3-2-0:[]:[Blinker3]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[Blinker3]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Blinker1]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[Blinker2]        4-1-1:[]:[]        4-1-2:[]:[]
+4-1-0:[]:[Blinker4]        4-1-1:[]:[Blinker2]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 0 Treasure(s) 1 Damage
+Brawler - 0 Treasure(s) 0 Damage
 
 Orbiters - 4 Remaining
-Seekers - 3 Remaining
+Seekers - 4 Remaining
 Blinkers - 4 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	1	[]
+Brawler	1-1-1	0	[]
 
-Total Active Creatures:11
+Total Active Creatures:12
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	3-1-2
-Orbiter2	2-1-0
-Seeker2	1-1-1
-Blinker2	4-1-0
-Orbiter3	1-1-0
-Blinker3	3-2-0
-Orbiter4	1-1-0
-Seeker4	3-2-2
-Blinker4	2-0-1
+Seeker1	2-2-0
+Blinker1	3-0-1
+Orbiter2	1-0-1
+Seeker2	2-0-0
+Blinker2	4-1-1
+Orbiter3	2-0-1
+Seeker3	1-1-1
+Blinker3	2-2-1
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	4-1-0
 Turn2
 Enter action to be performed by Adventurer: Indiana Jones
 Creature(s) present in Room. You can perform one of the fo1lowing actions
 1. Fight
 2. Move
-Enter action :
-Fight
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[Orbiter3, Orbiter4]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[Blinker3]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker2]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[Blinker1]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[Blinker4]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 0 Treasure(s) 1 Damage
-
-Orbiters - 4 Remaining
-Seekers - 2 Remaining
-Blinkers - 4 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	1	[]
-
-Total Active Creatures:10
-Creatures	 Room
-Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	3-1-0
-Orbiter2	2-1-0
-Blinker2	2-2-2
-Orbiter3	1-1-0
-Blinker3	2-1-2
-Orbiter4	1-1-0
-Seeker4	3-2-2
-Blinker4	4-1-0
-Turn3
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Search
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[Blinker2]
-1-1-0:[]:[Orbiter3, Orbiter4]        1-1-1:[Brawler]:[]        1-1-2:[]:[Blinker3]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2, Blinker4]        2-1-1:[]:[Blinker1]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 1 Damage
-
-Orbiters - 4 Remaining
-Seekers - 2 Remaining
-Blinkers - 4 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	1	[Gem]
-
-Total Active Creatures:10
-Creatures	 Room
-Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-1-1
-Orbiter2	2-1-0
-Blinker2	1-0-2
-Orbiter3	1-1-0
-Blinker3	1-1-2
-Orbiter4	1-1-0
-Seeker4	3-2-2
-Blinker4	2-1-0
-Turn4
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
 Enter action :
 Move
 Select a room to move to
@@ -181,41 +94,127 @@ Select a room to move to
 8. 1-2-2
 9. 0-1-1
 10. 2-1-1
-5
+2
+You moved when Creature present in room. You will suffer 1 point damage for each creature in room!
 
 0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[Blinker2]        1-0-2:[]:[]
-1-1-0:[]:[Orbiter3, Orbiter4]        1-1-1:[]:[]        1-1-2:[Brawler]:[]
+1-0-0:[]:[]        1-0-1:[Brawler]:[Seeker3]        1-0-2:[]:[]
+1-1-0:[]:[Blinker1]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[Blinker1]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1, Blinker4]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[Blinker2]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[Blinker4]        3-0-1:[]:[]        3-0-2:[]:[Blinker3]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 1 Damage
+Brawler - 0 Treasure(s) 1 Damage
 
-Orbiters - 4 Remaining
-Seekers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 4 Remaining
+Blinkers - 4 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-0-1	1	[]
+
+Total Active Creatures:11
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	2-2-0
+Blinker1	1-1-0
+Seeker2	2-0-0
+Blinker2	2-0-2
+Orbiter3	2-0-1
+Seeker3	1-0-1
+Blinker3	3-0-2
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	3-0-0
+Turn3
+Enter action to be performed by Adventurer: Indiana Jones
+Creature(s) present in Room. You can perform one of the fo1lowing actions
+1. Fight
+2. Move
+Enter action :
+Fight
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[Brawler]:[]        1-0-2:[]:[]
+1-1-0:[]:[Blinker3]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Blinker2]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[Blinker4]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 1 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
 Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-2	1	[Gem]
+Brawler	1-0-1	1	[]
 
 Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-0-2
-Orbiter2	2-1-0
-Blinker2	1-0-1
-Orbiter3	1-1-0
-Orbiter4	1-1-0
-Seeker4	3-2-2
-Blinker4	3-0-2
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	2-1-1
+Orbiter3	2-0-1
+Blinker3	1-1-0
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	4-0-0
+Turn4
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Celebrate
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[Brawler]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Seeker2, Blinker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Blinker3]
+4-0-0:[]:[]        4-0-1:[]:[Blinker4]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 1 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 3 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-0-1	1	[]
+
+Total Active Creatures:9
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	2-0-0
+Orbiter3	2-0-1
+Blinker3	3-2-2
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	4-0-1
 Turn5
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
@@ -223,44 +222,41 @@ Empty Room. You can perform one of the fo1lowing actions
 2. Search
 3. Celebrate
 Enter action :
-Move
-Select a room to move to
-1. 1-1-1
-1
+Search
 
 0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[Orbiter3, Orbiter4]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
+1-0-0:[]:[]        1-0-1:[Brawler]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[Blinker2]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[Blinker4]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Blinker3]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Blinker2]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[Blinker4]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 1 Damage
+Brawler - 0 Treasure(s) 1 Damage
 
-Orbiters - 4 Remaining
-Seekers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
 Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	1	[Gem]
+Brawler	1-0-1	1	[]
 
 Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	4-0-0
-Orbiter2	2-1-0
-Blinker2	2-1-1
-Orbiter3	1-1-0
-Orbiter4	1-1-0
-Seeker4	3-2-2
-Blinker4	3-0-0
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	3-0-1
+Orbiter3	2-0-1
+Blinker3	2-1-1
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	4-1-1
 Turn6
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
@@ -270,90 +266,43 @@ Empty Room. You can perform one of the fo1lowing actions
 Enter action :
 Move
 Select a room to move to
-1. 1-0-0
-2. 1-0-1
-3. 1-0-2
-4. 1-1-0
-5. 1-1-2
-6. 1-2-0
-7. 1-2-1
-8. 1-2-2
-9. 0-1-1
-10. 2-1-1
-4
+1. 1-1-1
+1
 
 0-1-1:[]:[]
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[Brawler]:[Orbiter3]        1-1-1:[]:[]        1-1-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Blinker4]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[Blinker1]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[Blinker2]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1, Blinker4]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[Blinker2]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 2 Damage
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[Blinker3]        4-2-2:[]:[]
+Brawler - 0 Treasure(s) 1 Damage
 
 Orbiters - 3 Remaining
-Seekers - 2 Remaining
+Seekers - 3 Remaining
 Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-0	2	[Gem]
+Brawler	1-1-1	1	[]
 
-Total Active Creatures:8
+Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-2-0
-Orbiter2	2-1-0
-Blinker2	4-1-1
-Orbiter3	1-1-0
-Seeker4	3-2-2
-Blinker4	2-0-1
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	2-1-0
+Orbiter3	2-0-1
+Blinker3	4-2-1
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	2-2-0
 Turn7
-Enter action to be performed by Adventurer: Indiana Jones
-Creature(s) present in Room. You can perform one of the fo1lowing actions
-1. Fight
-2. Move
-Enter action :
-Fight
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[Brawler]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[Blinker2]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[Blinker1]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[Blinker4]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 3 Damage
-
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
-Blinkers - 3 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-0	3	[Gem]
-
-Total Active Creatures:7
-Creatures	 Room
-Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-1-1
-Orbiter2	2-1-0
-Blinker2	1-2-1
-Seeker4	3-2-2
-Blinker4	4-1-2
-Turn8
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -364,79 +313,38 @@ Search
 
 0-1-1:[]:[]
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[Brawler]:[Blinker1]        1-1-1:[]:[]        1-1-2:[]:[]
+1-1-0:[]:[]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[Blinker4]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1, Blinker2]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[Blinker2]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4, Blinker4]        3-1-1:[]:[Blinker3]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 4 Damage
+Brawler - 0 Treasure(s) 1 Damage
 
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
 Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-0	4	[Gem]
+Brawler	1-1-1	1	[]
 
-Total Active Creatures:7
+Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	1-1-0
-Orbiter2	2-1-0
-Blinker2	3-0-2
-Seeker4	3-2-2
-Blinker4	2-0-0
-Turn9
-Enter action to be performed by Adventurer: Indiana Jones
-Creature(s) present in Room. You can perform one of the fo1lowing actions
-1. Fight
-2. Move
-Enter action :
-Move
-Select a room to move to
-1. 1-1-1
-1
-You moved when Creature present in room. You will suffer 1 point damage for each creature in room!
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
-1-2-0:[]:[Blinker2]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker1]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[Blinker4]
-Brawler - 2 Treasure(s) 5 Damage
-
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
-Blinkers - 3 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	5	[Gem]
-
-Total Active Creatures:7
-Creatures	 Room
-Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-2-2
-Orbiter2	2-1-0
-Blinker2	1-2-0
-Seeker4	3-2-2
-Blinker4	4-2-2
-Turn10
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	2-1-0
+Orbiter3	2-0-1
+Blinker3	3-1-1
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	3-1-0
+Turn8
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -461,33 +369,78 @@ Select a room to move to
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[Brawler]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[Blinker4]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[Blinker1]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Seeker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[Blinker4]        3-1-2:[]:[]
+3-2-0:[]:[Blinker3]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[Blinker2]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
+Brawler - 0 Treasure(s) 1 Damage
 
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-2-0	5	[Gem]
+Brawler	1-2-0	1	[]
 
-Total Active Creatures:6
+Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	4-0-0
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	2-1-1
-Turn11
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	4-1-2
+Orbiter3	2-0-1
+Blinker3	3-2-0
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	3-1-1
+Turn9
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Search
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[Brawler]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[Blinker3]        2-1-2:[]:[Seeker4, Blinker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[Blinker2]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 1 Damage
+
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 3 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	1-2-0	1	[Sword]
+
+Total Active Creatures:9
+Creatures	 Room
+Orbiter1	2-0-1
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	4-0-2
+Orbiter3	2-0-1
+Blinker3	2-1-1
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	2-1-2
+Turn10
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -503,33 +456,36 @@ Select a room to move to
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[Brawler]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[Blinker1]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker4]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+2-0-0:[]:[Seeker2]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[Blinker3]        2-1-1:[]:[Blinker2]        2-1-2:[]:[Seeker4, Blinker4]
+2-2-0:[]:[Seeker1]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
+Brawler - 2 Treasure(s) 1 Damage
 
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 3 Remaining
+Blinkers - 3 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	5	[Gem]
+Brawler	1-1-1	1	[Sword]
 
-Total Active Creatures:6
+Total Active Creatures:9
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-0-0
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	3-1-2
-Turn12
+Seeker1	2-2-0
+Seeker2	2-0-0
+Blinker2	2-1-1
+Orbiter3	2-0-1
+Blinker3	2-1-0
+Orbiter4	3-1-0
+Seeker4	2-1-2
+Blinker4	2-1-2
+Turn11
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -554,33 +510,32 @@ Select a room to move to
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Orbiter1]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker1]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[Blinker4]
+2-0-0:[]:[]        2-0-1:[]:[Orbiter1, Orbiter3]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[Blinker3, Blinker4]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
+Brawler - 2 Treasure(s) 1 Damage
 
-Orbiters - 2 Remaining
-Seekers - 2 Remaining
+Orbiters - 3 Remaining
+Seekers - 0 Remaining
 Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	5	[Gem]
+Brawler	2-1-1	1	[Sword]
 
-Total Active Creatures:6
+Total Active Creatures:5
 Creatures	 Room
 Orbiter1	2-0-1
-Seeker1	3-0-2
-Blinker1	2-2-2
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	4-1-2
-Turn13
+Orbiter3	2-0-1
+Blinker3	4-0-1
+Orbiter4	3-1-0
+Blinker4	4-0-1
+Turn12
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -605,32 +560,102 @@ Select a room to move to
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[Brawler]:[]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[Blinker1]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker4]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Brawler]:[Orbiter1]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Blinker3]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[Blinker4]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
+Brawler - 2 Treasure(s) 2 Damage
 
-Orbiters - 1 Remaining
-Seekers - 2 Remaining
+Orbiters - 2 Remaining
+Seekers - 0 Remaining
 Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	2-0-1	5	[Gem]
+Brawler	2-0-1	2	[Sword]
 
-Total Active Creatures:5
+Total Active Creatures:4
 Creatures	 Room
-Seeker1	3-0-2
-Blinker1	2-2-1
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	3-1-2
+Orbiter1	2-0-1
+Blinker3	3-0-2
+Orbiter4	3-1-0
+Blinker4	4-0-1
+Turn13
+Enter action to be performed by Adventurer: Indiana Jones
+Creature(s) present in Room. You can perform one of the fo1lowing actions
+1. Fight
+2. Move
+Enter action :
+Fight
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[Blinker3]
+2-0-0:[]:[]        2-0-1:[Brawler]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[Blinker4]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 2 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	2-0-1	2	[Sword]
+
+Total Active Creatures:3
+Creatures	 Room
+Blinker3	1-2-2
+Orbiter4	3-1-0
+Blinker4	3-2-0
 Turn14
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Celebrate
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[Brawler]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[Blinker3]        3-1-2:[]:[Blinker4]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 2 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	2-0-1	2	[Sword]
+
+Total Active Creatures:3
+Creatures	 Room
+Blinker3	3-1-1
+Orbiter4	3-1-0
+Blinker4	3-1-2
+Turn15
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -640,75 +665,32 @@ Enter action :
 Search
 
 0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Blinker3]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[Blinker4]
+1-2-0:[]:[]        1-2-1:[]:[Blinker4]        1-2-2:[]:[]
 2-0-0:[]:[]        2-0-1:[Brawler]:[]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
 2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[Blinker1]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
-
-Orbiters - 1 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-0-1	5	[Gem]
-
-Total Active Creatures:5
-Creatures	 Room
-Seeker1	3-0-2
-Blinker1	4-1-0
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	1-2-2
-Turn15
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Move
-Select a room to move to
-1. 2-1-1
-1
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[]:[Orbiter2]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker4]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1, Blinker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 5 Damage
+Brawler - 2 Treasure(s) 2 Damage
 
 Orbiters - 1 Remaining
-Seekers - 2 Remaining
+Seekers - 0 Remaining
 Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	5	[Gem]
+Brawler	2-0-1	2	[Sword]
 
-Total Active Creatures:5
+Total Active Creatures:3
 Creatures	 Room
-Seeker1	3-0-2
-Blinker1	3-0-2
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	2-2-2
+Blinker3	1-0-1
+Orbiter4	3-1-0
+Blinker4	1-2-1
 Turn16
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
@@ -718,178 +700,37 @@ Empty Room. You can perform one of the fo1lowing actions
 Enter action :
 Move
 Select a room to move to
-1. 2-0-0
-2. 2-0-1
-3. 2-0-2
-4. 2-1-0
-5. 2-1-2
-6. 2-2-0
-7. 2-2-1
-8. 2-2-2
-9. 1-1-1
-10. 3-1-1
-4
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[Brawler]:[Orbiter2]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[Blinker4]        4-1-1:[]:[Blinker1]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 6 Damage
-
-Orbiters - 1 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-0	6	[Gem]
-
-Total Active Creatures:5
-Creatures	 Room
-Seeker1	3-0-2
-Blinker1	4-1-1
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	4-1-0
-Turn17
-Enter action to be performed by Adventurer: Indiana Jones
-Creature(s) present in Room. You can perform one of the fo1lowing actions
-1. Fight
-2. Move
-Enter action :
-Move
-Select a room to move to
 1. 2-1-1
 1
-You moved when Creature present in room. You will suffer 1 point damage for each creature in room!
 
 0-1-1:[]:[]
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
 2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[Blinker4]
-2-1-0:[]:[Orbiter2]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 7 Damage
-
-Orbiters - 1 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	7	[Gem]
-
-Total Active Creatures:5
-Creatures	 Room
-Seeker1	3-0-2
-Blinker1	3-2-1
-Orbiter2	2-1-0
-Seeker4	3-2-2
-Blinker4	2-0-2
-Turn18
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Move
-Select a room to move to
-1. 2-0-0
-2. 2-0-1
-3. 2-0-2
-4. 2-1-0
-5. 2-1-2
-6. 2-2-0
-7. 2-2-1
-8. 2-2-2
-9. 1-1-1
-10. 3-1-1
-4
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[Brawler]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[Blinker1]
-3-2-0:[]:[Blinker4]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 7 Damage
-
-Orbiters - 0 Remaining
-Seekers - 2 Remaining
-Blinkers - 2 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-0	7	[Gem]
-
-Total Active Creatures:4
-Creatures	 Room
-Seeker1	3-0-2
-Blinker1	3-1-2
-Seeker4	3-2-2
-Blinker4	3-2-0
-Turn19
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Move
-Select a room to move to
-1. 2-1-1
-1
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[Blinker1]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
 2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Seeker1]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[Seeker4]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Blinker3, Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[Blinker4]        4-1-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 7 Damage
+Brawler - 2 Treasure(s) 2 Damage
 
-Orbiters - 0 Remaining
-Seekers - 2 Remaining
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
 Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	7	[Gem]
+Brawler	2-1-1	2	[Sword]
 
-Total Active Creatures:4
+Total Active Creatures:3
 Creatures	 Room
-Seeker1	3-0-2
-Blinker1	1-2-0
-Seeker4	3-2-2
-Blinker4	4-1-1
-Turn20
+Blinker3	3-1-0
+Orbiter4	3-1-0
+Blinker4	2-0-2
+Turn17
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -911,67 +752,33 @@ Select a room to move to
 10
 
 0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Blinker4]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[Blinker3]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
 2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
 2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
 3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
-3-1-0:[]:[]        3-1-1:[Brawler]:[Seeker4]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[Blinker1]        4-1-2:[]:[]
-4-2-0:[]:[Blinker4]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 8 Damage
-
-Orbiters - 0 Remaining
-Seekers - 1 Remaining
-Blinkers - 2 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	3-1-1	8	[Gem]
-
-Total Active Creatures:3
-Creatures	 Room
-Blinker1	4-1-1
-Seeker4	3-1-1
-Blinker4	4-2-0
-Turn21
-Enter action to be performed by Adventurer: Indiana Jones
-Creature(s) present in Room. You can perform one of the fo1lowing actions
-1. Fight
-2. Move
-Enter action :
-Fight
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[Blinker4]
-3-1-0:[]:[]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
 3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[Blinker1]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 9 Damage
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 2 Damage
 
-Orbiters - 0 Remaining
+Orbiters - 1 Remaining
 Seekers - 0 Remaining
 Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	3-1-1	9	[Gem]
+Brawler	3-1-1	2	[Sword]
 
-Total Active Creatures:2
+Total Active Creatures:3
 Creatures	 Room
-Blinker1	4-2-0
-Blinker4	3-0-2
-Turn22
+Blinker3	1-1-2
+Orbiter4	3-1-0
+Blinker4	1-0-1
+Turn18
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -990,34 +797,157 @@ Select a room to move to
 8. 3-2-2
 9. 2-1-1
 10. 4-1-1
-3
+4
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[Blinker4]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Blinker3]        3-0-2:[]:[]
+3-1-0:[Brawler]:[Orbiter4]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 3 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-0	3	[Sword]
+
+Total Active Creatures:3
+Creatures	 Room
+Blinker3	3-0-1
+Orbiter4	3-1-0
+Blinker4	1-2-0
+Turn19
+Enter action to be performed by Adventurer: Indiana Jones
+Creature(s) present in Room. You can perform one of the fo1lowing actions
+1. Fight
+2. Move
+Enter action :
+Move
+Select a room to move to
+1. 3-1-1
+1
+You moved when Creature present in room. You will suffer 1 point damage for each creature in room!
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[Blinker3]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[Blinker4]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[Orbiter4]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 4 Damage
+
+Orbiters - 1 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	4	[Sword]
+
+Total Active Creatures:3
+Creatures	 Room
+Blinker3	1-0-2
+Orbiter4	3-1-0
+Blinker4	2-0-2
+Turn20
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 3-0-0
+2. 3-0-1
+3. 3-0-2
+4. 3-1-0
+5. 3-1-2
+6. 3-2-0
+7. 3-2-1
+8. 3-2-2
+9. 2-1-1
+10. 4-1-1
+4
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Blinker4]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker3]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[Brawler]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 4 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-0	4	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	2-2-2
+Blinker4	1-0-1
+Turn21
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Celebrate
 
 0-1-1:[]:[]
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[]        2-0-1:[]:[Blinker1]        2-0-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[Brawler]:[]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[Blinker4]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[Brawler]:[]        3-1-1:[]:[]        3-1-2:[]:[]
 3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[Blinker3]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 9 Damage
+Brawler - 2 Treasure(s) 4 Damage
 
 Orbiters - 0 Remaining
 Seekers - 0 Remaining
-Blinkers - 1 Remaining
+Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	3-0-2	9	[Gem]
+Brawler	3-1-0	4	[Sword]
 
-Total Active Creatures:1
+Total Active Creatures:2
 Creatures	 Room
-Blinker1	2-0-1
-Turn23
+Blinker3	4-0-2
+Blinker4	2-2-1
+Turn22
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -1033,25 +963,26 @@ Search
 2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
 2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[Brawler]:[]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[Blinker1]        3-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[Blinker4]        3-0-2:[]:[]
+3-1-0:[Brawler]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 9 Damage
+4-2-0:[]:[]        4-2-1:[]:[Blinker3]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 4 Damage
 
 Orbiters - 0 Remaining
 Seekers - 0 Remaining
-Blinkers - 1 Remaining
+Blinkers - 2 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	3-0-2	9	[Gem]
+Brawler	3-1-0	4	[Sword]
 
-Total Active Creatures:1
+Total Active Creatures:2
 Creatures	 Room
-Blinker1	3-2-1
-Turn24
+Blinker3	4-2-1
+Blinker4	3-0-1
+Turn23
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -1064,8 +995,367 @@ Select a room to move to
 1
 
 0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[Blinker4]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[Brawler]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[]:[Blinker3]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 4 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	3-1-1	4	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	4-2-0
+Blinker4	1-0-2
+Turn24
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 3-0-0
+2. 3-0-1
+3. 3-0-2
+4. 3-1-0
+5. 3-1-2
+6. 3-2-0
+7. 3-2-1
+8. 3-2-2
+9. 2-1-1
+10. 4-1-1
+10
+
+0-1-1:[]:[]
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[Blinker1]        1-1-1:[]:[]        1-1-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[Blinker3]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[Blinker4]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 4 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	4	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	2-2-1
+Blinker4	4-2-0
+Turn25
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 4-0-0
+2. 4-0-1
+3. 4-0-2
+4. 4-1-0
+5. 4-1-2
+6. 4-2-0
+7. 4-2-1
+8. 4-2-2
+9. 3-1-1
+6
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[Blinker3]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
+4-2-0:[Brawler]:[Blinker4]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 5 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-2-0	5	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	2-2-2
+Blinker4	4-2-0
+Turn26
+Enter action to be performed by Adventurer: Indiana Jones
+Creature(s) present in Room. You can perform one of the fo1lowing actions
+1. Fight
+2. Move
+Enter action :
+Move
+Select a room to move to
+1. 4-1-1
+1
+You moved when Creature present in room. You will suffer 1 point damage for each creature in room!
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[Blinker4]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[Blinker3]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 6 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	6	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	4-1-2
+Blinker4	1-1-0
+Turn27
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 4-0-0
+2. 4-0-1
+3. 4-0-2
+4. 4-1-0
+5. 4-1-2
+6. 4-2-0
+7. 4-2-1
+8. 4-2-2
+9. 3-1-1
+5
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[Blinker4]        4-1-1:[]:[]        4-1-2:[Brawler]:[Blinker3]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 6 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 2 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	6	[Sword]
+
+Total Active Creatures:2
+Creatures	 Room
+Blinker3	4-1-2
+Blinker4	4-1-0
+Turn28
+Enter action to be performed by Adventurer: Indiana Jones
+Creature(s) present in Room. You can perform one of the fo1lowing actions
+1. Fight
+2. Move
+Enter action :
+Fight
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[Blinker4]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 7 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	7	[Sword]
+
+Total Active Creatures:1
+Creatures	 Room
+Blinker4	2-1-2
+Turn29
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Celebrate
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[Blinker4]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 7 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 1 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	7	[Sword]
+
+Total Active Creatures:1
+Creatures	 Room
+Blinker4	1-0-1
+Turn30
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Search
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[Brawler]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 7 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-2	7	[Sword]
+
+Total Active Creatures:0
+Creatures	 Room
+Turn31
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 4-1-1
+1
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
+1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
+2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
+2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
+2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
+3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
+3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
+3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
+4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
+4-1-0:[]:[]        4-1-1:[Brawler]:[]        4-1-2:[]:[]
+4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
+Brawler - 2 Treasure(s) 7 Damage
+
+Orbiters - 0 Remaining
+Seekers - 0 Remaining
+Blinkers - 0 Remaining
+Total Active Adventurers:1
+Adventurers	 Room	 Damage	 Treasure
+Brawler	4-1-1	7	[Sword]
+
+Total Active Creatures:0
+Creatures	 Room
+Turn32
+Enter action to be performed by Adventurer: Indiana Jones
+Empty Room. You can perform one of the fo1lowing actions
+1. Move
+2. Search
+3. Celebrate
+Enter action :
+Move
+Select a room to move to
+1. 4-0-0
+2. 4-0-1
+3. 4-0-2
+4. 4-1-0
+5. 4-1-2
+6. 4-2-0
+7. 4-2-1
+8. 4-2-2
+9. 3-1-1
+9
+
+0-1-1:[]:[]
+1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
+1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
 2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
@@ -1076,19 +1366,18 @@ Select a room to move to
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 9 Damage
+Brawler - 2 Treasure(s) 7 Damage
 
 Orbiters - 0 Remaining
 Seekers - 0 Remaining
-Blinkers - 1 Remaining
+Blinkers - 0 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	3-1-1	9	[Gem]
+Brawler	3-1-1	7	[Sword]
 
-Total Active Creatures:1
+Total Active Creatures:0
 Creatures	 Room
-Blinker1	1-1-0
-Turn25
+Turn33
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -1113,121 +1402,6 @@ Select a room to move to
 1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
 1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
 1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[]:[Blinker1]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[]:[]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 9 Damage
-
-Orbiters - 0 Remaining
-Seekers - 0 Remaining
-Blinkers - 1 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	9	[Gem]
-
-Total Active Creatures:1
-Creatures	 Room
-Blinker1	2-0-0
-Turn26
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Move
-Select a room to move to
-1. 2-0-0
-2. 2-0-1
-3. 2-0-2
-4. 2-1-0
-5. 2-1-2
-6. 2-2-0
-7. 2-2-1
-8. 2-2-2
-9. 1-1-1
-10. 3-1-1
-1
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[Brawler]:[Blinker1]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 10 Damage
-
-Orbiters - 0 Remaining
-Seekers - 0 Remaining
-Blinkers - 1 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-0-0	10	[Gem]
-
-Total Active Creatures:1
-Creatures	 Room
-Blinker1	2-0-0
-Turn27
-Enter action to be performed by Adventurer: Indiana Jones
-Creature(s) present in Room. You can perform one of the fo1lowing actions
-1. Fight
-2. Move
-Enter action :
-Fight
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
-2-0-0:[Brawler]:[]        2-0-1:[]:[]        2-0-2:[]:[]
-2-1-0:[]:[]        2-1-1:[]:[]        2-1-2:[]:[]
-2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
-3-0-0:[]:[]        3-0-1:[]:[]        3-0-2:[]:[]
-3-1-0:[]:[]        3-1-1:[]:[]        3-1-2:[]:[]
-3-2-0:[]:[]        3-2-1:[]:[]        3-2-2:[]:[]
-4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
-4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
-4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 10 Damage
-
-Orbiters - 0 Remaining
-Seekers - 0 Remaining
-Blinkers - 0 Remaining
-Total Active Adventurers:1
-Adventurers	 Room	 Damage	 Treasure
-Brawler	2-0-0	10	[Gem]
-
-Total Active Creatures:0
-Creatures	 Room
-Turn28
-Enter action to be performed by Adventurer: Indiana Jones
-Empty Room. You can perform one of the fo1lowing actions
-1. Move
-2. Search
-3. Celebrate
-Enter action :
-Move
-Select a room to move to
-1. 2-1-1
-1
-
-0-1-1:[]:[]
-1-0-0:[]:[]        1-0-1:[]:[]        1-0-2:[]:[]
-1-1-0:[]:[]        1-1-1:[]:[]        1-1-2:[]:[]
-1-2-0:[]:[]        1-2-1:[]:[]        1-2-2:[]:[]
 2-0-0:[]:[]        2-0-1:[]:[]        2-0-2:[]:[]
 2-1-0:[]:[]        2-1-1:[Brawler]:[]        2-1-2:[]:[]
 2-2-0:[]:[]        2-2-1:[]:[]        2-2-2:[]:[]
@@ -1237,18 +1411,18 @@ Select a room to move to
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 10 Damage
+Brawler - 2 Treasure(s) 7 Damage
 
 Orbiters - 0 Remaining
 Seekers - 0 Remaining
 Blinkers - 0 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	2-1-1	10	[Gem]
+Brawler	2-1-1	7	[Sword]
 
 Total Active Creatures:0
 Creatures	 Room
-Turn29
+Turn34
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -1282,18 +1456,18 @@ Select a room to move to
 4-0-0:[]:[]        4-0-1:[]:[]        4-0-2:[]:[]
 4-1-0:[]:[]        4-1-1:[]:[]        4-1-2:[]:[]
 4-2-0:[]:[]        4-2-1:[]:[]        4-2-2:[]:[]
-Brawler - 2 Treasure(s) 10 Damage
+Brawler - 2 Treasure(s) 7 Damage
 
 Orbiters - 0 Remaining
 Seekers - 0 Remaining
 Blinkers - 0 Remaining
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	1-1-1	10	[Gem]
+Brawler	1-1-1	7	[Sword]
 
 Total Active Creatures:0
 Creatures	 Room
-Turn30
+Turn35
 Enter action to be performed by Adventurer: Indiana Jones
 Empty Room. You can perform one of the fo1lowing actions
 1. Move
@@ -1317,9 +1491,10 @@ Select a room to move to
 
 Total Active Adventurers:1
 Adventurers	 Room	 Damage	 Treasure
-Brawler	0-1-1	10	[Gem]
+Brawler	0-1-1	7	[Sword]
 
 Total Active Creatures:0
 Creatures	 Room
+RotLA turn summary chart created!!! Filename is - RotLASummary.jpeg
 
 Process finished with exit code 0

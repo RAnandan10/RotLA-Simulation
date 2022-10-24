@@ -1,4 +1,4 @@
-Brawler enters 2-0-0
-Brawler loses combat
-Blinker1 wins combat
-Brawler damage 10
+Brawler enters 4-1-1
+Brawler damage 6
+Blinker3 enters 4-1-2
+Blinker4 enters 1-1-0
